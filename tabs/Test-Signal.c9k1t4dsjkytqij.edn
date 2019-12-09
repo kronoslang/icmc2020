@@ -1,0 +1,123 @@
+{:documentation "Generates a test signal with impulses and rapid changes to audition the reverb."
+ :identifier "Test-Signal"
+ :identity "c9k1t4dsjkytqij"
+ :patch
+{:cables
+{["07lhzcs6ym4hvxa" 0] [:fixed "v5x5zl6b878gfxw" 0]
+ ["07lhzcs6ym4hvxa" 1] [:fixed "v5x5zl6b878gfxw" 0]
+ ["4do9m03ub4obcyk" 0] [:fixed "gmypro5fdatxwo2" 0]
+ ["4pscon0xufsti1s" 0] [:fixed "5a096fc4385sddy" 0]
+ ["6czahxe733b9f45" 0] [:fixed "ad04t2c7ds25srn" 0]
+ ["9f7w0bir2la5x8" 0] [:fixed "b45m6wt3crohqv6" 0]
+ ["b45m6wt3crohqv6" 0] [:fixed "m5n1155101sl5fk" 0]
+ ["b45m6wt3crohqv6" 1] [:fixed "f9bls4ks7fgdswa" 0]
+ ["br784frm1cuwvjv" 0] [:fixed "5a096fc4385sddy" 0]
+ ["iru66mz4zzurjlk" 0] [:fixed "br784frm1cuwvjv" 0]
+ ["ksbc6z6h4zpu42b" 0] [:fixed "u73c4mb1ky2800l" 0]
+ ["m5n1155101sl5fk" 0] [:fixed "4do9m03ub4obcyk" 0]
+ ["m5n1155101sl5fk" 1] [:fixed "6czahxe733b9f45" 0]
+ ["u73c4mb1ky2800l" 0] [:fixed "07lhzcs6ym4hvxa" 0]
+ ["u73c4mb1ky2800l" 1] [:fixed "9f7w0bir2la5x8" 0]
+ ["v5x5zl6b878gfxw" 0] [:fixed "iru66mz4zzurjlk" 0]
+ ["v5x5zl6b878gfxw" 1] [:fixed "4pscon0xufsti1s" 0]}
+ :nodes
+{"07lhzcs6ym4hvxa" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [58 73]}
+ "4do9m03ub4obcyk" 
+{:inputs ["freq"]
+ :label "Gen:Tri($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Tri" [:tuple [:free-var "freq"]]]
+ :pos [-267 -161]}
+ "4pscon0xufsti1s" 
+{:inputs ["freq"]
+ :label "Gen:Tri($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Tri" [:tuple [:free-var "freq"]]]
+ :pos [-198 23]}
+ "5a096fc4385sddy" 
+{:inputs []
+ :label "0.21"
+ :outputs [""]
+ :parsed [:float "0.21"]
+ :pos [-387 14]
+ :selected true}
+ "6czahxe733b9f45" 
+{:inputs ["freq"]
+ :label "Gen:Tri($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Tri" [:tuple [:free-var "freq"]]]
+ :pos [-219 -310]}
+ "9f7w0bir2la5x8" 
+{:inputs ["freq"]
+ :label "Gen:Saw-($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Saw-" [:tuple [:free-var "freq"]]]
+ :pos [200 -88]}
+ "ad04t2c7ds25srn" 
+{:inputs []
+ :label "0.49"
+ :outputs [""]
+ :parsed [:float "0.49"]
+ :pos [-367 -310]}
+ "b45m6wt3crohqv6" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [25 -115]}
+ "br784frm1cuwvjv" 
+{:inputs ["freq"]
+ :label "Gen:Phasor($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Phasor" [:tuple [:free-var "freq"]]]
+ :pos [-243 99]}
+ "f9bls4ks7fgdswa" 
+{:inputs []
+ :label "3000"
+ :outputs [""]
+ :parsed [:float "3000"]
+ :pos [-25 -270]}
+ "gmypro5fdatxwo2" 
+{:inputs []
+ :label "0.11"
+ :outputs [""]
+ :parsed [:float "0.11"]
+ :pos [-369 -189]}
+ "iru66mz4zzurjlk" 
+{:inputs ["b"]
+ :label "1 -"
+ :outputs [""]
+ :parsed [:infix [:float "1"] "-" [:free-var "b"]]
+ :pos [-122 166]}
+ "ksbc6z6h4zpu42b" 
+{:inputs ["sig"]
+ :label "o))"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [371 200]}
+ "m5n1155101sl5fk" 
+{:ephemeral-inputs #{}
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-66 -68]}
+ "u73c4mb1ky2800l" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [397 2]}
+ "v5x5zl6b878gfxw" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-32 73]}}
+ :scale 1
+ :scroll [0 0]}}
