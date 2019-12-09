@@ -11,13 +11,34 @@ Brief() {
 }
 
 
+Test-Signal() {
+;; Generates a test signal with impulses and rapid changes to audition the reverb.
+(nu73c4mb1ky2800l-0) = (n07lhzcs6ym4hvxa-0 * n9f7w0bir2la5x8-0)
+(n5a096fc4385sddy-0) = 0.21
+(nb45m6wt3crohqv6-0) = (nm5n1155101sl5fk-0 * nf9bls4ks7fgdswa-0)
+(nbr784frm1cuwvjv-0) = Gen:Phasor(n5a096fc4385sddy-0)
+(nm5n1155101sl5fk-0) = (n4do9m03ub4obcyk-0 * n6czahxe733b9f45-0)
+(n4do9m03ub4obcyk-0) = Gen:Tri(ngmypro5fdatxwo2-0)
+(nksbc6z6h4zpu42b-0) = nu73c4mb1ky2800l-0
+(niru66mz4zzurjlk-0) = (1 - nbr784frm1cuwvjv-0)
+(ngmypro5fdatxwo2-0) = 0.11
+(n6czahxe733b9f45-0) = Gen:Tri(nad04t2c7ds25srn-0)
+(n9f7w0bir2la5x8-0) = Gen:Saw-(nb45m6wt3crohqv6-0)
+(n4pscon0xufsti1s-0) = Gen:Tri(n5a096fc4385sddy-0)
+(nad04t2c7ds25srn-0) = 0.49
+(nv5x5zl6b878gfxw-0) = (niru66mz4zzurjlk-0 * n4pscon0xufsti1s-0)
+(nf9bls4ks7fgdswa-0) = 3000
+(n07lhzcs6ym4hvxa-0) = (nv5x5zl6b878gfxw-0 * nv5x5zl6b878gfxw-0)
+nksbc6z6h4zpu42b-0
+}
+
 FDN(sig rt60 predelay damp tone mix) {
 (n7lrakq6xwwplv7u-0) = Butterfly(nvwyo51vfhtec3u7-0)
 (npn488smrmtnj2nm-0) = Math:Pow(n16bdifxjt1alv7w-0 nnt1f13bv82gl5x4-0)
 (nk4w9vi1iq5zh0p5-0) = (nbcbwjo9hceuad19-0 * n9nncusk1c8u4e4n-0)
 (nilmd4jtxy53859s-0) = Algorithm:Expand(nuzozw785sx6lobw-0 n872e35euq87re8g-0 nepx0bz2wzoe68kw-0)
 (n9nncusk1c8u4e4n-0) = Math:Sqrt(nnt1f13bv82gl5x4-0)
-(n3axy3etok4fls5s-0) = Math:Mix(nghs21lu2fkpkf72-5 neerbpfw5uye683x-0 nloc2v0p363kqxif-0)
+(n3axy3etok4fls5s-0) = Math:Mix(nghs21lu2fkpkf72-5 nghs21lu2fkpkf72-0 nloc2v0p363kqxif-0)
 (nghs21lu2fkpkf72-0 nghs21lu2fkpkf72-1 nghs21lu2fkpkf72-2 nghs21lu2fkpkf72-3 nghs21lu2fkpkf72-4 nghs21lu2fkpkf72-5) = arg
 (nloc2v0p363kqxif-0) = Filter:Lpf6(ng5ie7h8trup8n6-0 nghs21lu2fkpkf72-4)
 (neerbpfw5uye683x-0) = Vector:Repeat(nuzozw785sx6lobw-0 n7e2r70x0eag5rdj-0)
@@ -77,25 +98,6 @@ Delay-Line(sig N rt60 tone) {
 ndjut0z9raew515v-0
 }
 
-Test-Signal() {
-;; Generates a test signal with impulses and rapid changes to audition the reverb.
-(nu73c4mb1ky2800l-0) = (n07lhzcs6ym4hvxa-0 * n9f7w0bir2la5x8-0)
-(n5a096fc4385sddy-0) = 0.21
-(nb45m6wt3crohqv6-0) = (nm5n1155101sl5fk-0 * nf9bls4ks7fgdswa-0)
-(nbr784frm1cuwvjv-0) = Gen:Phasor(n5a096fc4385sddy-0)
-(nm5n1155101sl5fk-0) = (n4do9m03ub4obcyk-0 * n6czahxe733b9f45-0)
-(n4do9m03ub4obcyk-0) = Gen:Tri(ngmypro5fdatxwo2-0)
-(nksbc6z6h4zpu42b-0) = nu73c4mb1ky2800l-0
-(niru66mz4zzurjlk-0) = (1 - nbr784frm1cuwvjv-0)
-(ngmypro5fdatxwo2-0) = 0.11
-(n6czahxe733b9f45-0) = Gen:Tri(nad04t2c7ds25srn-0)
-(n9f7w0bir2la5x8-0) = Gen:Saw-(nb45m6wt3crohqv6-0)
-(n4pscon0xufsti1s-0) = Gen:Tri(n5a096fc4385sddy-0)
-(nad04t2c7ds25srn-0) = 0.49
-(nv5x5zl6b878gfxw-0) = (niru66mz4zzurjlk-0 * n4pscon0xufsti1s-0)
-(nf9bls4ks7fgdswa-0) = 3000
-(n07lhzcs6ym4hvxa-0) = (nv5x5zl6b878gfxw-0 * nv5x5zl6b878gfxw-0)
-nksbc6z6h4zpu42b-0
-}
+
 
 }
