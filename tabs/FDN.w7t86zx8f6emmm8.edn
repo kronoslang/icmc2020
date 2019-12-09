@@ -188,7 +188,7 @@
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
  :pos [-13 -183]
- :selected true}
+ }
  "k4w9vi1iq5zh0p5" 
 {:inputs ["a" "b" "more..."]
  :label "*"
