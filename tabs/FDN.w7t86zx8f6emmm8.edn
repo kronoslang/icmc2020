@@ -22,12 +22,14 @@
  ["bcbwjo9hceuad19" 0] [:fixed "7lrakq6xwwplv7u" 0]
  ["eerbpfw5uye683x" 0] [:fixed "uzozw785sx6lobw" 0]
  ["eerbpfw5uye683x" 1] [:fixed "7e2r70x0eag5rdj" 0]
+ ["g5ie7h8trup8n6" 0] [:fixed "9nncusk1c8u4e4n" 0]
+ ["g5ie7h8trup8n6" 1] [:fixed "7lrakq6xwwplv7u" 0]
  ["ilmd4jtxy53859s" 0] [:fixed "uzozw785sx6lobw" 0]
  ["ilmd4jtxy53859s" 1] [:fixed "872e35euq87re8g" 0]
  ["ilmd4jtxy53859s" 2] [:fixed "epx0bz2wzoe68kw" 0]
  ["k4w9vi1iq5zh0p5" 0] [:fixed "bcbwjo9hceuad19" 0]
  ["k4w9vi1iq5zh0p5" 1] [:fixed "9nncusk1c8u4e4n" 0]
- ["loc2v0p363kqxif" 0] [:fixed "7lrakq6xwwplv7u" 0]
+ ["loc2v0p363kqxif" 0] [:fixed "g5ie7h8trup8n6" 0]
  ["loc2v0p363kqxif" 1] [:fixed "ghs21lu2fkpkf72" 4]
  ["m5s284xjm4yt1aa" 0] [:fixed "3axy3etok4fls5s" 0]
  ["nt1f13bv82gl5x4" 0] [:fixed "uzozw785sx6lobw" 0]
@@ -43,7 +45,7 @@
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-283 -260]
+ :pos [-289 -299]
  }
  "2kdq3edkqg7femt" 
 {:inputs []
@@ -67,7 +69,7 @@
  "3axy3etok4fls5s" 
 {:cable-midpoints 
 {0 [53 212]
- 1 [52 233]}
+ 1 [46 236]}
  :inputs ["mix" "a" "b"]
  :label "Math:Mix($mix $a $b)"
  :name "wet/dry"
@@ -84,7 +86,7 @@
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements..."]]]
  :pos [112 -183]
- }
+ :selected true}
  "6gw6uwi1z6soa2m" 
 {:color 3
  :inputs []
@@ -106,6 +108,7 @@
  "7e2r70x0eag5rdj" 
 {:inputs ["sig" "delay-time" "buffer-size"]
  :label "Delay:Static-Delay($sig $delay-time $buffer-size)"
+ :name "pre-delay"
  :outputs [""]
  :parsed [:fn "Delay:Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay-time"] [:free-var "buffer-size"]]]
  :pos [-357 -158]
@@ -121,10 +124,10 @@
  "7lv9g825e8kvk7z" 
 {:color 3
  :inputs []
- :label "#513"
+ :label "#567"
  :outputs [""]
- :parsed [:invariant "513"]
- :pos [-457 -281]
+ :parsed [:invariant "567"]
+ :pos [-457 -340]
  }
  "872e35euq87re8g" 
 {:color 3
@@ -132,7 +135,7 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-102 -260]
+ :pos [-108 -299]
  }
  "9nncusk1c8u4e4n" 
 {:color 3
@@ -143,7 +146,9 @@
  :pos [260 -378]
  }
  "bcbwjo9hceuad19" 
-{:inputs ["sig~"]
+{:cable-midpoints 
+{}
+ :inputs ["sig~"]
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
@@ -164,15 +169,24 @@
  :name "broadcast input"
  :outputs [""]
  :parsed [:fn "Vector:Repeat" [:tuple [:free-var "count"] [:free-var "value"]]]
- :pos [-215 -109]
+ :pos [-188 -108]
  }
  "epx0bz2wzoe68kw" 
 {:color 3
  :inputs []
- :label "#6567"
+ :label "#5432"
  :outputs [""]
- :parsed [:invariant "6567"]
- :pos [-456 -340]
+ :parsed [:invariant "5432"]
+ :pos [-456 -399]
+ }
+ "g5ie7h8trup8n6" 
+{:cable-midpoints 
+{1 [34 84]}
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [378 139]
  }
  "ghs21lu2fkpkf72" 
 {:inputs []
@@ -205,7 +219,7 @@
  :name "reverb tail tone"
  :outputs [""]
  :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [387 195]
+ :pos [457 212]
  }
  "m5s284xjm4yt1aa" 
 {:inputs ["sig"]
@@ -220,14 +234,14 @@
  :label "#1 /"
  :outputs [""]
  :parsed [:infix [:invariant "1"] "/" [:free-var "b"]]
- :pos [-294 -387]
+ :pos [-300 -426]
  }
  "nxvyqf1s2fq5a5m" 
 {:inputs []
- :label "#20000"
+ :label "#50000"
  :outputs [""]
- :parsed [:invariant "20000"]
- :pos [-531 -437]
+ :parsed [:invariant "50000"]
+ :pos [-580 -229]
  }
  "pn488smrmtnj2nm" 
 {:color 3
@@ -235,7 +249,7 @@
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-192 -260]
+ :pos [-198 -299]
  }
  "uzozw785sx6lobw" 
 {:color 3
@@ -243,7 +257,7 @@
  :label "#8"
  :outputs [""]
  :parsed [:invariant "8"]
- :pos [-462 -219]
+ :pos [-462 -278]
  }
  "vwyo51vfhtec3u7" 
 {:inputs ["fn" "a" "v"]
