@@ -56,8 +56,8 @@
  }
  "2l3f6yd6nd091lh" 
 {:cable-midpoints 
-{2 [77 72]
- 3 [110 33]}
+{2 [51 75]
+ 3 [132 26]}
  :color 4
  :inputs ["sig" "N" "rt60" "tone"]
  :label "Delay-Line($sig $N $rt60 $tone)"
@@ -69,7 +69,7 @@
  "3axy3etok4fls5s" 
 {:cable-midpoints 
 {0 [53 212]
- 1 [135 215]}
+ 1 [130 250]}
  :inputs ["mix" "a" "b"]
  :label "Math:Mix($mix $a $b)"
  :name "wet/dry"
@@ -107,7 +107,7 @@
  }
  "7e2r70x0eag5rdj" 
 {:cable-midpoints 
-{}
+{1 [31 -57]}
  :inputs ["sig" "delay-time" "buffer-size"]
  :label "Delay:Static-Delay($sig $delay-time $buffer-size)"
  :name "pre-delay"
@@ -229,7 +229,7 @@
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
  :pos [470 283]
- :selected true}
+ }
  "nt1f13bv82gl5x4" 
 {:color 3
  :inputs ["b"]
