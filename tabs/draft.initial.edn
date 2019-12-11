@@ -14,7 +14,7 @@
  :label "0.01 -x- 0.25"
  :name "predelay"
  :outputs [""]
- :parsed [:widget "-fj3r32" 0.474761962890625 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-fj3r32" 0.77547607421875 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-198 -212]
  }
  "4u11lsxzvcj07" 
@@ -22,7 +22,7 @@
  :label "0 -o- 1"
  :name "hi-freq decay rate"
  :outputs [""]
- :parsed [:widget "-gs4pqj" 0.9040475027901785 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :parsed [:widget "-gs4pqj" 0.6540475027901785 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
  :pos [-69 -214]
  }
  "6z2bmrwrc9l8ktw" 
@@ -38,7 +38,7 @@
  :label "2000 -x- 20000"
  :name "tone"
  :outputs [""]
- :parsed [:widget "-96t11x" 0.6397617885044643 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-96t11x" 0.62547607421875 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [27 -214]
  }
  "8y3pz6w1ot3bojl" 
@@ -53,7 +53,7 @@
  :label "0.5 -x- 20"
  :name "decay time"
  :outputs [""]
- :parsed [:widget "8ri94n" 0.5897617885044643 {:type :slider, :limits [[:float "0.5"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "8ri94n" 0.6111903599330357 {:type :slider, :limits [[:float "0.5"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-291 -215]
  }
  "hi04rc5or6bwb4c" 
