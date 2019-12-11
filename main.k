@@ -52,10 +52,10 @@ FDN(sig rt60 predelay damp tone mix) {
 (n4a0jbxdh8ts8ybp-0) = Vector:Cons(nilmd4jtxy53859s-0 )
 (nbcbwjo9hceuad19-0) = z-1(n7lrakq6xwwplv7u-0)
 (nvwyo51vfhtec3u7-0) = Vector:Zip-Op(n2l3f6yd6nd091lh-0 n77du3c6at9d8577-0 n4a0jbxdh8ts8ybp-0)
-(n7lv9g825e8kvk7z-0) = #567
+(n7lv9g825e8kvk7z-0) = #234
 (n7e2r70x0eag5rdj-0) = Delay:Static-Delay(nghs21lu2fkpkf72-0 nghs21lu2fkpkf72-2 nnxvyqf1s2fq5a5m-0)
 (nm5s284xjm4yt1aa-0) = n3axy3etok4fls5s-0
-(nepx0bz2wzoe68kw-0) = #5432
+(nepx0bz2wzoe68kw-0) = #12345
 (nnxvyqf1s2fq5a5m-0) = #50000
 nm5s284xjm4yt1aa-0
 }

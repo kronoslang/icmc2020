@@ -1,5 +1,4 @@
-{
- :identity "r9859flqf51drao"
+{:identity "r9859flqf51drao"
  :patch
 {:cables
 {["qiq1bvhqhu1zwz" 0] [:fixed "udhru193kdwkofa" 0]
@@ -10,19 +9,16 @@
  :label "[1i 2i 3i 4i]"
  :outputs [""]
  :parsed [:list [:int32 "1"] [:int32 "2"] [:int32 "3"] [:int32 "4"]]
- :pos [-238 -172]
- }
+ :pos [-238 -172]}
  "qiq1bvhqhu1zwz" 
 {:inputs ["seed"]
  :label "Gen:Drift($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Drift" [:tuple [:free-var "seed"]]]
- :pos [88 -138]
- }
+ :pos [88 -138]}
  "udhru193kdwkofa" 
 {:inputs ["elements..."]
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements..."]]]
- :pos [-36 -172]
- }}}}
+ :pos [-36 -172]}}}}

@@ -86,7 +86,7 @@
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements..."]]]
  :pos [103 -229]
- }
+ :selected true}
  "6gw6uwi1z6soa2m" 
 {:color 3
  :inputs []
@@ -126,9 +126,9 @@
  "7lv9g825e8kvk7z" 
 {:color 3
  :inputs []
- :label "#567"
+ :label "#234"
  :outputs [""]
- :parsed [:invariant "567"]
+ :parsed [:invariant "234"]
  :pos [-466 -386]
  }
  "872e35euq87re8g" 
@@ -176,9 +176,9 @@
  "epx0bz2wzoe68kw" 
 {:color 3
  :inputs []
- :label "#5432"
+ :label "#12345"
  :outputs [""]
- :parsed [:invariant "5432"]
+ :parsed [:invariant "12345"]
  :pos [-465 -445]
  }
  "g5ie7h8trup8n6" 
