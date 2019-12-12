@@ -15,59 +15,51 @@
  :name "predelay"
  :outputs [""]
  :parsed [:widget "-fj3r32" 0.7611903599330357 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-198 -212]
- }
+ :pos [-198 -212]}
  "4u11lsxzvcj07" 
 {:inputs []
  :label "0 -o- 1"
  :name "hi-freq decay rate"
  :outputs [""]
  :parsed [:widget "-gs4pqj" 0.52547607421875 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
- :pos [-69 -214]
- }
+ :pos [-69 -214]}
  "6z2bmrwrc9l8ktw" 
 {:color 2
  :inputs ["sig" "rt60" "predelay" "damp" "tone" "mix"]
  :label "FDN($sig $rt60 $predelay $damp $tone $mix)"
  :outputs [""]
- :parsed [:fn "FDN" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "predelay"] [:free-var "damp"] [:free-var "tone"] [:free-var "mix"]]]
- :pos [81 106]
- }
+ :parsed [:fn "FDN:Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "predelay"] [:free-var "damp"] [:free-var "tone"] [:free-var "mix"]]]
+ :pos [81 106]}
  "8rnzyncldkh1uf1" 
 {:inputs []
  :label "2000 -x- 20000"
  :name "tone"
  :outputs [""]
  :parsed [:widget "-96t11x" 0.62547607421875 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [27 -214]
- }
+ :pos [27 -214]}
  "8y3pz6w1ot3bojl" 
 {:inputs []
  :label "Test-Signal()"
  :outputs [""]
- :parsed [:fn "Test-Signal" [:tuple]]
- :pos [-145 106]
- }
+ :parsed [:fn "FDN:Test-Signal" [:tuple]]
+ :pos [-145 106]}
  "hea4ylndv1ylho" 
 {:inputs []
  :label "0.5 -x- 20"
  :name "decay time"
  :outputs [""]
  :parsed [:widget "8ri94n" 0.6111903599330357 {:type :slider, :limits [[:float "0.5"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-291 -215]
- }
+ :pos [-291 -215]}
  "hi04rc5or6bwb4c" 
 {:inputs []
  :label "0 -o- 1"
  :name "wet/dry"
  :outputs [""]
  :parsed [:widget "-1a16o" 0.3897617885044643 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
- :pos [122 -214]
- }
+ :pos [122 -214]}
  "q0h94x14itu3nky" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [288 157]
- }}}}
+ :pos [288 157]}}}}

@@ -1,5 +1,5 @@
 {:documentation "Generates a test signal with impulses and rapid changes to audition the reverb."
- :identifier "Test-Signal"
+ :identifier "FDN:Test-Signal"
  :identity "c9k1t4dsjkytqij"
  :patch
 {:cables

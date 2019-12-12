@@ -1,5 +1,5 @@
-{:draft-argument "Test-Signal() 4.5 0.08 0.8 9000 0.5"
- :identifier "FDN"
+{:draft-argument "FDN:Test-Signal() 4.5 0.08 0.8 9000 0.5"
+ :identifier "FDN:Reverb"
  :identity "w7t86zx8f6emmm8"
  :patch
 {:cables
@@ -63,7 +63,7 @@
  :label "Delay-Line($sig $N $rt60 $tone)"
  :name "delay line prototype"
  :outputs [""]
- :parsed [:fn "Delay-Line" [:tuple [:free-var "sig"] [:free-var "N"] [:free-var "rt60"] [:free-var "tone"]]]
+ :parsed [:fn "FDN:Delay-Line" [:tuple [:free-var "sig"] [:free-var "N"] [:free-var "rt60"] [:free-var "tone"]]]
  :pos [-232 -15]
  }
  "3axy3etok4fls5s" 
@@ -86,7 +86,7 @@
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements..."]]]
  :pos [103 -229]
- :selected true}
+ }
  "6gw6uwi1z6soa2m" 
 {:color 3
  :inputs []
@@ -120,7 +120,7 @@
  :label "Butterfly($vec)"
  :name "feedback matrix"
  :outputs [""]
- :parsed [:fn "Butterfly" [:tuple [:free-var "vec"]]]
+ :parsed [:fn "FDN:Butterfly" [:tuple [:free-var "vec"]]]
  :pos [314 -82]
  }
  "7lv9g825e8kvk7z" 

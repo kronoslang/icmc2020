@@ -1,5 +1,5 @@
 {:draft-argument "1 4"
- :identifier "Shaker-Stimulus"
+ :identifier "Shaker:Stimulus"
  :identity "30ndbcghf0lq5q5"
  :patch
 {:cables
@@ -22,48 +22,49 @@
  :label "0.01"
  :outputs [""]
  :parsed [:float "0.01"]
- :pos [158 -13]
+ :pos [164 -95]
  }
  "2ashpvcsw17clvf" 
 {:inputs ["a"]
  :label "- 0.5"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "0.5"]]
- :pos [-60 -163]
+ :pos [-54 -245]
  }
  "44bd5yjugca3dgw" 
 {:inputs ["b"]
  :label "Min(1 $b)"
  :outputs [""]
  :parsed [:fn "Min" [:tuple [:float "1"] [:free-var "b"]]]
- :pos [-226 -169]
+ :pos [-220 -251]
  }
  "5gv77zi5qrh1ngu" 
 {:inputs ["out"]
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [507 -61]}
+ :pos [513 -143]
+ }
  "8rwotnpt23v93pc" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [28 -257]
+ :pos [34 -339]
  }
  "dqy973b17soi1s" 
 {:inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [230 -144]
+ :pos [236 -226]
  }
  "fxo4w0844e2hkf" 
 {:inputs ["freq"]
  :label "Gen:Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Phasor" [:tuple [:free-var "freq"]]]
- :pos [-505 -179]
+ :pos [-499 -261]
  }
  "iai8bhahtjdn634" 
 {:ephemeral-inputs #{"more1"}
@@ -71,7 +72,7 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [106 -149]
+ :pos [112 -231]
  }
  "iiu0ahwdqxgf59q" 
 {:ephemeral-inputs #{"more1"}
@@ -80,14 +81,14 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [335 -88]
+ :pos [341 -170]
  }
  "lduntt2fslvd308" 
 {:inputs []
  :label "(rate sharpness) = arg"
  :outputs ["rate" "sharpness"]
  :parsed "arg"
- :pos [-659 -173]
+ :pos [-653 -255]
  }
  "mif2f7c6dsqe8y9" 
 {:flip-y true
@@ -95,5 +96,7 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-377 -170]
- }}}}
+ :pos [-371 -252]
+ }}
+ :scale 0.6543901149988197
+ :scroll [0 0]}}

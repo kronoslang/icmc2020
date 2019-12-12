@@ -1,6 +1,6 @@
 {:documentation "Multiplies a vector with a butterfly-optimized Hadamaard matrix"
  :draft-argument "Vector:Cons(1 2 3 4)"
- :identifier "Butterfly"
+ :identifier "FDN:Butterfly"
  :identity "28t8355gx6bc7o1"
  :patch
 {:cables
@@ -43,7 +43,7 @@
 {:inputs ["vec"]
  :label "Butterfly($vec)"
  :outputs [""]
- :parsed [:fn "Butterfly" [:tuple [:free-var "vec"]]]
+ :parsed [:fn "FDN:Butterfly" [:tuple [:free-var "vec"]]]
  :pos [56 -257]}
  "fr96ob0y61m1o9j" 
 {:color 3
@@ -70,7 +70,7 @@
 {:inputs ["vec"]
  :label "Butterfly($vec)"
  :outputs [""]
- :parsed [:fn "Butterfly" [:tuple [:free-var "vec"]]]
+ :parsed [:fn "FDN:Butterfly" [:tuple [:free-var "vec"]]]
  :pos [64 -351]}
  "p2mb3rl0ylahe5j" 
 {:cable-midpoints 

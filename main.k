@@ -11,7 +11,7 @@ Brief() {
 }
 
 
-Test-Signal() {
+FDN:Test-Signal() {
 ;; Generates a test signal with impulses and rapid changes to audition the reverb.
 (nu73c4mb1ky2800l-0) = (n07lhzcs6ym4hvxa-0 * n9f7w0bir2la5x8-0)
 (n5a096fc4385sddy-0) = 0.21
@@ -32,8 +32,8 @@ Test-Signal() {
 nksbc6z6h4zpu42b-0
 }
 
-FDN(sig rt60 predelay damp tone mix) {
-(n7lrakq6xwwplv7u-0) = Butterfly(nvwyo51vfhtec3u7-0)
+FDN:Reverb(sig rt60 predelay damp tone mix) {
+(n7lrakq6xwwplv7u-0) = FDN:Butterfly(nvwyo51vfhtec3u7-0)
 (npn488smrmtnj2nm-0) = Math:Pow(n16bdifxjt1alv7w-0 nnt1f13bv82gl5x4-0)
 (nk4w9vi1iq5zh0p5-0) = (nbcbwjo9hceuad19-0 * n9nncusk1c8u4e4n-0)
 (nilmd4jtxy53859s-0) = Algorithm:Expand(nuzozw785sx6lobw-0 n872e35euq87re8g-0 nepx0bz2wzoe68kw-0)
@@ -43,7 +43,7 @@ FDN(sig rt60 predelay damp tone mix) {
 (nloc2v0p363kqxif-0) = Filter:Lpf6(ng5ie7h8trup8n6-0 nghs21lu2fkpkf72-4)
 (neerbpfw5uye683x-0) = Vector:Repeat(nuzozw785sx6lobw-0 n7e2r70x0eag5rdj-0)
 (ng5ie7h8trup8n6-0) = (n9nncusk1c8u4e4n-0 * n7lrakq6xwwplv7u-0)
-(n2l3f6yd6nd091lh-0) = (sig N) => ( Delay-Line(sig N nghs21lu2fkpkf72-1 nghs21lu2fkpkf72-3) ) 
+(n2l3f6yd6nd091lh-0) = (sig N) => ( FDN:Delay-Line(sig N nghs21lu2fkpkf72-1 nghs21lu2fkpkf72-3) ) 
 (nnt1f13bv82gl5x4-0) = (#1 / nuzozw785sx6lobw-0)
 (n872e35euq87re8g-0) = (b) => ( (npn488smrmtnj2nm-0 * b) ) 
 (nuzozw785sx6lobw-0) = #8
@@ -60,11 +60,11 @@ FDN(sig rt60 predelay damp tone mix) {
 nm5s284xjm4yt1aa-0
 }
 
-Butterfly(vec) {
+FDN:Butterfly(vec) {
 ;; Multiplies a vector with a butterfly-optimized Hadamaard matrix
 (nfr96ob0y61m1o9j-0) = arg
-(nksjisxtlq7d5af3-0) = Butterfly(n5plkcv29vwefrlb-0)
-(ncildyx45rf7w0ef-0) = Butterfly(n5plkcv29vwefrlb-1)
+(nksjisxtlq7d5af3-0) = FDN:Butterfly(n5plkcv29vwefrlb-0)
+(ncildyx45rf7w0ef-0) = FDN:Butterfly(n5plkcv29vwefrlb-1)
 (np2mb3rl0ylahe5j-0) = Constraints:Vector!(nfr96ob0y61m1o9j-0)
 (n5plkcv29vwefrlb-0 n5plkcv29vwefrlb-1) = Vector:Split(np2mb3rl0ylahe5j-0)
 (njtl3kclekjqgiuk-0) = (ncildyx45rf7w0ef-0 - nksjisxtlq7d5af3-0)
@@ -74,7 +74,7 @@ Butterfly(vec) {
 n37nxgg1t5vi61y2-0
 }
 
-Delay-Line(sig N rt60 tone) {
+FDN:Delay-Line(sig N rt60 tone) {
 (n1myqf0udlauqscf-0) = (b) => ( Math:Pow(n06d9sristimsb7-1 b) ) 
 (n7q7ti47sn0e61g6-0) = (nl885fhoaqe5w9y0-0 - n2cl3jlfp3yarzs7-0)
 (n1aq2euhex47to3h-0) = 1000
@@ -100,7 +100,7 @@ ndjut0z9raew515v-0
 
 
 
-Shaker-Stimulus(rate sharpness) {
+Shaker:Stimulus(rate sharpness) {
 (n44bd5yjugca3dgw-0) = Min(1 nmif2f7c6dsqe8y9-0)
 (niiu0ahwdqxgf59q-0) = (ndqy973b17soi1s-0 * n0c26n41gk1jfdba-0 * nlduntt2fslvd308-1)
 (nfxo4w0844e2hkf-0) = Gen:Phasor(nlduntt2fslvd308-0)
