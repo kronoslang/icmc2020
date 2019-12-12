@@ -36,7 +36,7 @@
  :label "0.01 -x- 0.25"
  :name "predelay"
  :outputs [""]
- :parsed [:widget "-fj3r32" 0.25226189749581474 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-fj3r32" 0.43797618321010046 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [33 -305]
  }
  "4hf8jv9svdt4dcr" 
@@ -44,14 +44,14 @@
  :label "0.995"
  :outputs [""]
  :parsed [:float "0.995"]
- :pos [-284 -193]
+ :pos [-304 -250]
  }
  "4u11lsxzvcj07" 
 {:inputs []
  :label "0 -o- 1"
  :name "hi-freq decay rate"
  :outputs [""]
- :parsed [:widget "-gs4pqj" 0.48797618321010044 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :parsed [:widget "-gs4pqj" 0.6594047546386719 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
  :pos [162 -307]
  }
  "4uc1ufmdcb2jm7v" 
@@ -59,31 +59,32 @@
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-284 -28]
+ :pos [-304 -85]
  }
  "6089nqbtu83f4c9" 
 {:inputs []
  :label "0.9999"
  :outputs [""]
  :parsed [:float "0.9999"]
- :pos [-284 -138]
+ :pos [-304 -195]
  }
  "6sy4jz99mfwjp2g" 
-{:inputs ["sig" "streams" "beans" "system-decay" "sound-decay"]
+{:color 3
+ :inputs ["sig" "streams" "beans" "system-decay" "sound-decay"]
  :label "Shaker:Synth($sig $streams $beans $system-decay $sound-decay)"
  :outputs [""]
  :parsed [:fn "Shaker:Synth" [:tuple [:free-var "sig"] [:free-var "streams"] [:free-var "beans"] [:free-var "system-decay"] [:free-var "sound-decay"]]]
- :pos [-143 13]
+ :pos [-184 13]
  }
  "6t28bdlsq77g2ii" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:number-widget :float "daa3gk" "8" ""]
- :pos [-787 -94]
+ :pos [-786 -101]
  }
  "6z2bmrwrc9l8ktw" 
-{:color 2
+{:color 3
  :inputs ["sig" "rt60" "predelay" "damp" "tone" "mix"]
  :label "FDN($sig $rt60 $predelay $damp $tone $mix)"
  :outputs [""]
@@ -95,14 +96,14 @@
  :label "* 4"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "4"]]
- :pos [-416 -75]
+ :pos [-415 -82]
  }
  "8rnzyncldkh1uf1" 
 {:inputs []
  :label "2000 -x- 20000"
  :name "tone"
  :outputs [""]
- :parsed [:widget "-96t11x" 0.4308333260672433 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-96t11x" 0.46654761178152904 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [258 -307]
  }
  "bj0lfmwzfv2hzml" 
@@ -110,28 +111,29 @@
  :label "+ 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "1"]]
- :pos [-517 -75]
+ :pos [-516 -82]
  }
  "bv2b92ciw4xs8ta" 
 {:inputs []
  :label "2"
  :outputs [""]
  :parsed [:number-widget :float "-ykbvoc" "1" ""]
- :pos [-732 103]
+ :pos [-731 96]
  }
  "cqhhjgx6feayfgm" 
-{:inputs ["v"]
+{:color 3
+ :inputs ["v"]
  :label "Vector:Explode($v)"
  :outputs [""]
  :parsed [:fn "Vector:Explode" [:tuple [:free-var "v"]]]
- :pos [26 13]
+ :pos [-9 13]
  }
  "hea4ylndv1ylho" 
 {:inputs []
  :label "0.5 -x- 20"
  :name "decay time"
  :outputs [""]
- :parsed [:widget "8ri94n" 0.5308333260672433 {:type :slider, :limits [[:float "0.5"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "8ri94n" 0.4451190403529576 {:type :slider, :limits [[:float "0.5"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-60 -308]
  }
  "hi04rc5or6bwb4c" 
@@ -139,7 +141,7 @@
  :label "0 -o- 1"
  :name "wet/dry"
  :outputs [""]
- :parsed [:widget "-1a16o" 0.47369046892438615 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :parsed [:widget "-1a16o" 0.416547611781529 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
  :pos [353 -307]
  }
  "ibxckdtzmrbq4wn" 
@@ -147,14 +149,14 @@
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-684 5]
- :selected true}
+ :pos [-683 -2]
+ }
  "k3x7ynp2440f31x" 
 {:inputs ["freq"]
  :label "Gen:Tri($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Tri" [:tuple [:free-var "freq"]]]
- :pos [-619 -75]
+ :pos [-618 -82]
  }
  "q0h94x14itu3nky" 
 {:inputs ["sig"]
@@ -168,22 +170,24 @@
  :label "64"
  :outputs [""]
  :parsed [:number-widget :float "h3oz59" "8" ""]
- :pos [-284 -83]
+ :pos [-304 -140]
  }
  "rs4bom6r0a4s3c3" 
-{:flip-y true
+{:color 3
+ :flip-y true
  :inputs ["sig" "params"]
  :label "Shaker:Body($sig $params)"
  :outputs [""]
  :parsed [:fn "Shaker:Body" [:tuple [:free-var "sig"] [:free-var "params"]]]
- :pos [160 13]
+ :pos [167 13]
  }
  "tkpvfn5qvqzfkf1" 
-{:inputs ["rate" "sharpness"]
+{:color 3
+ :inputs ["rate" "sharpness"]
  :label "Shaker:Stimulus($rate $sharpness)"
  :outputs [""]
  :parsed [:fn "Shaker:Stimulus" [:tuple [:free-var "rate"] [:free-var "sharpness"]]]
- :pos [-361 21]
+ :pos [-360 13]
  }}
  :scale 1
  :scroll [0 0]}}
