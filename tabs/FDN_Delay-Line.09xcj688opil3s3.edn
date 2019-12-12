@@ -67,7 +67,7 @@
 {:inputs []
  :label "0.5"
  :outputs [""]
- :parsed [:float "0.5"]
+ :parsed [:number-widget :float "2hwqai" "0.42729" ""]
  :pos [-553 137]}
  "6hp2fpcy8gvue86" 
 {:inputs []
