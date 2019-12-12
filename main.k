@@ -98,7 +98,26 @@ FDN:Delay-Line(sig N rt60 tone) {
 ndjut0z9raew515v-0
 }
 
-
+Shaker:Synth(sig streams beans system-decay sound-decay) {
+(na2q7n2k2r20bc07-0) = (nmc9b8kn75rf1ajv-0 * 40)
+(nmc9b8kn75rf1ajv-0) = (nkkw21omt743wxs-0 / n3s5by81lo9ddsi-0)
+(np9umq7u51u45yzl-0) = (na2q7n2k2r20bc07-0 / nqpf1mcjof9upfnh-0)
+(napwwlg8g66dd89-0) = (n93fgu2xzf6nopd2-0 < nyu25psqmhd6s1ou-0)
+(nbjv7lq54n2l5x2b-0) = Vector:Indices(nfc5ir545ebbct5y-1)
+(n3s5by81lo9ddsi-0) = Math:Log(ng8xruwc1nrmbwhi-0)
+(n93fgu2xzf6nopd2-0) = Gen:Drift(nbjv7lq54n2l5x2b-0)
+(nc2fonjpj2d3a28-0) = Filter:Integrate(na8rqqwy0eha4a8a-0 nfc5ir545ebbct5y-4)
+(n5yi4xmbf4h8vmnx-0) = (nedjb9rsu26fd2q2-0 * nc2fonjpj2d3a28-0 * np9umq7u51u45yzl-0)
+(nfc5ir545ebbct5y-0 nfc5ir545ebbct5y-1 nfc5ir545ebbct5y-2 nfc5ir545ebbct5y-3 nfc5ir545ebbct5y-4) = arg
+(ng8xruwc1nrmbwhi-0) = 4
+(na8rqqwy0eha4a8a-0) = (naxi37fasya85pqe-0 & napwwlg8g66dd89-0)
+(nqpf1mcjof9upfnh-0) = nfc5ir545ebbct5y-2
+(naxi37fasya85pqe-0) = Filter:Tone(nfc5ir545ebbct5y-0 nfc5ir545ebbct5y-3)
+(nkkw21omt743wxs-0) = Math:Log(nqpf1mcjof9upfnh-0)
+(nedjb9rsu26fd2q2-0) = (n93fgu2xzf6nopd2-0 - 1)
+(nyu25psqmhd6s1ou-0) = (nqpf1mcjof9upfnh-0 / 512)
+n5yi4xmbf4h8vmnx-0
+}
 
 Shaker:Stimulus(rate sharpness) {
 (n44bd5yjugca3dgw-0) = Min(1 nmif2f7c6dsqe8y9-0)
@@ -113,6 +132,16 @@ Shaker:Stimulus(rate sharpness) {
 (n0c26n41gk1jfdba-0) = 0.01
 (n5gv77zi5qrh1ngu-0) = niiu0ahwdqxgf59q-0
 n5gv77zi5qrh1ngu-0
+}
+
+Shaker:Body(sig fs bws amps) {
+(ne9i4yrqcjctp7in-0 ne9i4yrqcjctp7in-1 ne9i4yrqcjctp7in-2 ne9i4yrqcjctp7in-3) = arg
+(ny0iaw0fat2gv93i-0) = Algorithm:Zip-With(ncis980qpnkzx7ip-0 ne9i4yrqcjctp7in-1 ne9i4yrqcjctp7in-2)
+(ncle8szopv77h1uv-0) = Algorithm:Zip-With(n3jap25307dl6eb6-0 ny0iaw0fat2gv93i-0 ne9i4yrqcjctp7in-3)
+(n3jap25307dl6eb6-0) = (a b) => ( (a * b) ) 
+(ncis980qpnkzx7ip-0) = (freq bw) => ( Filter:Resonator(ne9i4yrqcjctp7in-0 freq bw) ) 
+(n15rz3rki98g1uty-0) = Sum(ncle8szopv77h1uv-0 )
+n15rz3rki98g1uty-0
 }
 
 }

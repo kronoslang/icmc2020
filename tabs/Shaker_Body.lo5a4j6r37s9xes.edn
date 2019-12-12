@@ -1,0 +1,65 @@
+{:draft-argument "sig freqs bws amps"
+ :identifier "Shaker:Body"
+ :identity "lo5a4j6r37s9xes"
+ :patch
+{:cables
+{["15rz3rki98g1uty" 0] [:fixed "cle8szopv77h1uv" 0]
+ ["cis980qpnkzx7ip" 0] [:fixed "e9i4yrqcjctp7in" 0]
+ ["cle8szopv77h1uv" 0] [:fixed "3jap25307dl6eb6" 0]
+ ["cle8szopv77h1uv" 1] [:fixed "y0iaw0fat2gv93i" 0]
+ ["cle8szopv77h1uv" 2] [:fixed "e9i4yrqcjctp7in" 3]
+ ["y0iaw0fat2gv93i" 0] [:fixed "cis980qpnkzx7ip" 0]
+ ["y0iaw0fat2gv93i" 1] [:fixed "e9i4yrqcjctp7in" 1]
+ ["y0iaw0fat2gv93i" 2] [:fixed "e9i4yrqcjctp7in" 2]}
+ :nodes
+{"15rz3rki98g1uty" 
+{:ephemeral-inputs #{"numbers1"}
+ :inputs ["numbers1" "numbers..."]
+ :label "Sum($numbers...)"
+ :outputs [""]
+ :parsed [:fn "Sum" [:tuple [:free-var "numbers1"] [:free-var "numbers..."]]]
+ :pos [279 103]}
+ "3jap25307dl6eb6" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-44 31]
+ }
+ "cis980qpnkzx7ip" 
+{:cable-midpoints 
+{0 [36 130]}
+ :inputs ["sig" "freq" "bw"]
+ :label "Filter:Resonator($sig $freq $bw)"
+ :outputs [""]
+ :parsed [:fn "Filter:Resonator" [:tuple [:free-var "sig"] [:free-var "freq"] [:free-var "bw"]]]
+ :pos [-218 -5]
+ }
+ "cle8szopv77h1uv" 
+{:cable-midpoints 
+{2 [374 1]}
+ :inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [126 51]
+ }
+ "e9i4yrqcjctp7in" 
+{:inputs []
+ :label "(sig fs bws amps) = arg"
+ :outputs ["sig" "fs" "bws" "amps"]
+ :parsed "arg"
+ :pos [-417 -247]
+ }
+ "y0iaw0fat2gv93i" 
+{:cable-midpoints 
+{1 [220 0]
+ 2 [262 -5]}
+ :inputs ["func" "as" "bs"]
+ :label "Algorithm:Zip-With($func $as $bs)"
+ :outputs [""]
+ :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
+ :pos [-35 -51]
+ }}
+ :scale 1
+ :scroll [0 0]}}

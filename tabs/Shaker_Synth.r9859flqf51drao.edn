@@ -1,4 +1,5 @@
-{:identity "r9859flqf51drao"
+{:identifier "Shaker:Synth"
+ :identity "r9859flqf51drao"
  :patch
 {:cables
 {["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
