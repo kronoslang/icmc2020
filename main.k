@@ -135,12 +135,12 @@ n5gv77zi5qrh1ngu-0
 }
 
 Shaker:Body(sig fs bws amps) {
-(ne9i4yrqcjctp7in-0 ne9i4yrqcjctp7in-1 ne9i4yrqcjctp7in-2 ne9i4yrqcjctp7in-3) = arg
-(ny0iaw0fat2gv93i-0) = Algorithm:Zip-With(ncis980qpnkzx7ip-0 ne9i4yrqcjctp7in-1 ne9i4yrqcjctp7in-2)
-(ncle8szopv77h1uv-0) = Algorithm:Zip-With(n3jap25307dl6eb6-0 ny0iaw0fat2gv93i-0 ne9i4yrqcjctp7in-3)
+(n15rz3rki98g1uty-0) = Sum(ncle8szopv77h1uv-0 )
 (n3jap25307dl6eb6-0) = (a b) => ( (a * b) ) 
 (ncis980qpnkzx7ip-0) = (freq bw) => ( Filter:Resonator(ne9i4yrqcjctp7in-0 freq bw) ) 
-(n15rz3rki98g1uty-0) = Sum(ncle8szopv77h1uv-0 )
+(ncle8szopv77h1uv-0) = Algorithm:Zip-With(n3jap25307dl6eb6-0 ny0iaw0fat2gv93i-0 ne9i4yrqcjctp7in-3)
+(ne9i4yrqcjctp7in-0 ne9i4yrqcjctp7in-1 ne9i4yrqcjctp7in-2 ne9i4yrqcjctp7in-3) = arg
+(ny0iaw0fat2gv93i-0) = Algorithm:Zip-With(ncis980qpnkzx7ip-0 ne9i4yrqcjctp7in-1 ne9i4yrqcjctp7in-2)
 n15rz3rki98g1uty-0
 }
 

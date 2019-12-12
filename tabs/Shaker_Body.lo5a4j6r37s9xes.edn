@@ -24,8 +24,7 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-44 31]
- }
+ :pos [-44 31]}
  "cis980qpnkzx7ip" 
 {:cable-midpoints 
 {0 [36 130]}
@@ -33,8 +32,7 @@
  :label "Filter:Resonator($sig $freq $bw)"
  :outputs [""]
  :parsed [:fn "Filter:Resonator" [:tuple [:free-var "sig"] [:free-var "freq"] [:free-var "bw"]]]
- :pos [-218 -5]
- }
+ :pos [-218 -5]}
  "cle8szopv77h1uv" 
 {:cable-midpoints 
 {2 [374 1]}
@@ -42,15 +40,13 @@
  :label "Algorithm:Zip-With($func $as $bs)"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
- :pos [126 51]
- }
+ :pos [126 51]}
  "e9i4yrqcjctp7in" 
 {:inputs []
  :label "(sig fs bws amps) = arg"
  :outputs ["sig" "fs" "bws" "amps"]
  :parsed "arg"
- :pos [-417 -247]
- }
+ :pos [-417 -247]}
  "y0iaw0fat2gv93i" 
 {:cable-midpoints 
 {1 [220 0]
@@ -59,7 +55,6 @@
  :label "Algorithm:Zip-With($func $as $bs)"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
- :pos [-35 -51]
- }}
+ :pos [-35 -51]}}
  :scale 1
  :scroll [0 0]}}

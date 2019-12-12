@@ -45,15 +45,13 @@
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-298 -345]
- }
+ :pos [-298 -345]}
  "2kdq3edkqg7femt" 
 {:inputs []
  :label ";# Feedback Delay Network #"
  :outputs []
  :parsed [:comment "# Feedback Delay Network #"]
- :pos [451 -230]
- }
+ :pos [451 -230]}
  "2l3f6yd6nd091lh" 
 {:cable-midpoints 
 {2 [51 75]
@@ -64,8 +62,7 @@
  :name "delay line prototype"
  :outputs [""]
  :parsed [:fn "FDN:Delay-Line" [:tuple [:free-var "sig"] [:free-var "N"] [:free-var "rt60"] [:free-var "tone"]]]
- :pos [-232 -15]
- }
+ :pos [-232 -15]}
  "3axy3etok4fls5s" 
 {:cable-midpoints 
 {0 [53 212]
@@ -75,8 +72,7 @@
  :name "wet/dry"
  :outputs [""]
  :parsed [:fn "Math:Mix" [:tuple [:free-var "mix"] [:free-var "a"] [:free-var "b"]]]
- :pos [319 288]
- }
+ :pos [319 288]}
  "4a0jbxdh8ts8ybp" 
 {:color 3
  :ephemeral-inputs #{"elements1"}
@@ -85,16 +81,14 @@
  :name "delay time vec"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements..."]]]
- :pos [103 -229]
- }
+ :pos [103 -229]}
  "6gw6uwi1z6soa2m" 
 {:color 3
  :inputs []
  :label "; Compute delay line lengths as a decorrelated series\nas well as the feedback matrix normalization factor"
  :outputs []
  :parsed [:comment "Compute delay line lengths as a decorrelated series\nas well as the feedback matrix normalization factor"]
- :pos [194 -368]
- }
+ :pos [194 -368]}
  "77du3c6at9d8577" 
 {:cable-midpoints 
 {1 [-234 112]}
@@ -103,8 +97,7 @@
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-49 -155]
- }
+ :pos [-49 -155]}
  "7e2r70x0eag5rdj" 
 {:cable-midpoints 
 {1 [31 -57]}
@@ -113,40 +106,35 @@
  :name "pre-delay"
  :outputs [""]
  :parsed [:fn "Delay:Static-Delay" [:tuple [:free-var "sig"] [:free-var "delay-time"] [:free-var "buffer-size"]]]
- :pos [-366 -204]
- }
+ :pos [-366 -204]}
  "7lrakq6xwwplv7u" 
 {:inputs ["vec"]
  :label "Butterfly($vec)"
  :name "feedback matrix"
  :outputs [""]
  :parsed [:fn "FDN:Butterfly" [:tuple [:free-var "vec"]]]
- :pos [314 -82]
- }
+ :pos [314 -82]}
  "7lv9g825e8kvk7z" 
 {:color 3
  :inputs []
  :label "#234"
  :outputs [""]
  :parsed [:invariant "234"]
- :pos [-466 -386]
- }
+ :pos [-466 -386]}
  "872e35euq87re8g" 
 {:color 3
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-117 -345]
- }
+ :pos [-117 -345]}
  "9nncusk1c8u4e4n" 
 {:color 3
  :inputs ["a"]
  :label "Math:Sqrt($a)"
  :outputs [""]
  :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
- :pos [251 -424]
- }
+ :pos [251 -424]}
  "bcbwjo9hceuad19" 
 {:cable-midpoints 
 {}
@@ -154,15 +142,13 @@
  :label "z-1($sig~)"
  :outputs [""]
  :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
- :pos [458 -82]
- }
+ :pos [458 -82]}
  "blsp87odgcqmk38" 
 {:inputs []
  :label "; The signal path is a vectored delay line; the vectored feedback coefficient becomes an orthogonal matrix,\ncomputed by `Butterfly` here."
  :outputs []
  :parsed [:comment "The signal path is a vectored delay line; the vectored feedback coefficient becomes an orthogonal matrix,\ncomputed by `Butterfly` here."]
- :pos [-330 150]
- }
+ :pos [-330 150]}
  "eerbpfw5uye683x" 
 {:cable-midpoints 
 {}
@@ -171,16 +157,14 @@
  :name "broadcast input"
  :outputs [""]
  :parsed [:fn "Vector:Repeat" [:tuple [:free-var "count"] [:free-var "value"]]]
- :pos [-197 -154]
- }
+ :pos [-197 -154]}
  "epx0bz2wzoe68kw" 
 {:color 3
  :inputs []
  :label "#12345"
  :outputs [""]
  :parsed [:invariant "12345"]
- :pos [-465 -445]
- }
+ :pos [-465 -445]}
  "g5ie7h8trup8n6" 
 {:cable-midpoints 
 {1 [34 84]}
@@ -188,31 +172,27 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [369 93]
- }
+ :pos [369 93]}
  "ghs21lu2fkpkf72" 
 {:inputs []
  :label "(sig rt60 predelay damp tone mix) = arg"
  :outputs ["sig" "rt60" "predelay" "damp" "tone" "mix"]
  :parsed "arg"
- :pos [-575 -196]
- }
+ :pos [-575 -196]}
  "ilmd4jtxy53859s" 
 {:color 3
  :inputs ["count" "iterator" "seed"]
  :label "Algorithm:Expand($count $iterator $seed)"
  :outputs [""]
  :parsed [:fn "Algorithm:Expand" [:tuple [:free-var "count"] [:free-var "iterator"] [:free-var "seed"]]]
- :pos [-22 -229]
- }
+ :pos [-22 -229]}
  "k4w9vi1iq5zh0p5" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :name "normalize"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [536 -82]
- }
+ :pos [536 -82]}
  "loc2v0p363kqxif" 
 {:cable-midpoints 
 {1 [85 151]}
@@ -221,53 +201,46 @@
  :name "reverb tail tone"
  :outputs [""]
  :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [448 166]
- }
+ :pos [448 166]}
  "m5s284xjm4yt1aa" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [470 283]
- }
+ :pos [470 283]}
  "nt1f13bv82gl5x4" 
 {:color 3
  :inputs ["b"]
  :label "#1 /"
  :outputs [""]
  :parsed [:infix [:invariant "1"] "/" [:free-var "b"]]
- :pos [-309 -472]
- }
+ :pos [-309 -472]}
  "nxvyqf1s2fq5a5m" 
 {:inputs []
  :label "#50000"
  :outputs [""]
  :parsed [:invariant "50000"]
- :pos [-589 -275]
- }
+ :pos [-589 -275]}
  "pn488smrmtnj2nm" 
 {:color 3
  :inputs ["a" "b"]
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-207 -345]
- }
+ :pos [-207 -345]}
  "uzozw785sx6lobw" 
 {:color 3
  :inputs []
  :label "#8"
  :outputs [""]
  :parsed [:invariant "8"]
- :pos [-471 -324]
- }
+ :pos [-471 -324]}
  "vwyo51vfhtec3u7" 
 {:inputs ["fn" "a" "v"]
  :label "Vector:Zip-Op($fn $a $v)"
  :name "apply delay line to vectored signal"
  :outputs [""]
  :parsed [:fn "Vector:Zip-Op" [:tuple [:free-var "fn"] [:free-var "a"] [:free-var "v"]]]
- :pos [147 -82]
- }}
+ :pos [147 -82]}}
  :scale 0.7329401210064331
  :scroll [0 0]}}
