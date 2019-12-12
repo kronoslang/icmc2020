@@ -11,4 +11,4 @@
  :url "https://kronoslang.io"
  :version "0.1"}
  :name "icmc2020"
- :tabs ("tabs/draft.initial.edn" "tabs/Test-Signal.c9k1t4dsjkytqij.edn" "tabs/FDN.w7t86zx8f6emmm8.edn" "tabs/Butterfly.28t8355gx6bc7o1.edn" "tabs/Delay-Line.09xcj688opil3s3.edn" "tabs/draft.r9859flqf51drao.edn")}
+ :tabs ("tabs/draft.initial.edn" "tabs/Test-Signal.c9k1t4dsjkytqij.edn" "tabs/FDN.w7t86zx8f6emmm8.edn" "tabs/Butterfly.28t8355gx6bc7o1.edn" "tabs/Delay-Line.09xcj688opil3s3.edn" "tabs/draft.r9859flqf51drao.edn" "tabs/Shaker-Stimulus.30ndbcghf0lq5q5.edn")}

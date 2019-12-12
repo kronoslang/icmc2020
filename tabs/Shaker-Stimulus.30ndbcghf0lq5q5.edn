@@ -1,0 +1,99 @@
+{:draft-argument "1 4"
+ :identifier "Shaker-Stimulus"
+ :identity "30ndbcghf0lq5q5"
+ :patch
+{:cables
+{["2ashpvcsw17clvf" 0] [:fixed "44bd5yjugca3dgw" 0]
+ ["44bd5yjugca3dgw" 0] [:fixed "mif2f7c6dsqe8y9" 0]
+ ["5gv77zi5qrh1ngu" 0] [:fixed "iiu0ahwdqxgf59q" 0]
+ ["dqy973b17soi1s" 0] [:fixed "iai8bhahtjdn634" 0]
+ ["fxo4w0844e2hkf" 0] [:fixed "lduntt2fslvd308" 0]
+ ["iai8bhahtjdn634" 0] [:fixed "2ashpvcsw17clvf" 0]
+ ["iai8bhahtjdn634" 1] [:fixed "2ashpvcsw17clvf" 0]
+ ["iai8bhahtjdn634" 2] [:fixed "8rwotnpt23v93pc" 0]
+ ["iiu0ahwdqxgf59q" 0] [:fixed "dqy973b17soi1s" 0]
+ ["iiu0ahwdqxgf59q" 1] [:fixed "0c26n41gk1jfdba" 0]
+ ["iiu0ahwdqxgf59q" 2] [:fixed "lduntt2fslvd308" 1]
+ ["mif2f7c6dsqe8y9" 0] [:fixed "fxo4w0844e2hkf" 0]
+ ["mif2f7c6dsqe8y9" 1] [:fixed "lduntt2fslvd308" 1]}
+ :nodes
+{"0c26n41gk1jfdba" 
+{:inputs []
+ :label "0.01"
+ :outputs [""]
+ :parsed [:float "0.01"]
+ :pos [158 -13]
+ }
+ "2ashpvcsw17clvf" 
+{:inputs ["a"]
+ :label "- 0.5"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:float "0.5"]]
+ :pos [-60 -163]
+ }
+ "44bd5yjugca3dgw" 
+{:inputs ["b"]
+ :label "Min(1 $b)"
+ :outputs [""]
+ :parsed [:fn "Min" [:tuple [:float "1"] [:free-var "b"]]]
+ :pos [-226 -169]
+ }
+ "5gv77zi5qrh1ngu" 
+{:inputs ["out"]
+ :label "$out"
+ :outputs [""]
+ :parsed [:free-var "out"]
+ :pos [507 -61]}
+ "8rwotnpt23v93pc" 
+{:inputs []
+ :label "4"
+ :outputs [""]
+ :parsed [:float "4"]
+ :pos [28 -257]
+ }
+ "dqy973b17soi1s" 
+{:inputs ["b"]
+ :label "1 -"
+ :outputs [""]
+ :parsed [:infix [:float "1"] "-" [:free-var "b"]]
+ :pos [230 -144]
+ }
+ "fxo4w0844e2hkf" 
+{:inputs ["freq"]
+ :label "Gen:Phasor($freq)"
+ :outputs [""]
+ :parsed [:fn "Gen:Phasor" [:tuple [:free-var "freq"]]]
+ :pos [-505 -179]
+ }
+ "iai8bhahtjdn634" 
+{:ephemeral-inputs #{"more1"}
+ :inputs ["a" "b" "more1" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
+ :pos [106 -149]
+ }
+ "iiu0ahwdqxgf59q" 
+{:ephemeral-inputs #{"more1"}
+ :flip-y true
+ :inputs ["a" "b" "more1" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
+ :pos [335 -88]
+ }
+ "lduntt2fslvd308" 
+{:inputs []
+ :label "(rate sharpness) = arg"
+ :outputs ["rate" "sharpness"]
+ :parsed "arg"
+ :pos [-659 -173]
+ }
+ "mif2f7c6dsqe8y9" 
+{:flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-377 -170]
+ }}}}

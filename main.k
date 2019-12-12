@@ -100,4 +100,19 @@ ndjut0z9raew515v-0
 
 
 
+Shaker-Stimulus(rate sharpness) {
+(n44bd5yjugca3dgw-0) = Min(1 nmif2f7c6dsqe8y9-0)
+(niiu0ahwdqxgf59q-0) = (ndqy973b17soi1s-0 * n0c26n41gk1jfdba-0 * nlduntt2fslvd308-1)
+(nfxo4w0844e2hkf-0) = Gen:Phasor(nlduntt2fslvd308-0)
+(n8rwotnpt23v93pc-0) = 4
+(n2ashpvcsw17clvf-0) = (n44bd5yjugca3dgw-0 - 0.5)
+(ndqy973b17soi1s-0) = (1 - niai8bhahtjdn634-0)
+(nmif2f7c6dsqe8y9-0) = (nfxo4w0844e2hkf-0 * nlduntt2fslvd308-1)
+(niai8bhahtjdn634-0) = (n2ashpvcsw17clvf-0 * n2ashpvcsw17clvf-0 * n8rwotnpt23v93pc-0)
+(nlduntt2fslvd308-0 nlduntt2fslvd308-1) = arg
+(n0c26n41gk1jfdba-0) = 0.01
+(n5gv77zi5qrh1ngu-0) = niiu0ahwdqxgf59q-0
+n5gv77zi5qrh1ngu-0
+}
+
 }
