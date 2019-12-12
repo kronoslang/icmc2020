@@ -70,7 +70,7 @@
  :outputs [""]
  :parsed [:fn "Filter:Biquad" [:tuple [:free-var "sig"] [:free-var "a0"] [:free-var "a1"] [:free-var "a2"] [:free-var "b1"] [:free-var "b2"]]]
  :pos [228 339]
- }
+ :selected true}
  "f225xs7xdvxeoy5" 
 {:inputs ["sig"]
  :label "Rate-of($sig)"

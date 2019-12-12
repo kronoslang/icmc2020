@@ -29,51 +29,44 @@
  :label "- 0.5"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "0.5"]]
- :pos [37 -116]
- }
+ :pos [37 -116]}
  "44bd5yjugca3dgw" 
 {:inputs ["b"]
  :label "Min(1 $b)"
  :outputs [""]
  :parsed [:fn "Min" [:tuple [:float "1"] [:free-var "b"]]]
- :pos [-129 -122]
- }
+ :pos [-129 -122]}
  "5gv77zi5qrh1ngu" 
 {:inputs ["out"]
  :label "$out"
  :outputs [""]
  :parsed [:free-var "out"]
- :pos [604 -14]
- }
+ :pos [604 -14]}
  "8rwotnpt23v93pc" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [125 -210]
- }
+ :pos [125 -210]}
  "dqy973b17soi1s" 
 {:inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [327 -97]
- }
+ :pos [327 -97]}
  "fxo4w0844e2hkf" 
 {:inputs ["freq"]
  :label "Gen:Phasor($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Phasor" [:tuple [:free-var "freq"]]]
- :pos [-408 -132]
- }
+ :pos [-408 -132]}
  "iai8bhahtjdn634" 
 {:ephemeral-inputs #{"more1"}
  :inputs ["a" "b" "more1" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [203 -102]
- }
+ :pos [203 -102]}
  "iiu0ahwdqxgf59q" 
 {:ephemeral-inputs #{"more1"}
  :flip-y true
@@ -81,22 +74,19 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [432 -41]
- }
+ :pos [432 -41]}
  "lduntt2fslvd308" 
 {:inputs []
  :label "(rate sharpness) = arg"
  :outputs ["rate" "sharpness"]
  :parsed "arg"
- :pos [-562 -126]
- }
+ :pos [-562 -126]}
  "mif2f7c6dsqe8y9" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-280 -123]
- }}
+ :pos [-280 -123]}}
  :scale 0.8822708663166641
  :scroll [0 0]}}

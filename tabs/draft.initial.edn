@@ -21,9 +21,9 @@
  :nodes
 {"1h26rt21h3bhwkc" 
 {:inputs []
- :label "[[2300 5600 8100] [0.96 0.99 0.99] [0.1 0.8 1.0]]"
+ :label "([2300 5600 8100] [0.96 0.99 0.99] [0.1 0.8 1.0])"
  :outputs [""]
- :parsed [:list [:list [:float "2300"] [:float "5600"] [:float "8100"]] [:list [:float "0.96"] [:float "0.99"] [:float "0.99"]] [:list [:float "0.1"] [:float "0.8"] [:float "1.0"]]]
+ :parsed [:tuple [:list [:float "2300"] [:float "5600"] [:float "8100"]] [:list [:float "0.96"] [:float "0.99"] [:float "0.99"]] [:list [:float "0.1"] [:float "0.8"] [:float "1.0"]]]
  :pos [-316 192]
  }
  "4d66hdf5w2uvifk" 
@@ -90,7 +90,7 @@
 {:inputs []
  :label "2"
  :outputs [""]
- :parsed [:number-widget :float "-ykbvoc" "4" ""]
+ :parsed [:number-widget :float "-ykbvoc" "6" ""]
  :pos [-548 19]
  }
  "cqhhjgx6feayfgm" 
@@ -137,12 +137,12 @@
  :outputs [""]
  :parsed [:fn "Shaker:Body" [:tuple [:free-var "sig"] [:free-var "params"]]]
  :pos [160 13]
- }
+ :selected true}
  "sa673sy2mi12lff" 
 {:inputs []
  :label "4"
  :outputs [""]
- :parsed [:number-widget :float "-ahtnzj" "5" ""]
+ :parsed [:number-widget :float "-ahtnzj" "4" ""]
  :pos [-481 -89]
  }
  "tkpvfn5qvqzfkf1" 
