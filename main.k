@@ -9,7 +9,30 @@ Brief() {
 ;; Example code
  nil
 }
-
+Shaker->Reverb() {
+(nhea4ylndv1ylho-0) = 0.5594046456473214
+(nibxckdtzmrbq4wn-0) = (nbv2b92ciw4xs8ta-0 / n6t28bdlsq77g2ii-0)
+(n6z2bmrwrc9l8ktw-0) = FDN:Reverb(nrs4bom6r0a4s3c3-0 nhea4ylndv1ylho-0 n4d66hdf5w2uvifk-0 n4u11lsxzvcj07-0 n8rnzyncldkh1uf1-0 nhi04rc5or6bwb4c-0)
+(nbj0lfmwzfv2hzml-0) = (nk3x7ynp2440f31x-0 + 1)
+(n4uc1ufmdcb2jm7v-0) = #1
+(n4u11lsxzvcj07-0) = 0.8522617885044643
+(nqnjkhk1voyhy47u-0) = 6
+(n4d66hdf5w2uvifk-0) = 0.5094046456473215
+(nq0h94x14itu3nky-0) = n6z2bmrwrc9l8ktw-0
+(nk3x7ynp2440f31x-0) = Gen:Tri(nibxckdtzmrbq4wn-0)
+(n7m27g5e1jsl91wr-0) = (nbj0lfmwzfv2hzml-0 * 4)
+(ntkpvfn5qvqzfkf1-0) = Shaker:Stimulus(nbv2b92ciw4xs8ta-0 n7m27g5e1jsl91wr-0)
+(nrs4bom6r0a4s3c3-0) = Shaker:Body(n6sy4jz99mfwjp2g-0 n1h26rt21h3bhwkc-0)
+(n6t28bdlsq77g2ii-0) = 8
+(n1h26rt21h3bhwkc-0) = ([2300 5600 8100] [0.96 0.99 0.99] [0.1 0.8 1.0])
+(nhi04rc5or6bwb4c-0) = 0.6165475027901786
+(nbv2b92ciw4xs8ta-0) = 1
+(n4hf8jv9svdt4dcr-0) = 0.995
+(n6sy4jz99mfwjp2g-0) = Shaker:Synth(ntkpvfn5qvqzfkf1-0 n4uc1ufmdcb2jm7v-0 nqnjkhk1voyhy47u-0 n6089nqbtu83f4c9-0 n4hf8jv9svdt4dcr-0)
+(n6089nqbtu83f4c9-0) = 0.9999
+(n8rnzyncldkh1uf1-0) = 0.6451189313616071
+nq0h94x14itu3nky-0
+}
 
 FDN:Test-Signal() {
 ;; Generates a test signal with impulses and rapid changes to audition the reverb.
@@ -81,7 +104,7 @@ FDN:Delay-Line(sig N rt60 tone) {
 (n4al53zwp4ylzfjt-0) = 0.42729
 (n8f4i3c25p8k594z-0) = [#0.81 #0.88]
 (nyk3mat7is7ag7xf-0) = (nxbf4tm9qg2krxgg-0 / n06d9sristimsb7-3)
-(nno85n4czqc1439e-0) = (n7q7ti47sn0e61g6-0 * nmo80ghvl3wo06n9-0)
+(nno85n4czqc1439e-0) = (n7q7ti47sn0e61g6-0 * n3rw6lvvz65u7v2j-0)
 (n2cl3jlfp3yarzs7-0) = Delay:Sample-Delay(njrx6qi13gfz88nw-0 n06d9sristimsb7-1)
 (nxbf4tm9qg2krxgg-0) = (n06d9sristimsb7-1 / ndjhqrr9vzb8r77k-0 / n06d9sristimsb7-2)
 (ndjhqrr9vzb8r77k-0) = Rate-of(n06d9sristimsb7-0)
@@ -90,11 +113,13 @@ FDN:Delay-Line(sig N rt60 tone) {
 (n06d9sristimsb7-0 n06d9sristimsb7-1 n06d9sristimsb7-2 n06d9sristimsb7-3) = arg
 (njrx6qi13gfz88nw-0) = Algorithm:Reduce(nwwd4qw23ha8hwg5-0 n06d9sristimsb7-0 nef3cnh9id6cb4tp-0 )
 (nl885fhoaqe5w9y0-0) = Filter:Lpf6(n2cl3jlfp3yarzs7-0 n1aq2euhex47to3h-0)
+(n3rw6lvvz65u7v2j-0) = Neg(nmo80ghvl3wo06n9-0)
 (ndjut0z9raew515v-0) = (nno85n4czqc1439e-0 + ntbn37icsdnu40fz-0)
 (nmo80ghvl3wo06n9-0) = Math:Pow(n6hp2fpcy8gvue86-0 nyk3mat7is7ag7xf-0)
+(n81jadr9jih3b8u-0) = Neg(nsfacte5hxnj4nqw-0)
 (n6hp2fpcy8gvue86-0) = 0.001
 (nsfacte5hxnj4nqw-0) = Math:Pow(n6hp2fpcy8gvue86-0 nxbf4tm9qg2krxgg-0)
-(ntbn37icsdnu40fz-0) = (nl885fhoaqe5w9y0-0 * nsfacte5hxnj4nqw-0)
+(ntbn37icsdnu40fz-0) = (nl885fhoaqe5w9y0-0 * n81jadr9jih3b8u-0)
 ndjut0z9raew515v-0
 }
 
@@ -160,6 +185,21 @@ Shaker:Resonator(sig res r) {
 (n5ag8iz45zbq6866-0) = (n6egpzuswj1derot-1 * Math:Pi)
 (nk0m1zcu0wqj5l5d-0) = (n5ag8iz45zbq6866-0 * 2)
 nc7o4q8dnkksg1s5-0
+}
+
+Vector-Shaker() {
+(n7iyue92lo25l0v4-0) = #4
+(new958s7i7x0so3q-0) = Shaker:Stimulus(nrbq8izyceb0oorb-0 nj3w003j8jxir4xx-0)
+(n8gyne0g3icj9stf-0) = 1
+(n23f5kk5hyivxyga-0) = 0.9999
+(n1sytl1e7ygzwhin-0) = Vector:Cons(440 550 660 770)
+(nqtr4k2qr2c3286k-0) = 0.95
+(ndlxefvenlsec89f-0) = Shaker:Resonator(n2sgngeelp7uexc2-0 n1sytl1e7ygzwhin-0 n23f5kk5hyivxyga-0)
+(nrbq8izyceb0oorb-0) = 0.5
+(n2sgngeelp7uexc2-0) = Shaker:Synth(new958s7i7x0so3q-0 n7iyue92lo25l0v4-0 n8gyne0g3icj9stf-0 ngvqp4vr4nk13nlj-0 nqtr4k2qr2c3286k-0)
+(ngvqp4vr4nk13nlj-0) = 0.9999
+(nj3w003j8jxir4xx-0) = 2
+ndlxefvenlsec89f-0
 }
 
 }

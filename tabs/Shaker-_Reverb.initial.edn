@@ -1,4 +1,5 @@
-{:identity "initial"
+{:identifier "Shaker->Reverb"
+ :identity "initial"
  :patch
 {:cables
 {["6sy4jz99mfwjp2g" 0] [:fixed "tkpvfn5qvqzfkf1" 0]
@@ -35,7 +36,7 @@
  :label "0.01 -x- 0.25"
  :name "predelay"
  :outputs [""]
- :parsed [:widget "-fj3r32" 0.43797618321010046 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-fj3r32" 0.5094046456473215 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [118 -286]
  }
  "4hf8jv9svdt4dcr" 
@@ -50,7 +51,7 @@
  :label "0 -o- 1"
  :name "hi-freq decay rate"
  :outputs [""]
- :parsed [:widget "-gs4pqj" 0.6594047546386719 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :parsed [:widget "-gs4pqj" 0.8522617885044643 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
  :pos [247 -288]
  }
  "4uc1ufmdcb2jm7v" 
@@ -74,7 +75,7 @@
  :outputs [""]
  :parsed [:fn "Shaker:Synth" [:tuple [:free-var "sig"] [:free-var "streams"] [:free-var "beans"] [:free-var "system-decay"] [:free-var "sound-decay"]]]
  :pos [-41 32]
- :selected true}
+ }
  "6t28bdlsq77g2ii" 
 {:inputs []
  :label "4"
@@ -102,7 +103,7 @@
  :label "2000 -x- 20000"
  :name "tone"
  :outputs [""]
- :parsed [:widget "-96t11x" 0.7165475027901785 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-96t11x" 0.6451189313616071 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [343 -288]
  }
  "bj0lfmwzfv2hzml" 
@@ -132,7 +133,7 @@
  :label "0 -o- 1"
  :name "wet/dry"
  :outputs [""]
- :parsed [:widget "-1a16o" 0.6594046456473214 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :parsed [:widget "-1a16o" 0.6165475027901786 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
  :pos [438 -288]
  }
  "ibxckdtzmrbq4wn" 

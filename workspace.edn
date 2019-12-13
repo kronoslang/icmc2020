@@ -1,6 +1,6 @@
 {:assets 
 {}
- :current-tab 5
+ :current-tab 9
  
  :manifest 
 {:dependencies 
@@ -11,4 +11,4 @@
  :url "https://kronoslang.io"
  :version "0.1"}
  :name "icmc2020"
- :tabs ("tabs/draft.initial.edn" "tabs/FDN_Test-Signal.c9k1t4dsjkytqij.edn" "tabs/FDN_Reverb.w7t86zx8f6emmm8.edn" "tabs/FDN_Butterfly.28t8355gx6bc7o1.edn" "tabs/FDN_Delay-Line.09xcj688opil3s3.edn" "tabs/Shaker_Synth.r9859flqf51drao.edn" "tabs/Shaker_Stimulus.30ndbcghf0lq5q5.edn" "tabs/Shaker_Body.lo5a4j6r37s9xes.edn" "tabs/Shaker_Resonator.4faejvwqdmgduz.edn")}
+ :tabs ("tabs/Shaker-_Reverb.initial.edn" "tabs/FDN_Test-Signal.c9k1t4dsjkytqij.edn" "tabs/FDN_Reverb.w7t86zx8f6emmm8.edn" "tabs/FDN_Butterfly.28t8355gx6bc7o1.edn" "tabs/FDN_Delay-Line.09xcj688opil3s3.edn" "tabs/Shaker_Synth.r9859flqf51drao.edn" "tabs/Shaker_Stimulus.30ndbcghf0lq5q5.edn" "tabs/Shaker_Body.lo5a4j6r37s9xes.edn" "tabs/Shaker_Resonator.4faejvwqdmgduz.edn" "tabs/Vector-Shaker.uqv662p5zee2jty.edn")}
