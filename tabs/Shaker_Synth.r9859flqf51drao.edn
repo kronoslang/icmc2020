@@ -3,14 +3,15 @@
  :identity "r9859flqf51drao"
  :patch
 {:cables
-{["1lttnz1r7a1h9kx" 0] [:fixed "g4v7l17r9lvsc6v" 0]
- ["1tj1l7ju03c3cbu" 0] [:fixed "a8rqqwy0eha4a8a" 0]
+{["1tj1l7ju03c3cbu" 0] [:fixed "a8rqqwy0eha4a8a" 0]
  ["1tj1l7ju03c3cbu" 1] [:fixed "fc5ir545ebbct5y" 4]
  ["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
  ["5yi4xmbf4h8vmnx" 0] [:fixed "edjb9rsu26fd2q2" 0]
  ["5yi4xmbf4h8vmnx" 1] [:fixed "1tj1l7ju03c3cbu" 0]
  ["5yi4xmbf4h8vmnx" 2] [:fixed "p9umq7u51u45yzl" 0]
- ["93fgu2xzf6nopd2" 0] [:fixed "bjv7lq54n2l5x2b" 0]
+ ["93fgu2xzf6nopd2" 0] [:fixed "omj26b0luapco5t" 0]
+ ["9rfze3545av8ow" 0] [:fixed "fc5ir545ebbct5y" 1]
+ ["9rfze3545av8ow" 1] [:fixed "u2w89wllwhf4kkj" 0]
  ["a2q7n2k2r20bc07" 0] [:fixed "mc9b8kn75rf1ajv" 0]
  ["a8rqqwy0eha4a8a" 0] [:fixed "axi37fasya85pqe" 0]
  ["a8rqqwy0eha4a8a" 1] [:fixed "apwwlg8g66dd89" 0]
@@ -18,37 +19,31 @@
  ["apwwlg8g66dd89" 1] [:fixed "yu25psqmhd6s1ou" 0]
  ["axi37fasya85pqe" 0] [:fixed "fc5ir545ebbct5y" 0]
  ["axi37fasya85pqe" 1] [:fixed "fc5ir545ebbct5y" 3]
- ["bjv7lq54n2l5x2b" 0] [:fixed "fc5ir545ebbct5y" 1]
+ ["bjv7lq54n2l5x2b" 0] [:fixed "9rfze3545av8ow" 0]
  ["edjb9rsu26fd2q2" 0] [:fixed "93fgu2xzf6nopd2" 0]
  ["kkw21omt743wxs" 0] [:fixed "qpf1mcjof9upfnh" 0]
  ["mc9b8kn75rf1ajv" 0] [:fixed "kkw21omt743wxs" 0]
  ["mc9b8kn75rf1ajv" 1] [:fixed "3s5by81lo9ddsi" 0]
- ["mjgr4jrll5xp3s" 0] [:fixed "m8rgh7jzydzj14t" 0]
+ ["omj26b0luapco5t" 0] [:fixed "bjv7lq54n2l5x2b" 0]
+ ["omj26b0luapco5t" 1] [:fixed "wjr0ii07s1dnq9r" 0]
  ["p9umq7u51u45yzl" 0] [:fixed "a2q7n2k2r20bc07" 0]
  ["p9umq7u51u45yzl" 1] [:fixed "qpf1mcjof9upfnh" 0]
  ["qpf1mcjof9upfnh" 0] [:fixed "fc5ir545ebbct5y" 2]
  ["yu25psqmhd6s1ou" 0] [:fixed "qpf1mcjof9upfnh" 0]}
  :nodes
-{"1lttnz1r7a1h9kx" 
-{:inputs ["seed"]
- :label "Gen:Drift($seed)"
- :outputs [""]
- :parsed [:fn "Gen:Drift" [:tuple [:free-var "seed"]]]
- :pos [-153 284]
- }
- "1tj1l7ju03c3cbu" 
+{"1tj1l7ju03c3cbu" 
 {:inputs ["sig" "cutoff"]
  :label "Filter:Tone($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [165 -42]
+ :pos [300 -51]
  }
  "3s5by81lo9ddsi" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-268 -374]
+ :pos [-133 -383]
  }
  "5yi4xmbf4h8vmnx" 
 {:ephemeral-inputs #{"more1"}
@@ -56,21 +51,28 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [298 40]
+ :pos [430 149]
  }
  "93fgu2xzf6nopd2" 
 {:inputs ["seed"]
  :label "Gen:Drift($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Drift" [:tuple [:free-var "seed"]]]
- :pos [-233 -31]
+ :pos [-13 -22]
+ }
+ "9rfze3545av8ow" 
+{:inputs ["v" "pred"]
+ :label "Constraints:Condition!($v $pred)"
+ :outputs [""]
+ :parsed [:fn "Constraints:Condition!" [:tuple [:free-var "v"] [:free-var "pred"]]]
+ :pos [-537 -12]
  }
  "a2q7n2k2r20bc07" 
 {:inputs ["a"]
  :label "* 40"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "40"]]
- :pos [-59 -233]
+ :pos [76 -242]
  }
  "a8rqqwy0eha4a8a" 
 {:cable-midpoints 
@@ -80,7 +82,7 @@
  :label "&"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:free-var "b"] [:free-var "more..."]]
- :pos [56 -41]
+ :pos [191 -50]
  }
  "apwwlg8g66dd89" 
 {:cable-midpoints 
@@ -89,7 +91,7 @@
  :label "<"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "<" [:free-var "b"] [:free-var "more..."]]
- :pos [-44 -79]
+ :pos [91 -88]
  }
  "axi37fasya85pqe" 
 {:cable-midpoints 
@@ -98,16 +100,16 @@
  :label "Filter:Tone($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [-456 40]
+ :pos [-366 150]
  }
  "bjv7lq54n2l5x2b" 
 {:cable-midpoints 
-{0 [38 115]}
+{}
  :inputs ["count"]
  :label "Vector:Indices($count)"
  :outputs [""]
  :parsed [:fn "Vector:Indices" [:tuple [:free-var "count"]]]
- :pos [-369 -31]
+ :pos [-367 24]
  }
  "edjb9rsu26fd2q2" 
 {:cable-midpoints 
@@ -116,72 +118,73 @@
  :label "- 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [149 40]
+ :pos [281 149]
  }
  "fc5ir545ebbct5y" 
 {:inputs []
  :label "(sig streams beans system-decay sound-decay) = arg"
  :outputs ["sig" "streams" "beans" "system-decay" "sound-decay"]
  :parsed "arg"
- :pos [-581 -269]
- }
- "g4v7l17r9lvsc6v" 
-{:inputs []
- :label "1"
- :outputs [""]
- :parsed [:float "1"]
- :pos [-263 284]
+ :pos [-647 -292]
  }
  "g8xruwc1nrmbwhi" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [-390 -374]
+ :pos [-255 -383]
  }
  "kkw21omt743wxs" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-263 -233]
+ :pos [-128 -242]
  }
- "m8rgh7jzydzj14t" 
-{:inputs []
- :label "-1"
- :outputs [""]
- :parsed [:float "-1"]
- :pos [-56 287]
- :selected true}
  "mc9b8kn75rf1ajv" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-157 -233]
+ :pos [-22 -242]
  }
- "mjgr4jrll5xp3s" 
-{:edit-mode true
- :inputs ["0"]
- :label ""
+ "omj26b0luapco5t" 
+{:ephemeral-inputs #{"forms1" "forms2"}
+ :inputs ["forms1" "forms2" "forms..."]
+ :label "Polymorphic($forms...)"
  :outputs [""]
- :pos [67 287]
+ :parsed [:fn "Polymorphic" [:tuple [:free-var "forms1"] [:free-var "forms2"] [:free-var "forms..."]]]
+ :pos [-197 24]
  }
  "p9umq7u51u45yzl" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [44 -233]
+ :pos [179 -242]
  }
  "qpf1mcjof9upfnh" 
 {:cable-midpoints 
-{0 [53 -33]}
+{}
  :inputs ["beans"]
  :label "$beans"
  :outputs [""]
  :parsed [:free-var "beans"]
- :pos [-387 -311]
+ :pos [-252 -320]
+ }
+ "u2w89wllwhf4kkj" 
+{:inputs ["a"]
+ :label "> #1"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] ">" [:invariant "1"]]
+ :pos [-585 -77]
+ }
+ "wjr0ii07s1dnq9r" 
+{:inputs []
+ :label "#1"
+ :outputs [""]
+ :parsed [:invariant "1"]
+ :pos [-278 -83]
  }
  "yu25psqmhd6s1ou" 
 {:cable-midpoints 
@@ -190,7 +193,7 @@
  :label "/ 512"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "512"]]
- :pos [-144 -126]
+ :pos [-9 -135]
  }}
  :scale 1
  :scroll [0 0]}}
