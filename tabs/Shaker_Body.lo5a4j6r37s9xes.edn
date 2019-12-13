@@ -12,13 +12,7 @@
  ["y0iaw0fat2gv93i" 1] [:fixed "e9i4yrqcjctp7in" 1]
  ["y0iaw0fat2gv93i" 2] [:fixed "e9i4yrqcjctp7in" 2]}
  :nodes
-{"06p0jasj8fkavr" 
-{:inputs []
- :label "G"
- :outputs [""]
- :pos [-281 -488]
- }
- "088ayu8krtlinoe" 
+{"088ayu8krtlinoe" 
 {:inputs ["sig" "res" "r"]
  :label "Shaker:Resonator($sig $res $r)"
  :outputs [""]
@@ -32,7 +26,7 @@
  :outputs [""]
  :parsed [:fn "Sum" [:tuple [:free-var "numbers1"] [:free-var "numbers..."]]]
  :pos [279 103]
- :selected true}
+ }
  "3jap25307dl6eb6" 
 {:inputs ["a" "b" "more..."]
  :label "*"

@@ -27,43 +27,37 @@
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [359 -168]
- }
+ :pos [359 -168]}
  "1v5v001qg2nw1fn" 
 {:inputs ["a"]
  :label "* -2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "-2"]]
- :pos [268 -218]
- }
+ :pos [268 -218]}
  "4nzd4iax45t6ei2" 
 {:inputs ["a"]
  :label "Math:Cos($a)"
  :outputs [""]
  :parsed [:fn "Math:Cos" [:tuple [:free-var "a"]]]
- :pos [145 -218]
- }
+ :pos [145 -218]}
  "5ag8iz45zbq6866" 
 {:inputs ["a"]
  :label "* Math:Pi"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" "Math:Pi"]
- :pos [-193 -226]
- }
+ :pos [-193 -226]}
  "6egpzuswj1derot" 
 {:inputs []
  :label "(sig res r) = arg"
  :outputs ["sig" "res" "r"]
  :parsed "arg"
- :pos [-374 -131]
- }
+ :pos [-374 -131]}
  "7o2uk423ofg3l27" 
 {:inputs []
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [-260 238]
- }
+ :pos [-260 238]}
  "c7o4q8dnkksg1s5" 
 {:inputs ["sig" "a0" "a1" "a2" "b1" "b2"]
  :label "Filter:Biquad($sig $a0 $a1 $a2 $b1 $b2)"
@@ -76,42 +70,36 @@
  :label "Rate-of($sig)"
  :outputs [""]
  :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
- :pos [-165 -377]
- }
+ :pos [-165 -377]}
  "ftzbczcj13btsd5" 
 {:inputs []
  :label "-1"
  :outputs [""]
  :parsed [:float "-1"]
- :pos [-150 238]
- }
+ :pos [-150 238]}
  "k0m1zcu0wqj5l5d" 
 {:inputs ["a"]
  :label "* 2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "2"]]
- :pos [-70 -226]
- }
+ :pos [-70 -226]}
  "n7tdft4o263mjtx" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-151 37]
- }
+ :pos [-151 37]}
  "sqopxaqen6xse2i" 
 {:inputs []
  :label "#0"
  :outputs [""]
  :parsed [:invariant "0"]
- :pos [-27 238]
- }
+ :pos [-27 238]}
  "vhvg46lxixnqfyd" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [43 -223]
- }}
+ :pos [43 -223]}}
  :scale 1
  :scroll [0 0]}}
