@@ -104,20 +104,17 @@ Shaker:Synth(sig streams beans system-decay sound-decay) {
 (nmc9b8kn75rf1ajv-0) = (nkkw21omt743wxs-0 / n3s5by81lo9ddsi-0)
 (np9umq7u51u45yzl-0) = (na2q7n2k2r20bc07-0 / nqpf1mcjof9upfnh-0)
 (napwwlg8g66dd89-0) = (n93fgu2xzf6nopd2-0 < nyu25psqmhd6s1ou-0)
-(nbjv7lq54n2l5x2b-0) = Vector:Indices(n9rfze3545av8ow-0)
 (n3s5by81lo9ddsi-0) = Math:Log(ng8xruwc1nrmbwhi-0)
-(n93fgu2xzf6nopd2-0) = Gen:Drift(nomj26b0luapco5t-0)
+(n93fgu2xzf6nopd2-0) = Gen:Drift(n7xbx6ub2g93s4hc-0)
 (n5yi4xmbf4h8vmnx-0) = (nedjb9rsu26fd2q2-0 * n1tj1l7ju03c3cbu-0 * np9umq7u51u45yzl-0)
-(nu2w89wllwhf4kkj-0) = (a) => ( (a > #1) ) 
 (nfc5ir545ebbct5y-0 nfc5ir545ebbct5y-1 nfc5ir545ebbct5y-2 nfc5ir545ebbct5y-3 nfc5ir545ebbct5y-4) = arg
+(n7xbx6ub2g93s4hc-0) = Vector:Vectorize(n57a7pl1uc4uqwp9-0)
 (ng8xruwc1nrmbwhi-0) = 4
 (na8rqqwy0eha4a8a-0) = (naxi37fasya85pqe-0 & napwwlg8g66dd89-0)
+(n57a7pl1uc4uqwp9-0) = Algorithm:Count(nfc5ir545ebbct5y-1)
 (nqpf1mcjof9upfnh-0) = nfc5ir545ebbct5y-2
-(nwjr0ii07s1dnq9r-0) = #1
 (naxi37fasya85pqe-0) = Filter:Tone(nfc5ir545ebbct5y-0 nfc5ir545ebbct5y-3)
-(n9rfze3545av8ow-0) = Constraints:Condition!(nfc5ir545ebbct5y-1 nu2w89wllwhf4kkj-0)
 (nkkw21omt743wxs-0) = Math:Log(nqpf1mcjof9upfnh-0)
-(nomj26b0luapco5t-0) = Polymorphic(nbjv7lq54n2l5x2b-0 nwjr0ii07s1dnq9r-0 )
 (nedjb9rsu26fd2q2-0) = (n93fgu2xzf6nopd2-0 - 1)
 (nyu25psqmhd6s1ou-0) = (nqpf1mcjof9upfnh-0 / 512)
 n5yi4xmbf4h8vmnx-0
