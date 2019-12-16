@@ -17,23 +17,20 @@
  :label "Shaker:Resonator($sig $res $r)"
  :outputs [""]
  :parsed [:fn "Shaker:Resonator" [:tuple [:free-var "sig"] [:free-var "res"] [:free-var "r"]]]
- :pos [-241 -51]
- }
+ :pos [-241 -51]}
  "15rz3rki98g1uty" 
 {:ephemeral-inputs #{"numbers1"}
  :inputs ["numbers1" "numbers..."]
  :label "Sum($numbers...)"
  :outputs [""]
  :parsed [:fn "Sum" [:tuple [:free-var "numbers1"] [:free-var "numbers..."]]]
- :pos [279 103]
- }
+ :pos [279 103]}
  "3jap25307dl6eb6" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-44 31]
- }
+ :pos [-44 31]}
  "cle8szopv77h1uv" 
 {:cable-midpoints 
 {2 [374 1]}
@@ -48,8 +45,7 @@
  :label "(sig fs bws amps) = arg"
  :outputs ["sig" "fs" "bws" "amps"]
  :parsed "arg"
- :pos [-417 -247]
- }
+ :pos [-417 -247]}
  "y0iaw0fat2gv93i" 
 {:cable-midpoints 
 {1 [220 0]
@@ -58,7 +54,6 @@
  :label "Algorithm:Zip-With($func $as $bs)"
  :outputs [""]
  :parsed [:fn "Algorithm:Zip-With" [:tuple [:free-var "func"] [:free-var "as"] [:free-var "bs"]]]
- :pos [-35 -51]
- }}
+ :pos [-35 -51]}}
  :scale 1
  :scroll [0 0]}}

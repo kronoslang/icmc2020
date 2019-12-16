@@ -18,43 +18,37 @@
  :label "Vector:Cons(440 550 660 770)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:float "440"] [:float "550"] [:float "660"] [:float "770"]]]
- :pos [-31 -353]
- }
+ :pos [-31 -353]}
  "23f5kk5hyivxyga" 
 {:inputs []
  :label "0.9999"
  :outputs [""]
  :parsed [:float "0.9999"]
- :pos [357 -244]
- }
+ :pos [357 -244]}
  "27d46syr57iun75" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [218 -121]
- }
+ :pos [218 -121]}
  "2sgngeelp7uexc2" 
 {:inputs ["sig" "streams" "beans" "system-decay" "sound-decay"]
  :label "Shaker:Synth($sig $streams $beans $system-decay $sound-decay)"
  :outputs [""]
  :parsed [:fn "Shaker:Synth" [:tuple [:free-var "sig"] [:free-var "streams"] [:free-var "beans"] [:free-var "system-decay"] [:free-var "sound-decay"]]]
- :pos [59 -55]
- }
+ :pos [59 -55]}
  "7iyue92lo25l0v4" 
 {:inputs []
  :label "#4"
  :outputs [""]
  :parsed [:invariant "4"]
- :pos [-84 -153]
- }
+ :pos [-84 -153]}
  "8gyne0g3icj9stf" 
 {:inputs []
  :label "3"
  :outputs [""]
  :parsed [:number-widget :float "h62xye" "1" ""]
- :pos [-50 -272]
- }
+ :pos [-50 -272]}
  "dlxefvenlsec89f" 
 {:inputs ["sig" "res" "r"]
  :label "Shaker:Resonator($sig $res $r)"
@@ -67,42 +61,36 @@
  :label "Shaker:Stimulus($rate $sharpness)"
  :outputs [""]
  :parsed [:fn "Shaker:Stimulus" [:tuple [:free-var "rate"] [:free-var "sharpness"]]]
- :pos [-128 -55]
- }
+ :pos [-128 -55]}
  "gvqp4vr4nk13nlj" 
 {:inputs []
  :label "0.9999"
  :outputs [""]
  :parsed [:float "0.9999"]
- :pos [-2 -207]
- }
+ :pos [-2 -207]}
  "gx61cbppsm6265m" 
 {:inputs []
  :label "440"
  :outputs [""]
  :parsed [:float "440"]
- :pos [218 -121]
- }
+ :pos [218 -121]}
  "j3w003j8jxir4xx" 
 {:inputs []
  :label "2"
  :outputs [""]
  :parsed [:float "2"]
- :pos [-255 -138]
- }
+ :pos [-255 -138]}
  "qtr4k2qr2c3286k" 
 {:inputs []
  :label "0.95"
  :outputs [""]
  :parsed [:float "0.95"]
- :pos [110 -256]
- }
+ :pos [110 -256]}
  "rbq8izyceb0oorb" 
 {:inputs []
  :label "0.5"
  :outputs [""]
  :parsed [:float "0.5"]
- :pos [-321 -66]
- }}
+ :pos [-321 -66]}}
  :scale 1
  :scroll [0 0]}}

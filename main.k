@@ -16,7 +16,7 @@ Shaker->Reverb() {
 (nbj0lfmwzfv2hzml-0) = (nk3x7ynp2440f31x-0 + 1)
 (n4uc1ufmdcb2jm7v-0) = #1
 (n4u11lsxzvcj07-0) = 0.8522617885044643
-(nqnjkhk1voyhy47u-0) = 6
+(nqnjkhk1voyhy47u-0) = 36
 (n4d66hdf5w2uvifk-0) = 0.5094046456473215
 (nq0h94x14itu3nky-0) = n6z2bmrwrc9l8ktw-0
 (nk3x7ynp2440f31x-0) = Gen:Tri(nibxckdtzmrbq4wn-0)
@@ -200,6 +200,29 @@ Vector-Shaker() {
 (ngvqp4vr4nk13nlj-0) = 0.9999
 (nj3w003j8jxir4xx-0) = 2
 ndlxefvenlsec89f-0
+}
+
+Adafruit() {
+(noz19jtxjcfhc82-0) = Vector:Cons(ntnw1lqaafhb0544-0 )
+(nawq6892gom6ef53-0) = Control:Signal(noz19jtxjcfhc82-0)
+(naljiv83c1s78u2o-0) = Math:Sqrt(nkmcachxoh9nq8v7-0)
+(nb4d8mzgv32hzkx9-0) = IO:Source("/midi" 0i #0)
+(nlz86qxa2d1u9n2f-0) = 255i
+(n0pyienn22l3gbfc-0) = (nawq6892gom6ef53-0 - nixc6mdkat4t18rw-0)
+(n8w6aldz5er5cbm4-0) = [20i 21i 22i]
+(nkmcachxoh9nq8v7-0) = Vector:Horizontal(ndbt9c4td7j8hj64-0 n7a4by8zk3seell-0)
+(ndbt9c4td7j8hj64-0) = (a b) => ( (a + b) ) 
+(n7a4by8zk3seell-0) = (n0pyienn22l3gbfc-0 * n0pyienn22l3gbfc-0)
+(ntnw1lqaafhb0544-0) = Algorithm:Map(n0q1nmb7zdh3ldza-0 n8w6aldz5er5cbm4-0 )
+(nixc6mdkat4t18rw-0) = Filter:Lpf6(nawq6892gom6ef53-0 n9it8n56d3ex8vd-0)
+(nhooqnmjrf9c6brl-0) = 255i
+(nbhubun7hq75dpy-0) = And(ncondfhugy1fa4yj-0 nlz86qxa2d1u9n2f-0)
+(ncondfhugy1fa4yj-0) = BitShiftRight(nb4d8mzgv32hzkx9-0 nqx88qfucy78l713-0)
+(n9it8n56d3ex8vd-0) = 3
+(nkqmlgzumdbmcayh-0) = And(nb4d8mzgv32hzkx9-0 nhooqnmjrf9c6brl-0)
+(n0q1nmb7zdh3ldza-0) = (cn) => ( Control:Sample-and-Hold(nkqmlgzumdbmcayh-0 (nbhubun7hq75dpy-0 == cn)) ) 
+(nqx88qfucy78l713-0) = 8i
+naljiv83c1s78u2o-0
 }
 
 }
