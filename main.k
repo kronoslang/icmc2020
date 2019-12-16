@@ -12,28 +12,20 @@ Brief() {
 Shaker->Reverb() {
 (nhea4ylndv1ylho-0) = 0.5594046456473214
 (nbt0g6gik4vnjj9c-0) = Adafruit()
-(nibxckdtzmrbq4wn-0) = (nbv2b92ciw4xs8ta-0 / n6t28bdlsq77g2ii-0)
 (n6z2bmrwrc9l8ktw-0) = FDN:Reverb(nrs4bom6r0a4s3c3-0 nhea4ylndv1ylho-0 n4d66hdf5w2uvifk-0 n4u11lsxzvcj07-0 n8rnzyncldkh1uf1-0 nhi04rc5or6bwb4c-0)
-(nd7z5gr3yin0zbgb-0) = Select([ntkpvfn5qvqzfkf1-0 nvgtaxphb5dkqddy-0] 0)
-(nbj0lfmwzfv2hzml-0) = (nk3x7ynp2440f31x-0 + 1)
 (n4uc1ufmdcb2jm7v-0) = #1
 (n4u11lsxzvcj07-0) = 0.8522617885044643
 (nqnjkhk1voyhy47u-0) = 36
 (n4d66hdf5w2uvifk-0) = 0.5094046456473215
 (nq0h94x14itu3nky-0) = n6z2bmrwrc9l8ktw-0
-(nk3x7ynp2440f31x-0) = Gen:Tri(nibxckdtzmrbq4wn-0)
-(n7m27g5e1jsl91wr-0) = (nbj0lfmwzfv2hzml-0 * 4)
-(ntkpvfn5qvqzfkf1-0) = Shaker:Stimulus(nbv2b92ciw4xs8ta-0 n7m27g5e1jsl91wr-0)
 (nrs4bom6r0a4s3c3-0) = Shaker:Body(n6sy4jz99mfwjp2g-0 n1h26rt21h3bhwkc-0)
-(n6t28bdlsq77g2ii-0) = 8
 (n1h26rt21h3bhwkc-0) = ([2300 5600 8100] [0.96 0.99 0.99] [0.1 0.8 1.0])
-(nhi04rc5or6bwb4c-0) = 0.6165475027901786
-(nbv2b92ciw4xs8ta-0) = 1
+(nhi04rc5or6bwb4c-0) = 0.4862500871930804
 (n4hf8jv9svdt4dcr-0) = 0.995
-(n6sy4jz99mfwjp2g-0) = Shaker:Synth(nd7z5gr3yin0zbgb-0 n4uc1ufmdcb2jm7v-0 nqnjkhk1voyhy47u-0 n6089nqbtu83f4c9-0 n4hf8jv9svdt4dcr-0)
+(n6sy4jz99mfwjp2g-0) = Shaker:Synth(nvgtaxphb5dkqddy-0 n4uc1ufmdcb2jm7v-0 nqnjkhk1voyhy47u-0 n6089nqbtu83f4c9-0 n4hf8jv9svdt4dcr-0)
 (n6089nqbtu83f4c9-0) = 0.9999
 (n8rnzyncldkh1uf1-0) = 0.6451189313616071
-(nvgtaxphb5dkqddy-0) = (nbt0g6gik4vnjj9c-0 / 10000)
+(nvgtaxphb5dkqddy-0) = (nbt0g6gik4vnjj9c-0 / 1000)
 nq0h94x14itu3nky-0
 }
 
@@ -192,17 +184,17 @@ nc7o4q8dnkksg1s5-0
 
 Vector-Shaker() {
 (n7iyue92lo25l0v4-0) = #4
-(new958s7i7x0so3q-0) = Shaker:Stimulus(nrbq8izyceb0oorb-0 nj3w003j8jxir4xx-0)
-(n8gyne0g3icj9stf-0) = 1
+(n8gyne0g3icj9stf-0) = 2
 (n23f5kk5hyivxyga-0) = 0.9999
 (n1sytl1e7ygzwhin-0) = Vector:Cons(440 550 660 770)
 (nqtr4k2qr2c3286k-0) = 0.95
 (ndlxefvenlsec89f-0) = Shaker:Resonator(n2sgngeelp7uexc2-0 n1sytl1e7ygzwhin-0 n23f5kk5hyivxyga-0)
-(nrbq8izyceb0oorb-0) = 0.5
-(n2sgngeelp7uexc2-0) = Shaker:Synth(new958s7i7x0so3q-0 n7iyue92lo25l0v4-0 n8gyne0g3icj9stf-0 ngvqp4vr4nk13nlj-0 nqtr4k2qr2c3286k-0)
+(n2sgngeelp7uexc2-0) = Shaker:Synth(n9ybu1osj693929q-0 n7iyue92lo25l0v4-0 n8gyne0g3icj9stf-0 ngvqp4vr4nk13nlj-0 nqtr4k2qr2c3286k-0)
 (ngvqp4vr4nk13nlj-0) = 0.9999
-(nj3w003j8jxir4xx-0) = 2
-ndlxefvenlsec89f-0
+(nppddg7ecb1si7gv-0) = (ndlxefvenlsec89f-0 * 0.1)
+(n9ybu1osj693929q-0) = (nitx3xv82zqiinod-0 / 1000)
+(nitx3xv82zqiinod-0) = Adafruit()
+nppddg7ecb1si7gv-0
 }
 
 Adafruit() {
@@ -223,7 +215,7 @@ Adafruit() {
 (nhooqnmjrf9c6brl-0) = 255i
 (nbhubun7hq75dpy-0) = And(ncondfhugy1fa4yj-0 nlz86qxa2d1u9n2f-0)
 (ncondfhugy1fa4yj-0) = BitShiftRight(nb4d8mzgv32hzkx9-0 nqx88qfucy78l713-0)
-(n9it8n56d3ex8vd-0) = 3
+(n9it8n56d3ex8vd-0) = 1
 (nkqmlgzumdbmcayh-0) = And(nb4d8mzgv32hzkx9-0 nhooqnmjrf9c6brl-0)
 (n0q1nmb7zdh3ldza-0) = (cn) => ( Control:Sample-and-Hold(nkqmlgzumdbmcayh-0 (nbhubun7hq75dpy-0 == cn)) ) 
 (nqx88qfucy78l713-0) = 8i

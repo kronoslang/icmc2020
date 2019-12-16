@@ -2,7 +2,7 @@
  :identity "initial"
  :patch
 {:cables
-{["6sy4jz99mfwjp2g" 0] [:fixed "d7z5gr3yin0zbgb" 0]
+{["6sy4jz99mfwjp2g" 0] [:fixed "vgtaxphb5dkqddy" 0]
  ["6sy4jz99mfwjp2g" 1] [:fixed "4uc1ufmdcb2jm7v" 0]
  ["6sy4jz99mfwjp2g" 2] [:fixed "qnjkhk1voyhy47u" 0]
  ["6sy4jz99mfwjp2g" 3] [:fixed "6089nqbtu83f4c9" 0]
@@ -15,8 +15,6 @@
  ["6z2bmrwrc9l8ktw" 5] [:fixed "hi04rc5or6bwb4c" 0]
  ["7m27g5e1jsl91wr" 0] [:fixed "bj0lfmwzfv2hzml" 0]
  ["bj0lfmwzfv2hzml" 0] [:fixed "k3x7ynp2440f31x" 0]
- ["d7z5gr3yin0zbgb" 0] [:fixed "tkpvfn5qvqzfkf1" 0]
- ["d7z5gr3yin0zbgb" 1] [:fixed "vgtaxphb5dkqddy" 0]
  ["ibxckdtzmrbq4wn" 0] [:fixed "bv2b92ciw4xs8ta" 0]
  ["ibxckdtzmrbq4wn" 1] [:fixed "6t28bdlsq77g2ii" 0]
  ["k3x7ynp2440f31x" 0] [:fixed "ibxckdtzmrbq4wn" 0]
@@ -32,7 +30,7 @@
  :label "([2300 5600 8100] [0.96 0.99 0.99] [0.1 0.8 1.0])"
  :outputs [""]
  :parsed [:tuple [:list [:float "2300"] [:float "5600"] [:float "8100"]] [:list [:float "0.96"] [:float "0.99"] [:float "0.99"]] [:list [:float "0.1"] [:float "0.8"] [:float "1.0"]]]
- :pos [-158 118]
+ :pos [-149 120]
  }
  "4d66hdf5w2uvifk" 
 {:inputs []
@@ -40,14 +38,14 @@
  :name "predelay"
  :outputs [""]
  :parsed [:widget "-fj3r32" 0.5094046456473215 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [191 -379]
+ :pos [200 -377]
  }
  "4hf8jv9svdt4dcr" 
 {:inputs []
  :label "0.995"
  :outputs [""]
  :parsed [:float "0.995"]
- :pos [-146 -324]
+ :pos [-137 -322]
  }
  "4u11lsxzvcj07" 
 {:inputs []
@@ -55,21 +53,21 @@
  :name "hi-freq decay rate"
  :outputs [""]
  :parsed [:widget "-gs4pqj" 0.8522617885044643 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
- :pos [320 -381]
+ :pos [329 -379]
  }
  "4uc1ufmdcb2jm7v" 
 {:inputs []
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-146 -159]
+ :pos [-137 -157]
  }
  "6089nqbtu83f4c9" 
 {:inputs []
  :label "0.9999"
  :outputs [""]
  :parsed [:float "0.9999"]
- :pos [-146 -269]
+ :pos [-137 -267]
  }
  "6sy4jz99mfwjp2g" 
 {:color 3
@@ -77,14 +75,14 @@
  :label "Shaker:Synth($sig $streams $beans $system-decay $sound-decay)"
  :outputs [""]
  :parsed [:fn "Shaker:Synth" [:tuple [:free-var "sig"] [:free-var "streams"] [:free-var "beans"] [:free-var "system-decay"] [:free-var "sound-decay"]]]
- :pos [32 -61]
+ :pos [41 -59]
  }
  "6t28bdlsq77g2ii" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:number-widget :float "daa3gk" "8" ""]
- :pos [-859 -142]
+ :pos [-755 -102]
  }
  "6z2bmrwrc9l8ktw" 
 {:color 3
@@ -92,14 +90,14 @@
  :label "FDN($sig $rt60 $predelay $damp $tone $mix)"
  :outputs [""]
  :parsed [:fn "FDN:Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "predelay"] [:free-var "damp"] [:free-var "tone"] [:free-var "mix"]]]
- :pos [500 -61]
+ :pos [509 -59]
  }
  "7m27g5e1jsl91wr" 
 {:inputs ["a"]
  :label "* 4"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "4"]]
- :pos [-488 -123]
+ :pos [-384 -83]
  }
  "8rnzyncldkh1uf1" 
 {:inputs []
@@ -107,36 +105,29 @@
  :name "tone"
  :outputs [""]
  :parsed [:widget "-96t11x" 0.6451189313616071 {:type :slider, :limits [[:float "2000"] [:float "20000"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [416 -381]
+ :pos [425 -379]
  }
  "bj0lfmwzfv2hzml" 
 {:inputs ["a"]
  :label "+ 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:float "1"]]
- :pos [-589 -123]
+ :pos [-485 -83]
  }
  "bt0g6gik4vnjj9c" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "Adafruit()"
  :outputs [""]
  :parsed [:fn "Adafruit" [:tuple]]
- :pos [-769 -277]
- :selected true}
+ :pos [-668 -213]
+ }
  "bv2b92ciw4xs8ta" 
 {:inputs []
  :label "2"
  :outputs [""]
  :parsed [:number-widget :float "-ykbvoc" "1" ""]
- :pos [-804 55]
- }
- "d7z5gr3yin0zbgb" 
-{:color 3
- :inputs ["auto" "midi"]
- :label "$auto |/ $midi"
- :outputs [""]
- :parsed [:widget "-r2t3t8" 0 {:type :toggle, :render [:states], :states [[:free-var "auto"] [:free-var "midi"]]}]
- :pos [-265 -39]
+ :pos [-700 95]
  }
  "hea4ylndv1ylho" 
 {:inputs []
@@ -144,43 +135,43 @@
  :name "decay time"
  :outputs [""]
  :parsed [:widget "8ri94n" 0.5594046456473214 {:type :slider, :limits [[:float "0.5"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [98 -382]
+ :pos [107 -380]
  }
  "hi04rc5or6bwb4c" 
 {:inputs []
  :label "0 -o- 1"
  :name "wet/dry"
  :outputs [""]
- :parsed [:widget "-1a16o" 0.6165475027901786 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
- :pos [511 -381]
+ :parsed [:widget "-1a16o" 0.4862500871930804 {:type :slider, :limits [[:float "0"] [:float "1"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :pos [520 -379]
  }
  "ibxckdtzmrbq4wn" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-756 -43]
+ :pos [-652 -3]
  }
  "k3x7ynp2440f31x" 
 {:inputs ["freq"]
  :label "Gen:Tri($freq)"
  :outputs [""]
  :parsed [:fn "Gen:Tri" [:tuple [:free-var "freq"]]]
- :pos [-691 -123]
+ :pos [-587 -83]
  }
  "q0h94x14itu3nky" 
 {:inputs ["sig"]
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [677 -10]
+ :pos [686 -8]
  }
  "qnjkhk1voyhy47u" 
 {:inputs []
  :label "64"
  :outputs [""]
  :parsed [:number-widget :float "h3oz59" "36" ""]
- :pos [-146 -214]
+ :pos [-137 -212]
  }
  "rs4bom6r0a4s3c3" 
 {:color 3
@@ -189,7 +180,7 @@
  :label "Shaker:Body($sig $params)"
  :outputs [""]
  :parsed [:fn "Shaker:Body" [:tuple [:free-var "sig"] [:free-var "params"]]]
- :pos [266 -61]
+ :pos [275 -59]
  }
  "tkpvfn5qvqzfkf1" 
 {:color 3
@@ -197,14 +188,15 @@
  :label "Shaker:Stimulus($rate $sharpness)"
  :outputs [""]
  :parsed [:fn "Shaker:Stimulus" [:tuple [:free-var "rate"] [:free-var "sharpness"]]]
- :pos [-433 -28]
+ :pos [-329 12]
  }
  "vgtaxphb5dkqddy" 
-{:inputs ["a"]
- :label "/ 10000"
+{:color 3
+ :inputs ["a"]
+ :label "/ 1000"
  :outputs [""]
- :parsed [:infix [:free-var "a"] "/" [:float "10000"]]
- :pos [-565 -277]
+ :parsed [:infix [:free-var "a"] "/" [:float "1000"]]
+ :pos [-464 -213]
  }}
- :scale 1
+ :scale 0.9265629353920122
  :scroll [0 0]}}

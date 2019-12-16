@@ -31,98 +31,98 @@
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [314 6]
+ :pos [374 -30]
  }
  "0q1nmb7zdh3ldza" 
 {:inputs ["sig" "cc" "cn"]
  :label "Control:Sample-and-Hold($sig $cc == $cn)"
  :outputs [""]
  :parsed [:fn "Control:Sample-and-Hold" [:tuple [:free-var "sig"] [:infix [:free-var "cc"] "==" [:free-var "cn"]]]]
- :pos [-43 -301]
+ :pos [17 -337]
  }
  "7a4by8zk3seell" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [387 85]
+ :pos [447 49]
  }
  "8w6aldz5er5cbm4" 
 {:inputs []
  :label "[20i 21i 22i]"
  :outputs [""]
  :parsed [:list [:int32 "20"] [:int32 "21"] [:int32 "22"]]
- :pos [-328 -36]
+ :pos [-268 -72]
  }
  "9it8n56d3ex8vd" 
 {:inputs []
  :label "3"
  :outputs [""]
- :parsed [:float "3"]
- :pos [231 -278]
+ :parsed [:number-widget :float "haex0j" "1" ""]
+ :pos [291 -314]
  }
  "aljiv83c1s78u2o" 
 {:inputs ["a"]
  :label "Math:Sqrt($a)"
  :outputs [""]
  :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
- :pos [472 314]
+ :pos [532 278]
  }
  "awq6892gom6ef53" 
 {:inputs ["sig"]
  :label "Control:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
- :pos [166 -66]
+ :pos [226 -102]
  }
  "b4d8mzgv32hzkx9" 
 {:inputs []
  :label "IO:Source(\"/midi\" 0i #0)"
  :outputs [""]
  :parsed [:fn "IO:Source" [:tuple [:string "/midi"] [:int32 "0"] [:invariant "0"]]]
- :pos [-704 -274]
+ :pos [-644 -310]
  }
  "bhubun7hq75dpy" 
 {:inputs ["a" "b"]
  :label "And($a $b)"
  :outputs [""]
  :parsed [:fn "And" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-212 -400]
+ :pos [-152 -436]
  }
  "condfhugy1fa4yj" 
 {:inputs ["a" "b"]
  :label "BitShiftRight($a $b)"
  :outputs [""]
  :parsed [:fn "BitShiftRight" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-394 -349]
+ :pos [-334 -385]
  }
  "dbt9c4td7j8hj64" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [194 200]
+ :pos [254 164]
  }
  "hooqnmjrf9c6brl" 
 {:inputs []
  :label "255i"
  :outputs [""]
  :parsed [:int32 "255"]
- :pos [-598 -116]
+ :pos [-538 -152]
  }
  "ixc6mdkat4t18rw" 
 {:inputs ["sig" "cutoff"]
  :label "Filter:Lpf6($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [326 -133]
+ :pos [386 -169]
  }
  "kmcachxoh9nq8v7" 
 {:inputs ["fn" "v"]
  :label "Vector:Horizontal($fn $v)"
  :outputs [""]
  :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
- :pos [404 197]
+ :pos [464 161]
  }
  "kqmlgzumdbmcayh" 
 {:flip-y true
@@ -130,28 +130,28 @@
  :label "And($a $b)"
  :outputs [""]
  :parsed [:fn "And" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-403 -219]
+ :pos [-343 -255]
  }
  "lz86qxa2d1u9n2f" 
 {:inputs []
  :label "255i"
  :outputs [""]
  :parsed [:int32 "255"]
- :pos [-369 -486]
+ :pos [-309 -522]
  }
  "nx92l67izmtxfmx" 
 {:inputs ["b"]
  :label "Max(0 $b)"
  :outputs [""]
  :parsed [:fn "Max" [:tuple [:float "0"] [:free-var "b"]]]
- :pos [680 433]
+ :pos [740 397]
  }
  "o3q16t58y778sco" 
 {:inputs ["a"]
  :label "- 2"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "2"]]
- :pos [556 433]
+ :pos [616 397]
  }
  "oz19jtxjcfhc82" 
 {:ephemeral-inputs #{"elements1"}
@@ -159,14 +159,14 @@
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements..."]]]
- :pos [37 -129]
+ :pos [97 -165]
  }
  "qx88qfucy78l713" 
 {:inputs []
  :label "8i"
  :outputs [""]
  :parsed [:int32 "8"]
- :pos [-453 -421]
+ :pos [-393 -457]
  }
  "tnw1lqaafhb0544" 
 {:ephemeral-inputs #{"set1"}
@@ -175,7 +175,7 @@
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [-100 -129]
+ :pos [-40 -165]
  }}
- :scale 1
+ :scale 0.8389211702838585
  :scroll [0 0]}}
