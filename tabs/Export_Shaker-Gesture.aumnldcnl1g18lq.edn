@@ -1,0 +1,35 @@
+{:export 
+{:export-this-tab true
+ :user-interface 
+{"rate" true
+ "sharpness" true}}
+ :identifier "Export:Shaker-Gesture"
+ :identity "aumnldcnl1g18lq"
+ :patch
+{:cables
+{["d5uqddi1fmv9las" 0] [:fixed "y9rooehvoopum" 0]
+ ["d5uqddi1fmv9las" 1] [:fixed "6s6yvkbbd7utxyz" 0]}
+ :nodes
+{"6s6yvkbbd7utxyz" 
+{:inputs []
+ :label "1 -o- 20"
+ :name "sharpness"
+ :outputs [""]
+ :parsed [:widget "-dlvrw1" 0.5 {:type :slider, :limits [[:float "1"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :pos [-517 -199]
+ }
+ "d5uqddi1fmv9las" 
+{:inputs ["rate" "sharpness"]
+ :label "Shaker:Stimulus($rate $sharpness)"
+ :outputs [""]
+ :parsed [:fn "Shaker:Stimulus" [:tuple [:free-var "rate"] [:free-var "sharpness"]]]
+ :pos [-327 -22]
+ }
+ "y9rooehvoopum" 
+{:inputs []
+ :label "0.1 -o- 20"
+ :name "rate"
+ :outputs [""]
+ :parsed [:widget "uikqpg" 0.5 {:type :slider, :limits [[:float "0.1"] [:float "20"]], :render [:limits], :size 3, :orientation :vertical, :curve :linear}]
+ :pos [-629 -199]
+ }}}}

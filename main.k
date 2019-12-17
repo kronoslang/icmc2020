@@ -222,4 +222,11 @@ Adafruit() {
 nnx92l67izmtxfmx-0
 }
 
+Export:Shaker-Gesture() {
+(ny9rooehvoopum-0) = 0.5
+(n6s6yvkbbd7utxyz-0) = 0.5
+(nd5uqddi1fmv9las-0) = Shaker:Stimulus(ny9rooehvoopum-0 n6s6yvkbbd7utxyz-0)
+nd5uqddi1fmv9las-0
+}
+
 }
