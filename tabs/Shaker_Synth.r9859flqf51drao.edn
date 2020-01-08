@@ -3,12 +3,14 @@
  :identity "r9859flqf51drao"
  :patch
 {:cables
-{["1tj1l7ju03c3cbu" 0] [:fixed "a8rqqwy0eha4a8a" 0]
+{["11s8w2j7j9u2qmk" 0] [:fixed "1tj1l7ju03c3cbu" 0]
+ ["11s8w2j7j9u2qmk" 1] [:fixed "qyav8fvt5grhyne" 0]
+ ["1tj1l7ju03c3cbu" 0] [:fixed "a8rqqwy0eha4a8a" 0]
  ["1tj1l7ju03c3cbu" 1] [:fixed "fc5ir545ebbct5y" 4]
  ["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
  ["57a7pl1uc4uqwp9" 0] [:fixed "fc5ir545ebbct5y" 1]
  ["5yi4xmbf4h8vmnx" 0] [:fixed "edjb9rsu26fd2q2" 0]
- ["5yi4xmbf4h8vmnx" 1] [:fixed "1tj1l7ju03c3cbu" 0]
+ ["5yi4xmbf4h8vmnx" 1] [:fixed "11s8w2j7j9u2qmk" 0]
  ["5yi4xmbf4h8vmnx" 2] [:fixed "p9umq7u51u45yzl" 0]
  ["7xbx6ub2g93s4hc" 0] [:fixed "57a7pl1uc4uqwp9" 0]
  ["93fgu2xzf6nopd2" 0] [:fixed "7xbx6ub2g93s4hc" 0]
@@ -16,61 +18,77 @@
  ["a8rqqwy0eha4a8a" 0] [:fixed "axi37fasya85pqe" 0]
  ["a8rqqwy0eha4a8a" 1] [:fixed "apwwlg8g66dd89" 0]
  ["apwwlg8g66dd89" 0] [:fixed "93fgu2xzf6nopd2" 0]
- ["apwwlg8g66dd89" 1] [:fixed "yu25psqmhd6s1ou" 0]
+ ["apwwlg8g66dd89" 1] [:fixed "c2252fbn6scz6lm" 0]
  ["axi37fasya85pqe" 0] [:fixed "fc5ir545ebbct5y" 0]
  ["axi37fasya85pqe" 1] [:fixed "fc5ir545ebbct5y" 3]
+ ["c2252fbn6scz6lm" 0] [:fixed "qpf1mcjof9upfnh" 0]
+ ["c2252fbn6scz6lm" 1] [:fixed "lmqqkmsa8t9j0jj" 0]
+ ["c2252fbn6scz6lm" 2] [:fixed "fc5ir545ebbct5y" 1]
  ["edjb9rsu26fd2q2" 0] [:fixed "93fgu2xzf6nopd2" 0]
  ["kkw21omt743wxs" 0] [:fixed "qpf1mcjof9upfnh" 0]
  ["mc9b8kn75rf1ajv" 0] [:fixed "kkw21omt743wxs" 0]
  ["mc9b8kn75rf1ajv" 1] [:fixed "3s5by81lo9ddsi" 0]
  ["p9umq7u51u45yzl" 0] [:fixed "a2q7n2k2r20bc07" 0]
  ["p9umq7u51u45yzl" 1] [:fixed "qpf1mcjof9upfnh" 0]
- ["qpf1mcjof9upfnh" 0] [:fixed "fc5ir545ebbct5y" 2]
- ["yu25psqmhd6s1ou" 0] [:fixed "qpf1mcjof9upfnh" 0]}
+ ["qpf1mcjof9upfnh" 0] [:fixed "fc5ir545ebbct5y" 2]}
  :nodes
-{"1tj1l7ju03c3cbu" 
+{"11s8w2j7j9u2qmk" 
+{:inputs ["sig" "cutoff"]
+ :label "Filter:Lpf6($sig $cutoff)"
+ :outputs [""]
+ :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
+ :pos [265 4]
+ }
+ "1tj1l7ju03c3cbu" 
 {:inputs ["sig" "cutoff"]
  :label "Filter:Tone($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [145 -55]}
+ :pos [145 -55]
+ }
  "3s5by81lo9ddsi" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-261 -385]}
+ :pos [-261 -385]
+ }
  "57a7pl1uc4uqwp9" 
 {:inputs ["n"]
  :label "Algorithm:Count($n)"
  :outputs [""]
  :parsed [:fn "Algorithm:Count" [:tuple [:free-var "n"]]]
- :pos [-476 4]}
+ :pos [-476 4]
+ }
  "5yi4xmbf4h8vmnx" 
 {:ephemeral-inputs #{"more1"}
  :inputs ["a" "b" "more1" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [258 33]}
+ :pos [351 70]
+ }
  "7xbx6ub2g93s4hc" 
 {:inputs ["elements..."]
  :label "Vector:Vectorize($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Vectorize" [:tuple [:free-var "elements..."]]]
- :pos [-327 4]}
+ :pos [-327 4]
+ }
  "93fgu2xzf6nopd2" 
 {:inputs ["seed"]
  :label "Gen:Drift($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Drift" [:tuple [:free-var "seed"]]]
- :pos [-174 3]}
+ :pos [-174 3]
+ }
  "a2q7n2k2r20bc07" 
 {:inputs ["a"]
  :label "* 40"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "40"]]
- :pos [-79 -247]}
+ :pos [-79 -247]
+ }
  "a8rqqwy0eha4a8a" 
 {:cable-midpoints 
 {}
@@ -79,7 +97,8 @@
  :label "&"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:free-var "b"] [:free-var "more..."]]
- :pos [36 -54]}
+ :pos [36 -54]
+ }
  "apwwlg8g66dd89" 
 {:cable-midpoints 
 {}
@@ -87,7 +106,8 @@
  :label "<"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "<" [:free-var "b"] [:free-var "more..."]]
- :pos [-64 -92]}
+ :pos [-64 -92]
+ }
  "axi37fasya85pqe" 
 {:cable-midpoints 
 {}
@@ -95,7 +115,16 @@
  :label "Filter:Tone($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [-308 -57]}
+ :pos [-390 -57]
+ }
+ "c2252fbn6scz6lm" 
+{:ephemeral-inputs #{"more1"}
+ :inputs ["a" "b" "more1" "more..."]
+ :label "/"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
+ :pos [-260 -111]
+ }
  "edjb9rsu26fd2q2" 
 {:cable-midpoints 
 {}
@@ -103,37 +132,50 @@
  :label "- 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [109 33]}
+ :pos [109 33]
+ }
  "fc5ir545ebbct5y" 
 {:inputs []
  :label "(sig streams beans system-decay sound-decay) = arg"
  :outputs ["sig" "streams" "beans" "system-decay" "sound-decay"]
  :parsed "arg"
- :pos [-647 -292]}
+ :pos [-647 -292]
+ }
  "g8xruwc1nrmbwhi" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [-416 -385]}
+ :pos [-416 -385]
+ }
  "kkw21omt743wxs" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-258 -247]}
+ :pos [-258 -247]
+ }
+ "lmqqkmsa8t9j0jj" 
+{:inputs []
+ :label "Gen:Rate()"
+ :outputs [""]
+ :parsed [:fn "Gen:Rate" [:tuple]]
+ :pos [-442 -245]
+ }
  "mc9b8kn75rf1ajv" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-177 -247]}
+ :pos [-177 -247]
+ }
  "p9umq7u51u45yzl" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [24 -247]}
+ :pos [24 -247]
+ }
  "qpf1mcjof9upfnh" 
 {:cable-midpoints 
 {}
@@ -141,14 +183,14 @@
  :label "$beans"
  :outputs [""]
  :parsed [:free-var "beans"]
- :pos [-407 -324]}
- "yu25psqmhd6s1ou" 
-{:cable-midpoints 
-{}
- :inputs ["a"]
- :label "/ 512"
+ :pos [-473 -322]
+ }
+ "qyav8fvt5grhyne" 
+{:inputs []
+ :label "50"
  :outputs [""]
- :parsed [:infix [:free-var "a"] "/" [:float "512"]]
- :pos [-262 -158]}}
+ :parsed [:float "50"]
+ :pos [181 -151]
+ }}
  :scale 1
  :scroll [0 0]}}
