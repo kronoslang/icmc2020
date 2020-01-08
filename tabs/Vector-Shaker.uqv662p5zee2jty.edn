@@ -31,10 +31,10 @@
  }
  "23f5kk5hyivxyga" 
 {:inputs []
- :label "0.9999"
+ :label "0.995"
  :outputs [""]
- :parsed [:float "0.9999"]
- :pos [357 -244]
+ :parsed [:float "0.995"]
+ :pos [310 -212]
  }
  "27d46syr57iun75" 
 {:inputs []
@@ -48,13 +48,13 @@
  :label "* 100"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "100"]]
- :pos [533 -20]
+ :pos [532 52]
  }
  "5g6yqrbr6b7ab7r" 
 {:inputs []
- :label "50"
+ :label "0.9995"
  :outputs [""]
- :parsed [:float "50"]
+ :parsed [:float "0.9995"]
  :pos [-80 -181]
  }
  "7iyue92lo25l0v4" 
@@ -68,7 +68,7 @@
 {:inputs []
  :label "3"
  :outputs [""]
- :parsed [:number-widget :float "h62xye" "19" ""]
+ :parsed [:number-widget :float "h62xye" "24" ""]
  :pos [-155 -269]
  }
  "9ybu1osj693929q" 
@@ -82,8 +82,8 @@
 {:inputs []
  :label "150"
  :outputs [""]
- :parsed [:float "150"]
- :pos [-12 -267]
+ :parsed [:number-widget :float "7rgayv" "35" ""]
+ :pos [78 -272]
  }
  "dlxefvenlsec89f" 
 {:inputs ["sig" "res" "r"]
@@ -112,12 +112,6 @@
  :outputs [""]
  :parsed [:fn "Adafruit" [:tuple]]
  :pos [-643 -227]
- }
- "iuza809v57nxv84" 
-{:inputs []
- :label "§"
- :outputs [""]
- :pos [220 237]
  }
  "j3w003j8jxir4xx" 
 {:inputs []

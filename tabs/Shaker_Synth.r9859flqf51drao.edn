@@ -4,6 +4,8 @@
  :patch
 {:cables
 {["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
+ ["49b62cuniih4wu" 0] [:fixed "a8rqqwy0eha4a8a" 0]
+ ["49b62cuniih4wu" 1] [:fixed "fc5ir545ebbct5y" 3]
  ["57a7pl1uc4uqwp9" 0] [:fixed "fc5ir545ebbct5y" 1]
  ["5yi4xmbf4h8vmnx" 0] [:fixed "edjb9rsu26fd2q2" 0]
  ["5yi4xmbf4h8vmnx" 1] [:fixed "olb2839tp7yzujb" 0]
@@ -20,11 +22,9 @@
  ["c2252fbn6scz6lm" 2] [:fixed "fc5ir545ebbct5y" 1]
  ["edjb9rsu26fd2q2" 0] [:fixed "93fgu2xzf6nopd2" 0]
  ["kkw21omt743wxs" 0] [:fixed "z0s6egw4t6qluz9" 0]
- ["kwb35h4z517czs7" 0] [:fixed "a8rqqwy0eha4a8a" 0]
- ["kwb35h4z517czs7" 1] [:fixed "fc5ir545ebbct5y" 3]
  ["mc9b8kn75rf1ajv" 0] [:fixed "kkw21omt743wxs" 0]
  ["mc9b8kn75rf1ajv" 1] [:fixed "3s5by81lo9ddsi" 0]
- ["olb2839tp7yzujb" 0] [:fixed "kwb35h4z517czs7" 0]
+ ["olb2839tp7yzujb" 0] [:fixed "49b62cuniih4wu" 0]
  ["olb2839tp7yzujb" 1] [:fixed "fc5ir545ebbct5y" 4]
  ["p9umq7u51u45yzl" 0] [:fixed "a2q7n2k2r20bc07" 0]
  ["p9umq7u51u45yzl" 1] [:fixed "z0s6egw4t6qluz9" 0]
@@ -36,6 +36,13 @@
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
  :pos [-261 -385]
+ }
+ "49b62cuniih4wu" 
+{:inputs ["sig" "cutoff"]
+ :label "Filter:Tone($sig $cutoff)"
+ :outputs [""]
+ :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
+ :pos [116 159]
  }
  "57a7pl1uc4uqwp9" 
 {:cable-midpoints 
@@ -83,8 +90,8 @@
  :label "&"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:free-var "b"] [:free-var "more..."]]
- :pos [10 -46]
- }
+ :pos [-6 -40]
+ :selected true}
  "apwwlg8g66dd89" 
 {:cable-midpoints 
 {}
@@ -111,7 +118,7 @@
  :label "- 1"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [-25 25]
+ :pos [13 250]
  }
  "fc5ir545ebbct5y" 
 {:inputs []
@@ -133,15 +140,6 @@
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
  :pos [-258 -247]
- }
- "kwb35h4z517czs7" 
-{:cable-midpoints 
-{1 [104 92]}
- :inputs ["sig" "cutoff"]
- :label "Filter:Lpf6($sig $cutoff)"
- :outputs [""]
- :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [89 166]
  }
  "lmqqkmsa8t9j0jj" 
 {:inputs []
