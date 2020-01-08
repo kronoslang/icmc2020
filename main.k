@@ -24,7 +24,7 @@ Shaker->Reverb() {
 (ntkpvfn5qvqzfkf1-0) = Shaker:Stimulus(nbv2b92ciw4xs8ta-0 n7m27g5e1jsl91wr-0)
 (nrs4bom6r0a4s3c3-0) = Shaker:Body(n6sy4jz99mfwjp2g-0 n1h26rt21h3bhwkc-0)
 (n6t28bdlsq77g2ii-0) = 8
-(nvrdhdf2oanfs9g6-0) = 132
+(nvrdhdf2oanfs9g6-0) = 548
 (n1h26rt21h3bhwkc-0) = ([2300 5600 8100] [0.96 0.99 0.99] [0.1 0.8 1.0])
 (nhi04rc5or6bwb4c-0) = 0.4862500871930804
 (nbv2b92ciw4xs8ta-0) = 1
@@ -123,27 +123,26 @@ FDN:Delay-Line(sig N rt60 tone) {
 ndjut0z9raew515v-0
 }
 
-Shaker:Synth(sig streams beans system-decay sound-decay) {
+Shaker:Synth(sig streams beans decay smooth) {
 (na2q7n2k2r20bc07-0) = (nmc9b8kn75rf1ajv-0 * 40)
 (nmc9b8kn75rf1ajv-0) = (nkkw21omt743wxs-0 / n3s5by81lo9ddsi-0)
 (np9umq7u51u45yzl-0) = (na2q7n2k2r20bc07-0 / nz0s6egw4t6qluz9-0)
 (napwwlg8g66dd89-0) = (n93fgu2xzf6nopd2-0 < nc2252fbn6scz6lm-0)
 (nlmqqkmsa8t9j0jj-0) = Gen:Rate()
 (n3s5by81lo9ddsi-0) = Math:Log(ng8xruwc1nrmbwhi-0)
+(nkwb35h4z517czs7-0) = Filter:Lpf6(na8rqqwy0eha4a8a-0 nfc5ir545ebbct5y-3)
 (n93fgu2xzf6nopd2-0) = Gen:Drift(n7xbx6ub2g93s4hc-0)
 (nc2252fbn6scz6lm-0) = (nz0s6egw4t6qluz9-0 / nlmqqkmsa8t9j0jj-0 / nfc5ir545ebbct5y-1)
-(n5yi4xmbf4h8vmnx-0) = (nedjb9rsu26fd2q2-0 * noqa1lbbhm20bsdn-0 * np9umq7u51u45yzl-0)
+(n5yi4xmbf4h8vmnx-0) = (nedjb9rsu26fd2q2-0 * nolb2839tp7yzujb-0 * np9umq7u51u45yzl-0)
 (nfc5ir545ebbct5y-0 nfc5ir545ebbct5y-1 nfc5ir545ebbct5y-2 nfc5ir545ebbct5y-3 nfc5ir545ebbct5y-4) = arg
-(n8re6gofdb33z81-0) = #0.707
 (n7xbx6ub2g93s4hc-0) = Vector:Vectorize(n57a7pl1uc4uqwp9-0)
+(nolb2839tp7yzujb-0) = Filter:Lpf6(nkwb35h4z517czs7-0 nfc5ir545ebbct5y-4)
 (ng8xruwc1nrmbwhi-0) = 4
-(na8rqqwy0eha4a8a-0) = (naxi37fasya85pqe-0 & napwwlg8g66dd89-0)
+(na8rqqwy0eha4a8a-0) = (nfc5ir545ebbct5y-0 & napwwlg8g66dd89-0)
 (n57a7pl1uc4uqwp9-0) = Algorithm:Count(nfc5ir545ebbct5y-1)
-(naxi37fasya85pqe-0) = Filter:Tone(nfc5ir545ebbct5y-0 nfc5ir545ebbct5y-3)
 (nkkw21omt743wxs-0) = Math:Log(nz0s6egw4t6qluz9-0)
 (nz0s6egw4t6qluz9-0) = Max(#1 nfc5ir545ebbct5y-2)
 (nedjb9rsu26fd2q2-0) = (n93fgu2xzf6nopd2-0 - 1)
-(noqa1lbbhm20bsdn-0) = Filter:Lowpass(na8rqqwy0eha4a8a-0 nfc5ir545ebbct5y-4 n8re6gofdb33z81-0)
 n5yi4xmbf4h8vmnx-0
 }
 
@@ -192,15 +191,15 @@ nc7o4q8dnkksg1s5-0
 Vector-Shaker() {
 (n7iyue92lo25l0v4-0) = #4
 (new958s7i7x0so3q-0) = Shaker:Stimulus(nrbq8izyceb0oorb-0 nj3w003j8jxir4xx-0)
-(n8gyne0g3icj9stf-0) = 142
+(n8gyne0g3icj9stf-0) = 19
+(nbl9cq18xc88415c-0) = 150
 (n23f5kk5hyivxyga-0) = 0.9999
 (n40ayvncrapn9ii9-0) = (ndlxefvenlsec89f-0 * 100)
 (n1sytl1e7ygzwhin-0) = Vector:Cons(440 550 660 770)
-(nqtr4k2qr2c3286k-0) = 0.95
-(ndlxefvenlsec89f-0) = Shaker:Resonator(n2sgngeelp7uexc2-0 n1sytl1e7ygzwhin-0 n23f5kk5hyivxyga-0)
+(ndlxefvenlsec89f-0) = Shaker:Resonator(n05r1gvcvkcnbmvc-0 n1sytl1e7ygzwhin-0 n23f5kk5hyivxyga-0)
 (nrbq8izyceb0oorb-0) = 0.5
-(n2sgngeelp7uexc2-0) = Shaker:Synth(new958s7i7x0so3q-0 n7iyue92lo25l0v4-0 n8gyne0g3icj9stf-0 ngvqp4vr4nk13nlj-0 nqtr4k2qr2c3286k-0)
-(ngvqp4vr4nk13nlj-0) = 0.9999
+(n5g6yqrbr6b7ab7r-0) = 50
+(n05r1gvcvkcnbmvc-0) = Shaker:Synth(new958s7i7x0so3q-0 n7iyue92lo25l0v4-0 n8gyne0g3icj9stf-0 n5g6yqrbr6b7ab7r-0 nbl9cq18xc88415c-0)
 (nj3w003j8jxir4xx-0) = 2
 n40ayvncrapn9ii9-0
 }
