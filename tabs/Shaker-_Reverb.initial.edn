@@ -6,7 +6,7 @@
  ["6sy4jz99mfwjp2g" 1] [:fixed "4uc1ufmdcb2jm7v" 0]
  ["6sy4jz99mfwjp2g" 2] [:fixed "qnjkhk1voyhy47u" 0]
  ["6sy4jz99mfwjp2g" 3] [:fixed "6089nqbtu83f4c9" 0]
- ["6sy4jz99mfwjp2g" 4] [:fixed "4hf8jv9svdt4dcr" 0]
+ ["6sy4jz99mfwjp2g" 4] [:fixed "vrdhdf2oanfs9g6" 0]
  ["6z2bmrwrc9l8ktw" 0] [:fixed "rs4bom6r0a4s3c3" 0]
  ["6z2bmrwrc9l8ktw" 1] [:fixed "hea4ylndv1ylho" 0]
  ["6z2bmrwrc9l8ktw" 2] [:fixed "4d66hdf5w2uvifk" 0]
@@ -39,13 +39,6 @@
  :outputs [""]
  :parsed [:widget "-fj3r32" 0.5094046456473215 {:type :slider, :limits [[:float "0.01"] [:float "0.25"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [200 -377]
- }
- "4hf8jv9svdt4dcr" 
-{:inputs []
- :label "0.995"
- :outputs [""]
- :parsed [:float "0.995"]
- :pos [-137 -322]
  }
  "4u11lsxzvcj07" 
 {:inputs []
@@ -170,7 +163,7 @@
 {:inputs []
  :label "64"
  :outputs [""]
- :parsed [:number-widget :float "h3oz59" "18" ""]
+ :parsed [:number-widget :float "h3oz59" "96" ""]
  :pos [-137 -212]
  }
  "rs4bom6r0a4s3c3" 
@@ -197,6 +190,13 @@
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "1000"]]
  :pos [-464 -213]
+ }
+ "vrdhdf2oanfs9g6" 
+{:inputs []
+ :label "200"
+ :outputs [""]
+ :parsed [:number-widget :float "gaokkx" "132" ""]
+ :pos [-139 -331]
  }}
  :scale 0.9265629353920122
  :scroll [0 0]}}

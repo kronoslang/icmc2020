@@ -3,14 +3,10 @@
  :identity "r9859flqf51drao"
  :patch
 {:cables
-{["11s8w2j7j9u2qmk" 0] [:fixed "1tj1l7ju03c3cbu" 0]
- ["11s8w2j7j9u2qmk" 1] [:fixed "qyav8fvt5grhyne" 0]
- ["1tj1l7ju03c3cbu" 0] [:fixed "a8rqqwy0eha4a8a" 0]
- ["1tj1l7ju03c3cbu" 1] [:fixed "fc5ir545ebbct5y" 4]
- ["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
+{["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
  ["57a7pl1uc4uqwp9" 0] [:fixed "fc5ir545ebbct5y" 1]
  ["5yi4xmbf4h8vmnx" 0] [:fixed "edjb9rsu26fd2q2" 0]
- ["5yi4xmbf4h8vmnx" 1] [:fixed "11s8w2j7j9u2qmk" 0]
+ ["5yi4xmbf4h8vmnx" 1] [:fixed "oqa1lbbhm20bsdn" 0]
  ["5yi4xmbf4h8vmnx" 2] [:fixed "p9umq7u51u45yzl" 0]
  ["7xbx6ub2g93s4hc" 0] [:fixed "57a7pl1uc4uqwp9" 0]
  ["93fgu2xzf6nopd2" 0] [:fixed "7xbx6ub2g93s4hc" 0]
@@ -21,32 +17,21 @@
  ["apwwlg8g66dd89" 1] [:fixed "c2252fbn6scz6lm" 0]
  ["axi37fasya85pqe" 0] [:fixed "fc5ir545ebbct5y" 0]
  ["axi37fasya85pqe" 1] [:fixed "fc5ir545ebbct5y" 3]
- ["c2252fbn6scz6lm" 0] [:fixed "qpf1mcjof9upfnh" 0]
+ ["c2252fbn6scz6lm" 0] [:fixed "z0s6egw4t6qluz9" 0]
  ["c2252fbn6scz6lm" 1] [:fixed "lmqqkmsa8t9j0jj" 0]
  ["c2252fbn6scz6lm" 2] [:fixed "fc5ir545ebbct5y" 1]
  ["edjb9rsu26fd2q2" 0] [:fixed "93fgu2xzf6nopd2" 0]
- ["kkw21omt743wxs" 0] [:fixed "qpf1mcjof9upfnh" 0]
+ ["kkw21omt743wxs" 0] [:fixed "z0s6egw4t6qluz9" 0]
  ["mc9b8kn75rf1ajv" 0] [:fixed "kkw21omt743wxs" 0]
  ["mc9b8kn75rf1ajv" 1] [:fixed "3s5by81lo9ddsi" 0]
+ ["oqa1lbbhm20bsdn" 0] [:fixed "a8rqqwy0eha4a8a" 0]
+ ["oqa1lbbhm20bsdn" 1] [:fixed "fc5ir545ebbct5y" 4]
+ ["oqa1lbbhm20bsdn" 2] [:fixed "8re6gofdb33z81" 0]
  ["p9umq7u51u45yzl" 0] [:fixed "a2q7n2k2r20bc07" 0]
- ["p9umq7u51u45yzl" 1] [:fixed "qpf1mcjof9upfnh" 0]
- ["qpf1mcjof9upfnh" 0] [:fixed "fc5ir545ebbct5y" 2]}
+ ["p9umq7u51u45yzl" 1] [:fixed "z0s6egw4t6qluz9" 0]
+ ["z0s6egw4t6qluz9" 0] [:fixed "fc5ir545ebbct5y" 2]}
  :nodes
-{"11s8w2j7j9u2qmk" 
-{:inputs ["sig" "cutoff"]
- :label "Filter:Lpf6($sig $cutoff)"
- :outputs [""]
- :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [265 4]
- }
- "1tj1l7ju03c3cbu" 
-{:inputs ["sig" "cutoff"]
- :label "Filter:Tone($sig $cutoff)"
- :outputs [""]
- :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [145 -55]
- }
- "3s5by81lo9ddsi" 
+{"3s5by81lo9ddsi" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
@@ -75,6 +60,13 @@
  :parsed [:fn "Vector:Vectorize" [:tuple [:free-var "elements..."]]]
  :pos [-327 4]
  }
+ "8re6gofdb33z81" 
+{:inputs []
+ :label "#0.707"
+ :outputs [""]
+ :parsed [:invariant "0.707"]
+ :pos [107 -121]
+ :selected true}
  "93fgu2xzf6nopd2" 
 {:inputs ["seed"]
  :label "Gen:Drift($seed)"
@@ -139,7 +131,7 @@
  :label "(sig streams beans system-decay sound-decay) = arg"
  :outputs ["sig" "streams" "beans" "system-decay" "sound-decay"]
  :parsed "arg"
- :pos [-647 -292]
+ :pos [-760 -289]
  }
  "g8xruwc1nrmbwhi" 
 {:inputs []
@@ -169,6 +161,13 @@
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
  :pos [-177 -247]
  }
+ "oqa1lbbhm20bsdn" 
+{:inputs ["sig" "cutoff" "resonance"]
+ :label "Filter:Lowpass($sig $cutoff $resonance)"
+ :outputs [""]
+ :parsed [:fn "Filter:Lowpass" [:tuple [:free-var "sig"] [:free-var "cutoff"] [:free-var "resonance"]]]
+ :pos [221 -37]
+ }
  "p9umq7u51u45yzl" 
 {:inputs ["a" "b" "more..."]
  :label "/"
@@ -176,21 +175,12 @@
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
  :pos [24 -247]
  }
- "qpf1mcjof9upfnh" 
-{:cable-midpoints 
-{}
- :inputs ["beans"]
- :label "$beans"
+ "z0s6egw4t6qluz9" 
+{:inputs ["b"]
+ :label "Max(#1 $b)"
  :outputs [""]
- :parsed [:free-var "beans"]
- :pos [-473 -322]
- }
- "qyav8fvt5grhyne" 
-{:inputs []
- :label "50"
- :outputs [""]
- :parsed [:float "50"]
- :pos [181 -151]
+ :parsed [:fn "Max" [:tuple [:invariant "1"] [:free-var "b"]]]
+ :pos [-493 -324]
  }}
  :scale 1
  :scroll [0 0]}}

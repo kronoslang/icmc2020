@@ -7,6 +7,7 @@
  ["2sgngeelp7uexc2" 2] [:fixed "8gyne0g3icj9stf" 0]
  ["2sgngeelp7uexc2" 3] [:fixed "gvqp4vr4nk13nlj" 0]
  ["2sgngeelp7uexc2" 4] [:fixed "qtr4k2qr2c3286k" 0]
+ ["40ayvncrapn9ii9" 0] [:fixed "dlxefvenlsec89f" 0]
  ["9ybu1osj693929q" 0] [:fixed "itx3xv82zqiinod" 0]
  ["dlxefvenlsec89f" 0] [:fixed "2sgngeelp7uexc2" 0]
  ["dlxefvenlsec89f" 1] [:fixed "1sytl1e7ygzwhin" 0]
@@ -42,6 +43,13 @@
  :parsed [:fn "Shaker:Synth" [:tuple [:free-var "sig"] [:free-var "streams"] [:free-var "beans"] [:free-var "system-decay"] [:free-var "sound-decay"]]]
  :pos [59 -55]
  }
+ "40ayvncrapn9ii9" 
+{:inputs ["a"]
+ :label "* 100"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:float "100"]]
+ :pos [533 -20]
+ :selected true}
  "7iyue92lo25l0v4" 
 {:inputs []
  :label "#4"
@@ -53,7 +61,7 @@
 {:inputs []
  :label "3"
  :outputs [""]
- :parsed [:number-widget :float "h62xye" "18" ""]
+ :parsed [:number-widget :float "h62xye" "142" ""]
  :pos [-155 -269]
  }
  "9ybu1osj693929q" 
@@ -69,7 +77,7 @@
  :outputs [""]
  :parsed [:fn "Shaker:Resonator" [:tuple [:free-var "sig"] [:free-var "res"] [:free-var "r"]]]
  :pos [328 18]
- :selected true}
+ }
  "ew958s7i7x0so3q" 
 {:inputs ["rate" "sharpness"]
  :label "Shaker:Stimulus($rate $sharpness)"
