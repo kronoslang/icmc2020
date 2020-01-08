@@ -1,0 +1,66 @@
+{:documentation "Output approaches 'sig'nal asymptotically, reaching 90% of the way in 'lag' seconds."
+ :draft-argument "Gen:Pulse(1 0.5) 0.25"
+ :identifier "Shaker:Lag"
+ :identity "8il90ptyfkq975x"
+ :patch
+{:cables
+{["7dn2oqe1o76ibyj" 0] [:fixed "lhbhe44qr1ca2l3" 0]
+ ["90ae6dddm70b7r6" 0] [:fixed "tzkqcxqbr4um0xx" 0]
+ ["lhbhe44qr1ca2l3" 0] [:fixed "m14prf5w93dh597" 1]
+ ["lhbhe44qr1ca2l3" 1] [:fixed "90ae6dddm70b7r6" 0]
+ ["swf6q1qjwves2e8" 0] [:fixed "m14prf5w93dh597" 0]
+ ["swf6q1qjwves2e8" 1] [:fixed "7dn2oqe1o76ibyj" 0]
+ ["tzkqcxqbr4um0xx" 0] [:fixed "w49x3s4jd838wcw" 0]
+ ["tzkqcxqbr4um0xx" 1] [:fixed "m14prf5w93dh597" 1]
+ ["w49x3s4jd838wcw" 0] [:fixed "m14prf5w93dh597" 0]}
+ :nodes
+{"7dn2oqe1o76ibyj" 
+{:inputs ["b"]
+ :label "1 -"
+ :outputs [""]
+ :parsed [:infix [:float "1"] "-" [:free-var "b"]]
+ :pos [-292 -21]
+ }
+ "90ae6dddm70b7r6" 
+{:inputs ["b"]
+ :label "1 /"
+ :outputs [""]
+ :parsed [:infix [:float "1"] "/" [:free-var "b"]]
+ :pos [-423 -119]
+ }
+ "lhbhe44qr1ca2l3" 
+{:inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [-392 -20]
+ }
+ "m14prf5w93dh597" 
+{:inputs []
+ :label "(sig lag) = arg"
+ :outputs ["sig" "lag"]
+ :parsed "arg"
+ :pos [-851 -38]
+ }
+ "swf6q1qjwves2e8" 
+{:inputs ["sig" "cutoff"]
+ :label "Filter:Tone($sig $cutoff)"
+ :outputs [""]
+ :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
+ :pos [-218 98]
+ :selected true}
+ "tzkqcxqbr4um0xx" 
+{:flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-511 -121]
+ }
+ "w49x3s4jd838wcw" 
+{:inputs ["sig"]
+ :label "Rate-of($sig)"
+ :outputs [""]
+ :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
+ :pos [-634 -121]
+ }}}}
