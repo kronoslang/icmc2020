@@ -1,0 +1,48 @@
+{:draft-argument "0.5"
+ :identifier "Decay->Radius"
+ :identity "sqfggncn9u597be"
+ :patch
+{:cables
+{["3y7i5to2sh116d2" 0] [:fixed "zd3199a9krmorkx" 0]
+ ["8am2te881gokvg" 0] [:fixed "l2k1lvknrldb3wy" 0]
+ ["8am2te881gokvg" 1] [:fixed "3y7i5to2sh116d2" 0]
+ ["zd3199a9krmorkx" 0] [:fixed "kny61116qjl88hx" 0]
+ ["zd3199a9krmorkx" 1] [:fixed "v45ihpqhlj2yl22" 0]}
+ :nodes
+{"3y7i5to2sh116d2" 
+{:inputs ["b"]
+ :label "1 /"
+ :outputs [""]
+ :parsed [:infix [:float "1"] "/" [:free-var "b"]]
+ :pos [-189 -127]}
+ "8am2te881gokvg" 
+{:inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [-109 -52]}
+ "kny61116qjl88hx" 
+{:inputs []
+ :label "Gen:Rate()"
+ :outputs [""]
+ :parsed [:fn "Gen:Rate" [:tuple]]
+ :pos [-542 -223]}
+ "l2k1lvknrldb3wy" 
+{:inputs []
+ :label "0.1"
+ :outputs [""]
+ :parsed [:float "0.1"]
+ :pos [-281 -5]}
+ "v45ihpqhlj2yl22" 
+{:inputs []
+ :label "decay = arg"
+ :outputs ["decay"]
+ :parsed "arg"
+ :pos [-647 -77]}
+ "zd3199a9krmorkx" 
+{:flip-y true
+ :inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-277 -129]}}}}

@@ -1,4 +1,32 @@
 {:draft-argument "FDN:Test-Signal() 4.5 0.08 0.8 9000 0.5"
+ :export 
+{:arguments 
+{"damp" 
+{:default-value "0.8"
+ :max-value "1.5"
+ :signal-type "control"}
+ "mix" 
+{:default-value "1"
+ :max-value "1"
+ :signal-type "control"}
+ "predelay" 
+{:default-value "0.08"
+ :max-value "0.15"
+ :min-value "0.001"
+ :signal-type "control"}
+ "rt60" 
+{:default-value "4"
+ :max-value "15"
+ :min-value "0.1"
+ :signal-type "control"}
+ "sig" 
+{:signal-type "audio"}
+ "tone" 
+{:default-value "4000"
+ :max-value "8000"
+ :min-value "200"
+ :signal-type "control"}}
+ :export-this-tab true}
  :identifier "FDN:Reverb"
  :identity "w7t86zx8f6emmm8"
  :patch

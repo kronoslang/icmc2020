@@ -1,25 +1,25 @@
-{:draft-argument "#1 "
- :identifier "Shaker:Synth"
+{:draft-argument "Shaker:Stimulus(2 5) #1 5 0.1 0.01 0.001"
+ :identifier "Shaker:PHISEM"
  :identity "r9859flqf51drao"
  :patch
 {:cables
 {["0lp1r4h0k47mgoh" 0] [:fixed "fc5ir545ebbct5y" 0]
  ["0lp1r4h0k47mgoh" 1] [:fixed "fc5ir545ebbct5y" 3]
  ["3s5by81lo9ddsi" 0] [:fixed "g8xruwc1nrmbwhi" 0]
- ["5yi4xmbf4h8vmnx" 0] [:fixed "edjb9rsu26fd2q2" 0]
+ ["5yi4xmbf4h8vmnx" 0] [:fixed "8jfrjq7nosr46n7" 0]
  ["5yi4xmbf4h8vmnx" 1] [:fixed "ni6b2dq1e71c21g" 0]
  ["5yi4xmbf4h8vmnx" 2] [:fixed "p9umq7u51u45yzl" 0]
- ["79p4bf4v73egcjr" 0] [:fixed "lmqqkmsa8t9j0jj" 0]
- ["79p4bf4v73egcjr" 1] [:fixed "z0s6egw4t6qluz9" 0]
+ ["79p4bf4v73egcjr" 0] [:fixed "z0s6egw4t6qluz9" 0]
+ ["79p4bf4v73egcjr" 1] [:fixed "lmqqkmsa8t9j0jj" 0]
  ["89282qlspuz1363" 0] [:fixed "a8rqqwy0eha4a8a" 0]
  ["89282qlspuz1363" 1] [:fixed "fc5ir545ebbct5y" 5]
+ ["8jfrjq7nosr46n7" 0] [:fixed "l102dp7uuomqsfj" 0]
  ["93fgu2xzf6nopd2" 0] [:fixed "fc5ir545ebbct5y" 1]
  ["a2q7n2k2r20bc07" 0] [:fixed "mc9b8kn75rf1ajv" 0]
  ["a8rqqwy0eha4a8a" 0] [:fixed "0lp1r4h0k47mgoh" 0]
  ["a8rqqwy0eha4a8a" 1] [:fixed "apwwlg8g66dd89" 0]
  ["apwwlg8g66dd89" 0] [:fixed "93fgu2xzf6nopd2" 0]
  ["apwwlg8g66dd89" 1] [:fixed "79p4bf4v73egcjr" 0]
- ["edjb9rsu26fd2q2" 0] [:fixed "93fgu2xzf6nopd2" 0]
  ["kkw21omt743wxs" 0] [:fixed "z0s6egw4t6qluz9" 0]
  ["mc9b8kn75rf1ajv" 0] [:fixed "kkw21omt743wxs" 0]
  ["mc9b8kn75rf1ajv" 1] [:fixed "3s5by81lo9ddsi" 0]
@@ -35,52 +35,52 @@
  :name "system energy"
  :outputs [""]
  :parsed [:fn "Shaker:Lag" [:tuple [:free-var "sig"] [:free-var "lag"]]]
- :pos [-339 9]
- }
+ :pos [-339 9]}
  "3s5by81lo9ddsi" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-144 -313]
- }
+ :pos [-144 -313]}
  "5yi4xmbf4h8vmnx" 
 {:ephemeral-inputs #{"more1"}
  :inputs ["a" "b" "more1" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [425 353]
- }
+ :pos [425 353]}
  "79p4bf4v73egcjr" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-261 -105]
- }
+ :pos [-261 -105]}
  "89282qlspuz1363" 
 {:inputs ["sig" "lag"]
  :label "Shaker:Lag($sig $lag)"
  :name "particle envelope"
  :outputs [""]
  :parsed [:fn "Shaker:Lag" [:tuple [:free-var "sig"] [:free-var "lag"]]]
- :pos [123 218]
- }
+ :pos [123 218]}
+ "8jfrjq7nosr46n7" 
+{:inputs ["seed"]
+ :label "Gen:Noise($seed)"
+ :outputs [""]
+ :parsed [:fn "Gen:Noise" [:tuple [:free-var "seed"]]]
+ :pos [120 351]
+ :selected true}
  "93fgu2xzf6nopd2" 
 {:inputs ["seed"]
  :label "Gen:Drift($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Drift" [:tuple [:free-var "seed"]]]
- :pos [-312 124]
- }
+ :pos [-312 124]}
  "a2q7n2k2r20bc07" 
 {:inputs ["a"]
- :label "* 40"
+ :label "* 400"
  :outputs [""]
- :parsed [:infix [:free-var "a"] "*" [:float "40"]]
- :pos [38 -175]
- }
+ :parsed [:infix [:free-var "a"] "*" [:float "400"]]
+ :pos [56 -175]}
  "a8rqqwy0eha4a8a" 
 {:cable-midpoints 
 {}
@@ -89,8 +89,7 @@
  :label "&"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:free-var "b"] [:free-var "more..."]]
- :pos [111 32]
- }
+ :pos [111 32]}
  "apwwlg8g66dd89" 
 {:cable-midpoints 
 {}
@@ -98,66 +97,56 @@
  :label "<"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "<" [:free-var "b"] [:free-var "more..."]]
- :pos [53 -20]
- }
- "edjb9rsu26fd2q2" 
-{:cable-midpoints 
-{}
- :inputs ["a"]
- :label "- 1"
- :outputs [""]
- :parsed [:infix [:free-var "a"] "-" [:float "1"]]
- :pos [14 290]
- }
+ :pos [53 -20]}
  "fc5ir545ebbct5y" 
 {:inputs []
  :label "(sig seed rate sys-decay sound-decay smoothing) = arg"
  :outputs ["sig" "seed" "rate" "sys-decay" "sound-decay" "smoothing"]
  :parsed "arg"
- :pos [-664 -42]
- }
+ :pos [-664 -42]}
  "g8xruwc1nrmbwhi" 
 {:inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [-299 -313]
- }
+ :pos [-299 -313]}
  "kkw21omt743wxs" 
 {:inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-141 -175]
- }
+ :pos [-141 -175]}
+ "l102dp7uuomqsfj" 
+{:inputs []
+ :label "0.499d"
+ :outputs [""]
+ :parsed [:double "0.499"]
+ :pos [-119 353]
+ :selected true}
  "lmqqkmsa8t9j0jj" 
 {:inputs []
  :label "Gen:Rate()"
  :outputs [""]
  :parsed [:fn "Gen:Rate" [:tuple]]
- :pos [-396 -131]
- }
+ :pos [-396 -131]}
  "mc9b8kn75rf1ajv" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-60 -175]
- }
+ :pos [-60 -175]}
  "ni6b2dq1e71c21g" 
 {:inputs ["sig" "lag"]
  :label "Shaker:Lag($sig $lag)"
  :outputs [""]
  :parsed [:fn "Shaker:Lag" [:tuple [:free-var "sig"] [:free-var "lag"]]]
- :pos [272 221]
- }
+ :pos [272 221]}
  "p9umq7u51u45yzl" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [141 -175]
- }
+ :pos [159 -175]}
  "z0s6egw4t6qluz9" 
 {:cable-midpoints 
 {}
@@ -165,7 +154,6 @@
  :label "Max(#1 $b)"
  :outputs [""]
  :parsed [:fn "Max" [:tuple [:invariant "1"] [:free-var "b"]]]
- :pos [-376 -252]
- }}
+ :pos [-376 -252]}}
  :scale 1
  :scroll [0 0]}}
