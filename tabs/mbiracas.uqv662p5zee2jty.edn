@@ -1,0 +1,142 @@
+{:draft-argument "Inertial-Accel(Adafruit() 1 0.75) * 0.1"
+ :export 
+{:export-this-tab true}
+ :identifier "mbiracas"
+ :identity "uqv662p5zee2jty"
+ :patch
+{:cables
+{["320oyfvhxyze7u8" 0] [:fixed "mkc5ikq1o942o7l" 0]
+ ["39dcp5p6n3dn177" 0] [:fixed "mn7bt65l3y7d4wf" 0]
+ ["39dcp5p6n3dn177" 1] [:fixed "ebezi85i7fstpmx" 0]
+ ["39dcp5p6n3dn177" 2] [:fixed "pcissz7zn8ib65i" 0]
+ ["71x4yvdzbqgpyqh" 0] [:fixed "get61r64cidhdko" 0]
+ ["ebezi85i7fstpmx" 0] [:fixed "b2j872bwf5eg166" 0]
+ ["ebezi85i7fstpmx" 1] [:fixed "s3xoy8dxlc8mayb" 0]
+ ["mkc5ikq1o942o7l" 0] [:fixed "2pcyiycoy6n97h0" 0]
+ ["mkc5ikq1o942o7l" 1] [:fixed "39dcp5p6n3dn177" 0]
+ ["mn7bt65l3y7d4wf" 0] [:fixed "kqxrzrll5vvsi08" 0]
+ ["mn7bt65l3y7d4wf" 1] [:fixed "71x4yvdzbqgpyqh" 0]
+ ["mn7bt65l3y7d4wf" 2] [:fixed "ahkn6grj34yjkih" 0]
+ ["mn7bt65l3y7d4wf" 3] [:fixed "uyez010pue7l5r2" 0]
+ ["mn7bt65l3y7d4wf" 4] [:fixed "erzkkwzpieen8yy" 0]
+ ["mn7bt65l3y7d4wf" 5] [:fixed "cza5mpoqqmi5klh" 0]
+ ["pcissz7zn8ib65i" 0] [:fixed "uyy9a999iuf6cgy" 0]
+ ["s3xoy8dxlc8mayb" 0] [:fixed "1sytl1e7ygzwhin" 0]}
+ :nodes
+{"1sytl1e7ygzwhin" 
+{:inputs []
+ :label "Vector:Cons(8 5 6 7)"
+ :outputs [""]
+ :parsed [:fn "Vector:Cons" [:tuple [:float "8"] [:float "5"] [:float "6"] [:float "7"]]]
+ :pos [-603 -497]}
+ "2pcyiycoy6n97h0" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [139 108]}
+ "320oyfvhxyze7u8" 
+{:inputs ["w"]
+ :label "Approx:Tanh($w)"
+ :outputs [""]
+ :parsed [:fn "Approx:Tanh" [:tuple [:free-var "w"]]]
+ :pos [539 35]
+ :selected true}
+ "39dcp5p6n3dn177" 
+{:inputs ["sig" "res" "r"]
+ :label "Shaker:Resonator($sig $res $r)"
+ :outputs [""]
+ :parsed [:fn "Shaker:Resonator" [:tuple [:free-var "sig"] [:free-var "res"] [:free-var "r"]]]
+ :pos [239 -44]}
+ "71x4yvdzbqgpyqh" 
+{:inputs ["count"]
+ :label "Vector:Indices($count)"
+ :outputs [""]
+ :parsed [:fn "Vector:Indices" [:tuple [:free-var "count"]]]
+ :pos [-345 -107]}
+ "ahkn6grj34yjkih" 
+{:inputs []
+ :label "2 -x- 250"
+ :name "beans"
+ :outputs [""]
+ :parsed [:widget "5o8rmf" 0.5 {:type :slider, :limits [[:float "2"] [:float "250"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-168 -425]}
+ "b2j872bwf5eg166" 
+{:inputs []
+ :label "60 -x- 700"
+ :name "tuning"
+ :outputs [""]
+ :parsed [:widget "-61goll" 0.4691072736467634 {:type :slider, :limits [[:float "60"] [:float "700"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-364 -425]}
+ "cza5mpoqqmi5klh" 
+{:inputs []
+ :label "0.0001 -x- 0.1"
+ :name "particle shape"
+ :outputs [""]
+ :parsed [:widget "-l4oi74" 0.16196441650390625 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-470 -425]}
+ "ebezi85i7fstpmx" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-78 -333]}
+ "erzkkwzpieen8yy" 
+{:inputs []
+ :label "0.0001 -x- 0.1"
+ :name "particle decay"
+ :outputs [""]
+ :parsed [:widget "-m9fggc" 0.8405358450753349 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-596 -425]}
+ "get61r64cidhdko" 
+{:inputs []
+ :label "#4"
+ :outputs [""]
+ :parsed [:invariant "4"]
+ :pos [-481 -107]}
+ "kqxrzrll5vvsi08" 
+{:inputs []
+ :label "acceleration = arg"
+ :outputs ["acceleration"]
+ :parsed "arg"
+ :pos [-400 21]}
+ "mkc5ikq1o942o7l" 
+{:inputs ["fn" "v"]
+ :label "Vector:Horizontal($fn $v)"
+ :outputs [""]
+ :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
+ :pos [378 34]}
+ "mn7bt65l3y7d4wf" 
+{:inputs ["sig" "seed" "rate" "sys-decay" "sound-decay" "smoothing"]
+ :label "Shaker:Synth($sig $seed $rate $sys-decay $sound-decay $smoothing)"
+ :outputs [""]
+ :parsed [:fn "Shaker:PHISEM" [:tuple [:free-var "sig"] [:free-var "seed"] [:free-var "rate"] [:free-var "sys-decay"] [:free-var "sound-decay"] [:free-var "smoothing"]]]
+ :pos [10 -2]}
+ "pcissz7zn8ib65i" 
+{:inputs ["decay"]
+ :label "Decay->Radius($decay)"
+ :outputs [""]
+ :parsed [:fn "Decay->Radius" [:tuple [:free-var "decay"]]]
+ :pos [87 -266]}
+ "s3xoy8dxlc8mayb" 
+{:inputs ["a"]
+ :label "/ 4"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "/" [:float "4"]]
+ :pos [-314 -520]}
+ "uyez010pue7l5r2" 
+{:inputs []
+ :label "0.0001 -x- 0.5"
+ :name "system decay"
+ :outputs [""]
+ :parsed [:widget "sxrie6" 0.6048215593610491 {:type :slider, :limits [[:float "0.0001"] [:float "0.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-730 -425]}
+ "uyy9a999iuf6cgy" 
+{:inputs []
+ :label "0.001 -x- 1.5"
+ :name "ring decay"
+ :outputs [""]
+ :parsed [:widget "-zdn279" 0.7548215593610491 {:type :slider, :limits [[:float "0.001"] [:float "1.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-262 -425]}}
+ :scale 1
+ :scroll [0 0]}}

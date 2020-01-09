@@ -1,0 +1,88 @@
+{:draft-argument "Gen:Sin(0.1) Gen:Sin(0.11) Gen:Sin(0.13) 1"
+ :identifier "Inertial-Accel"
+ :identity "92ci4c8k7o5u7b6"
+ :patch
+{:cables
+{["08tncc7b2qq7lc" 0] [:fixed "juc0gv8ldtw3qeq" 0]
+ ["08tncc7b2qq7lc" 1] [:fixed "dtxzh4gfdhvgxut" 2]
+ ["0bp6ipoji9q4cnz" 0] [:fixed "dtxzh4gfdhvgxut" 0]
+ ["1joycsspmzfp3cy" 0] [:fixed "0bp6ipoji9q4cnz" 0]
+ ["1joycsspmzfp3cy" 1] [:fixed "4y66vl6878attd5" 0]
+ ["4y66vl6878attd5" 0] [:fixed "0bp6ipoji9q4cnz" 0]
+ ["4y66vl6878attd5" 1] [:fixed "dtxzh4gfdhvgxut" 1]
+ ["9l3fgd3cmpqndar" 0] [:fixed "xwsb4hgcf210g5" 0]
+ ["9l3fgd3cmpqndar" 1] [:fixed "oeb6oau0g2j42j7" 0]
+ ["juc0gv8ldtw3qeq" 0] [:fixed "wt7n6xdk80raqe7" 0]
+ ["mk5dna5y88gue7i" 0] [:fixed "9l3fgd3cmpqndar" 0]
+ ["oeb6oau0g2j42j7" 0] [:fixed "1joycsspmzfp3cy" 0]
+ ["oeb6oau0g2j42j7" 1] [:fixed "1joycsspmzfp3cy" 0]
+ ["wt7n6xdk80raqe7" 0] [:fixed "mk5dna5y88gue7i" 0]}
+ :nodes
+{"08tncc7b2qq7lc" 
+{:inputs ["a" "b"]
+ :label "Math:Pow($a $b)"
+ :outputs [""]
+ :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
+ :pos [535 -69]}
+ "0bp6ipoji9q4cnz" 
+{:inputs ["sig"]
+ :label "Control:Signal($sig)"
+ :outputs [""]
+ :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
+ :pos [-243 -228]}
+ "1joycsspmzfp3cy" 
+{:cable-midpoints 
+{1 [33 62]}
+ :inputs ["a" "b" "more..."]
+ :label "-"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-146 -94]}
+ "4y66vl6878attd5" 
+{:inputs ["sig" "cutoff"]
+ :label "Filter:Lpf6($sig $cutoff)"
+ :outputs [""]
+ :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
+ :pos [-94 -228]}
+ "9l3fgd3cmpqndar" 
+{:inputs ["fn" "v"]
+ :label "Vector:Horizontal($fn $v)"
+ :outputs [""]
+ :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
+ :pos [-43 91]}
+ "dtxzh4gfdhvgxut" 
+{:inputs []
+ :label "(xyz rate curve) = arg"
+ :outputs ["xyz" "rate" "curve"]
+ :parsed "arg"
+ :pos [-416 -329]}
+ "juc0gv8ldtw3qeq" 
+{:inputs ["b"]
+ :label "Max(0 $b)"
+ :outputs [""]
+ :parsed [:fn "Max" [:tuple [:float "0"] [:free-var "b"]]]
+ :pos [394 -69]}
+ "mk5dna5y88gue7i" 
+{:inputs ["a"]
+ :label "Math:Sqrt($a)"
+ :outputs [""]
+ :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
+ :pos [111 -69]}
+ "oeb6oau0g2j42j7" 
+{:inputs ["a" "b" "more..."]
+ :label "*"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
+ :pos [-98 -18]}
+ "wt7n6xdk80raqe7" 
+{:inputs ["a"]
+ :label "- 0.05"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:float "0.05"]]
+ :pos [230 -69]}
+ "xwsb4hgcf210g5" 
+{:inputs ["a" "b" "more..."]
+ :label "+"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
+ :pos [-175 65]}}}}
