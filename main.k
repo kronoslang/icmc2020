@@ -9,6 +9,8 @@ Brief() {
 ;; Example code
  nil
 }
+
+
 tambourine(acceleration) {
 (nsbuzx1ycq9mctzy-0) = arg
 (nkoeeadb7mnxymgw-0) = Sum(nro3mts6tg3a539k-0 )
@@ -22,6 +24,85 @@ tambourine(acceleration) {
 (n5rw41gvoc3ou5j9-0) = 0.3
 (n3ou2n95y47uc5f6-0) = #1
 nkoeeadb7mnxymgw-0
+}
+
+mbiracas(acceleration) {
+(nmn7bt65l3y7d4wf-0) = Shaker:PHISEM(nkqxrzrll5vvsi08-0 n71x4yvdzbqgpyqh-0 nahkn6grj34yjkih-0 nuyez010pue7l5r2-0 nerzkkwzpieen8yy-0 ncza5mpoqqmi5klh-0)
+(ns3xoy8dxlc8mayb-0) = (n1sytl1e7ygzwhin-0 / 4)
+(n320oyfvhxyze7u8-0) = Approx:Tanh(nmkc5ikq1o942o7l-0)
+(npcissz7zn8ib65i-0) = Decay->Radius(nuyy9a999iuf6cgy-0)
+(nb2j872bwf5eg166-0) = 0.4691072736467634
+(nebezi85i7fstpmx-0) = (nb2j872bwf5eg166-0 * ns3xoy8dxlc8mayb-0)
+(n1sytl1e7ygzwhin-0) = Vector:Cons(8 5 6 7)
+(n39dcp5p6n3dn177-0) = Shaker:Resonator(nmn7bt65l3y7d4wf-0 nebezi85i7fstpmx-0 npcissz7zn8ib65i-0)
+(n2pcyiycoy6n97h0-0) = (a b) => ( (a + b) ) 
+(nerzkkwzpieen8yy-0) = 0.8405358450753349
+(nmkc5ikq1o942o7l-0) = Vector:Horizontal(n2pcyiycoy6n97h0-0 n39dcp5p6n3dn177-0)
+(nkqxrzrll5vvsi08-0) = arg
+(nuyez010pue7l5r2-0) = 0.6048215593610491
+(n71x4yvdzbqgpyqh-0) = Vector:Indices(nget61r64cidhdko-0)
+(ncza5mpoqqmi5klh-0) = 0.16196441650390625
+(nget61r64cidhdko-0) = #4
+(nuyy9a999iuf6cgy-0) = 0.7548215593610491
+(nahkn6grj34yjkih-0) = 0.5
+n320oyfvhxyze7u8-0
+}
+
+adafruit(rate curve) {
+(nb4d8mzgv32hzkx9-0) = IO:Source("/midi" 0i #0)
+(nlz86qxa2d1u9n2f-0) = 255i
+(n8w6aldz5er5cbm4-0) = (20i 21i 22i)
+(nxn946kvuu6n1qow-0 nxn946kvuu6n1qow-1) = arg
+(ntnw1lqaafhb0544-0 ntnw1lqaafhb0544-1 ntnw1lqaafhb0544-2) = Algorithm:Map(n0q1nmb7zdh3ldza-0 n8w6aldz5er5cbm4-0 )
+(nhooqnmjrf9c6brl-0) = 255i
+(nbhubun7hq75dpy-0) = And(ncondfhugy1fa4yj-0 nlz86qxa2d1u9n2f-0)
+(ncondfhugy1fa4yj-0) = BitShiftRight(nb4d8mzgv32hzkx9-0 nqx88qfucy78l713-0)
+(nkqmlgzumdbmcayh-0) = And(nb4d8mzgv32hzkx9-0 nhooqnmjrf9c6brl-0)
+(n0q1nmb7zdh3ldza-0) = (cn) => ( (Control:Sample-and-Hold(nkqmlgzumdbmcayh-0 (nbhubun7hq75dpy-0 == cn)) / 60) ) 
+(nqx88qfucy78l713-0) = 8i
+(nhpl3stcqm5f58r2-0) = Inertial-Accel(ntnw1lqaafhb0544-0 ntnw1lqaafhb0544-1 ntnw1lqaafhb0544-2 nxn946kvuu6n1qow-0 nxn946kvuu6n1qow-1)
+nhpl3stcqm5f58r2-0
+}
+
+Inertial-Accel(x y z rate curve) {
+(njuc0gv8ldtw3qeq-0) = Max(0 nwt7n6xdk80raqe7-0)
+(nwt7n6xdk80raqe7-0) = (nmk5dna5y88gue7i-0 - 0.05)
+(nmk5dna5y88gue7i-0) = Math:Sqrt(n9l3fgd3cmpqndar-0)
+(n9l3fgd3cmpqndar-0) = Vector:Horizontal(nxwsb4hgcf210g5-0 noeb6oau0g2j42j7-0)
+(nghcdfnd6rzgn528-0) = Vector:Cons(ndtxzh4gfdhvgxut-0 ndtxzh4gfdhvgxut-1 ndtxzh4gfdhvgxut-2 )
+(n4y66vl6878attd5-0) = Filter:Lpf6(n0bp6ipoji9q4cnz-0 ndtxzh4gfdhvgxut-3)
+(noeb6oau0g2j42j7-0) = (n1joycsspmzfp3cy-0 * n1joycsspmzfp3cy-0)
+(n08tncc7b2qq7lc-0) = Math:Pow(njuc0gv8ldtw3qeq-0 ndtxzh4gfdhvgxut-4)
+(n1joycsspmzfp3cy-0) = (n0bp6ipoji9q4cnz-0 - n4y66vl6878attd5-0)
+(ndtxzh4gfdhvgxut-0 ndtxzh4gfdhvgxut-1 ndtxzh4gfdhvgxut-2 ndtxzh4gfdhvgxut-3 ndtxzh4gfdhvgxut-4) = arg
+(n0bp6ipoji9q4cnz-0) = Control:Signal(nghcdfnd6rzgn528-0)
+(nxwsb4hgcf210g5-0) = (a b) => ( (a + b) ) 
+n08tncc7b2qq7lc-0
+}
+
+Decay->Radius(decay) {
+(n3y7i5to2sh116d2-0) = (1 / nzd3199a9krmorkx-0)
+(n8am2te881gokvg-0) = Math:Pow(nl2k1lvknrldb3wy-0 n3y7i5to2sh116d2-0)
+(nkny61116qjl88hx-0) = Gen:Rate()
+(nl2k1lvknrldb3wy-0) = 0.1
+(nv45ihpqhlj2yl22-0) = arg
+(nzd3199a9krmorkx-0) = (nkny61116qjl88hx-0 * nv45ihpqhlj2yl22-0)
+n8am2te881gokvg-0
+}
+
+Shaker:Lag(sig lag) {
+;; Output approaches 'sig'nal asymptotically, reaching 90% of the way in 'lag' seconds.
+(ntzkqcxqbr4um0xx-0) = (nw49x3s4jd838wcw-0 * nm14prf5w93dh597-1)
+(nsk7cmyyiv6l2zbv-0) = Max(ntzkqcxqbr4um0xx-0 n62s970207sabsez-0)
+(n62s970207sabsez-0) = 1
+(nswf6q1qjwves2e8-0) = Filter:Tone(nm14prf5w93dh597-0 n7dn2oqe1o76ibyj-0)
+(nlhbhe44qr1ca2l3-0) = Math:Pow(nhetsv0b4biun3pf-0 n90ae6dddm70b7r6-0)
+(n90ae6dddm70b7r6-0) = (1 / nsk7cmyyiv6l2zbv-0)
+(nw49x3s4jd838wcw-0) = Rate-of(nm14prf5w93dh597-0)
+(nhetsv0b4biun3pf-0) = 0.1
+(nm14prf5w93dh597-0 nm14prf5w93dh597-1) = arg
+(n7dn2oqe1o76ibyj-0) = (1 - nlhbhe44qr1ca2l3-0)
+nswf6q1qjwves2e8-0
 }
 
 FDN:Test-Signal() {
@@ -175,91 +256,6 @@ Shaker:Resonator(sig res r) {
 (n5ag8iz45zbq6866-0) = (n6egpzuswj1derot-1 * Math:Pi)
 (nk0m1zcu0wqj5l5d-0) = (n5ag8iz45zbq6866-0 * 2)
 nc7o4q8dnkksg1s5-0
-}
-
-mbiracas(acceleration) {
-(nmn7bt65l3y7d4wf-0) = Shaker:PHISEM(nkqxrzrll5vvsi08-0 n71x4yvdzbqgpyqh-0 nahkn6grj34yjkih-0 nuyez010pue7l5r2-0 nerzkkwzpieen8yy-0 ncza5mpoqqmi5klh-0)
-(ns3xoy8dxlc8mayb-0) = (n1sytl1e7ygzwhin-0 / 4)
-(n320oyfvhxyze7u8-0) = Approx:Tanh(nmkc5ikq1o942o7l-0)
-(npcissz7zn8ib65i-0) = Decay->Radius(nuyy9a999iuf6cgy-0)
-(nb2j872bwf5eg166-0) = 0.4691072736467634
-(nebezi85i7fstpmx-0) = (nb2j872bwf5eg166-0 * ns3xoy8dxlc8mayb-0)
-(n1sytl1e7ygzwhin-0) = Vector:Cons(8 5 6 7)
-(n39dcp5p6n3dn177-0) = Shaker:Resonator(nmn7bt65l3y7d4wf-0 nebezi85i7fstpmx-0 npcissz7zn8ib65i-0)
-(n2pcyiycoy6n97h0-0) = (a b) => ( (a + b) ) 
-(nerzkkwzpieen8yy-0) = 0.8405358450753349
-(nmkc5ikq1o942o7l-0) = Vector:Horizontal(n2pcyiycoy6n97h0-0 n39dcp5p6n3dn177-0)
-(nkqxrzrll5vvsi08-0) = arg
-(nuyez010pue7l5r2-0) = 0.6048215593610491
-(n71x4yvdzbqgpyqh-0) = Vector:Indices(nget61r64cidhdko-0)
-(ncza5mpoqqmi5klh-0) = 0.16196441650390625
-(nget61r64cidhdko-0) = #4
-(nuyy9a999iuf6cgy-0) = 0.7548215593610491
-(nahkn6grj34yjkih-0) = 0.5
-n320oyfvhxyze7u8-0
-}
-
-Adafruit() {
-(nb4d8mzgv32hzkx9-0) = IO:Source("/midi" 0i #0)
-(nlz86qxa2d1u9n2f-0) = 255i
-(n8w6aldz5er5cbm4-0) = [20i 21i 22i]
-(nga6hozmw4qmorqz-0) = (nbg4rz6u3s7ljswl-0 / 60)
-(nbg4rz6u3s7ljswl-0) = Vector:Cons(ntnw1lqaafhb0544-0)
-(ntnw1lqaafhb0544-0) = Algorithm:Map(n0q1nmb7zdh3ldza-0 n8w6aldz5er5cbm4-0 )
-(nhooqnmjrf9c6brl-0) = 255i
-(nbhubun7hq75dpy-0) = And(ncondfhugy1fa4yj-0 nlz86qxa2d1u9n2f-0)
-(ncondfhugy1fa4yj-0) = BitShiftRight(nb4d8mzgv32hzkx9-0 nqx88qfucy78l713-0)
-(nkqmlgzumdbmcayh-0) = And(nb4d8mzgv32hzkx9-0 nhooqnmjrf9c6brl-0)
-(n0q1nmb7zdh3ldza-0) = (cn) => ( Control:Sample-and-Hold(nkqmlgzumdbmcayh-0 (nbhubun7hq75dpy-0 == cn)) ) 
-(nqx88qfucy78l713-0) = 8i
-nga6hozmw4qmorqz-0
-}
-
-Export:Shaker-Gesture() {
-(n6s6yvkbbd7utxyz-0) = 0.5
-(nd5uqddi1fmv9las-0) = Shaker:Stimulus(ny9rooehvoopum-0 n6s6yvkbbd7utxyz-0)
-(ny9rooehvoopum-0) = 0.5
-nd5uqddi1fmv9las-0
-}
-
-Shaker:Lag(sig lag) {
-;; Output approaches 'sig'nal asymptotically, reaching 90% of the way in 'lag' seconds.
-(ntzkqcxqbr4um0xx-0) = (nw49x3s4jd838wcw-0 * nm14prf5w93dh597-1)
-(nsk7cmyyiv6l2zbv-0) = Max(ntzkqcxqbr4um0xx-0 n62s970207sabsez-0)
-(n62s970207sabsez-0) = 1
-(nswf6q1qjwves2e8-0) = Filter:Tone(nm14prf5w93dh597-0 n7dn2oqe1o76ibyj-0)
-(nlhbhe44qr1ca2l3-0) = Math:Pow(nhetsv0b4biun3pf-0 n90ae6dddm70b7r6-0)
-(n90ae6dddm70b7r6-0) = (1 / nsk7cmyyiv6l2zbv-0)
-(nw49x3s4jd838wcw-0) = Rate-of(nm14prf5w93dh597-0)
-(nhetsv0b4biun3pf-0) = 0.1
-(nm14prf5w93dh597-0 nm14prf5w93dh597-1) = arg
-(n7dn2oqe1o76ibyj-0) = (1 - nlhbhe44qr1ca2l3-0)
-nswf6q1qjwves2e8-0
-}
-
-Decay->Radius(decay) {
-(n3y7i5to2sh116d2-0) = (1 / nzd3199a9krmorkx-0)
-(n8am2te881gokvg-0) = Math:Pow(nl2k1lvknrldb3wy-0 n3y7i5to2sh116d2-0)
-(nkny61116qjl88hx-0) = Gen:Rate()
-(nl2k1lvknrldb3wy-0) = 0.1
-(nv45ihpqhlj2yl22-0) = arg
-(nzd3199a9krmorkx-0) = (nkny61116qjl88hx-0 * nv45ihpqhlj2yl22-0)
-n8am2te881gokvg-0
-}
-
-Inertial-Accel(xyz rate curve) {
-(njuc0gv8ldtw3qeq-0) = Max(0 nwt7n6xdk80raqe7-0)
-(nwt7n6xdk80raqe7-0) = (nmk5dna5y88gue7i-0 - 0.05)
-(nmk5dna5y88gue7i-0) = Math:Sqrt(n9l3fgd3cmpqndar-0)
-(n9l3fgd3cmpqndar-0) = Vector:Horizontal(nxwsb4hgcf210g5-0 noeb6oau0g2j42j7-0)
-(n4y66vl6878attd5-0) = Filter:Lpf6(n0bp6ipoji9q4cnz-0 ndtxzh4gfdhvgxut-1)
-(noeb6oau0g2j42j7-0) = (n1joycsspmzfp3cy-0 * n1joycsspmzfp3cy-0)
-(n08tncc7b2qq7lc-0) = Math:Pow(njuc0gv8ldtw3qeq-0 ndtxzh4gfdhvgxut-2)
-(n1joycsspmzfp3cy-0) = (n0bp6ipoji9q4cnz-0 - n4y66vl6878attd5-0)
-(ndtxzh4gfdhvgxut-0 ndtxzh4gfdhvgxut-1 ndtxzh4gfdhvgxut-2) = arg
-(n0bp6ipoji9q4cnz-0) = Control:Signal(ndtxzh4gfdhvgxut-0)
-(nxwsb4hgcf210g5-0) = (a b) => ( (a + b) ) 
-n08tncc7b2qq7lc-0
 }
 
 }

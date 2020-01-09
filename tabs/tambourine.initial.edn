@@ -1,4 +1,9 @@
-{:draft-argument "Inertial-Accel(Adafruit() 10 1)"
+{:draft-argument "adafruit(10 1)"
+ :export 
+{:arguments 
+{"acceleration" 
+{:signal-type "audio"}}
+ :export-this-tab true}
  :identifier "tambourine"
  :identity "initial"
  :patch
@@ -19,68 +24,68 @@
  :label "Shaker:Resonator($sig $res $r) * $amp"
  :outputs [""]
  :parsed [:infix [:fn "Shaker:Resonator" [:tuple [:free-var "sig"] [:free-var "res"] [:free-var "r"]]] "*" [:free-var "amp"]]
- :pos [272 14]}
+ :pos [82 80]}
  "0nncubcgya815m6" 
 {:inputs []
  :label "0"
  :outputs [""]
  :parsed [:float "0"]
- :pos [-137 -381]}
+ :pos [-327 -315]}
  "1h26rt21h3bhwkc" 
 {:inputs []
  :label "[(2300 0.96 0.1) (5600 0.99 0.8) (8100 0.99 1.0)]"
  :outputs [""]
  :parsed [:list [:tuple [:float "2300"] [:float "0.96"] [:float "0.1"]] [:tuple [:float "5600"] [:float "0.99"] [:float "0.8"]] [:tuple [:float "8100"] [:float "0.99"] [:float "1.0"]]]
- :pos [276 -221]}
+ :pos [86 -155]}
  "3ou2n95y47uc5f6" 
 {:inputs []
  :label "#1"
  :outputs [""]
  :parsed [:invariant "1"]
- :pos [-383 -192]}
+ :pos [-573 -126]}
  "5rw41gvoc3ou5j9" 
 {:inputs []
  :label "0.3"
  :outputs [""]
  :parsed [:float "0.3"]
- :pos [-322 -299]}
+ :pos [-512 -233]}
  "koeeadb7mnxymgw" 
 {:ephemeral-inputs #{"numbers1"}
  :inputs ["numbers1" "numbers..."]
  :label "Sum($numbers...)"
  :outputs [""]
  :parsed [:fn "Sum" [:tuple [:free-var "numbers1"] [:free-var "numbers..."]]]
- :pos [721 -201]}
+ :pos [531 -135]}
  "o6b5rp27w5vt4ti" 
 {:inputs ["sig" "seed" "rate" "sys-decay" "sound-decay" "smoothing"]
  :label "Shaker:Synth($sig $seed $rate $sys-decay $sound-decay $smoothing)"
  :outputs [""]
  :parsed [:fn "Shaker:PHISEM" [:tuple [:free-var "sig"] [:free-var "seed"] [:free-var "rate"] [:free-var "sys-decay"] [:free-var "sound-decay"] [:free-var "smoothing"]]]
- :pos [-152 -110]}
+ :pos [-342 -44]}
  "oldoa9dp9dnp2c6" 
 {:inputs []
  :label "80"
  :outputs [""]
- :parsed [:number-widget :float "1jir3f" "106" ""]
- :pos [-361 -252]}
+ :parsed [:number-widget :float "-boeq00" "106" ""]
+ :pos [-551 -186]}
  "ro3mts6tg3a539k" 
 {:ephemeral-inputs #{"set1"}
  :inputs ["func" "set1" "set..."]
  :label "Algorithm:Map($func $set...)"
  :outputs [""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [609 -63]}
+ :pos [419 3]}
  "sbuzx1ycq9mctzy" 
 {:inputs []
  :label "acceleration = arg"
  :outputs ["acceleration"]
  :parsed "arg"
- :pos [-449 -47]}
+ :pos [-639 19]}
  "vi9yyxax38ast8t" 
 {:inputs []
  :label "0.005"
  :outputs [""]
  :parsed [:float "0.005"]
- :pos [-249 -355]}}
+ :pos [-439 -289]}}
  :scale 0.9265629353920122
  :scroll [0 0]}}

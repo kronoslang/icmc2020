@@ -1,6 +1,16 @@
-{:draft-argument "Inertial-Accel(Adafruit() 1 0.75) * 0.1"
+{:draft-argument "adafruit(1 0.75) * 0.1"
  :export 
-{:export-this-tab true}
+{:arguments 
+{"acceleration" 
+{:signal-type "audio"}}
+ :export-this-tab true
+ :user-interface 
+{"beans" true
+ "particle decay" true
+ "particle shape" true
+ "ring decay" true
+ "system decay" true
+ "tuning" true}}
  :identifier "mbiracas"
  :identity "uqv662p5zee2jty"
  :patch
@@ -59,21 +69,21 @@
  :label "2 -x- 250"
  :name "beans"
  :outputs [""]
- :parsed [:widget "5o8rmf" 0.5 {:type :slider, :limits [[:float "2"] [:float "250"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-wdivp2" 0.5 {:type :slider, :limits [[:float "2"] [:float "250"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-168 -425]}
  "b2j872bwf5eg166" 
 {:inputs []
  :label "60 -x- 700"
  :name "tuning"
  :outputs [""]
- :parsed [:widget "-61goll" 0.4691072736467634 {:type :slider, :limits [[:float "60"] [:float "700"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "fdxkai" 0.4691072736467634 {:type :slider, :limits [[:float "60"] [:float "700"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-364 -425]}
  "cza5mpoqqmi5klh" 
 {:inputs []
  :label "0.0001 -x- 0.1"
  :name "particle shape"
  :outputs [""]
- :parsed [:widget "-l4oi74" 0.16196441650390625 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "mqn896" 0.16196441650390625 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-470 -425]}
  "ebezi85i7fstpmx" 
 {:inputs ["a" "b" "more..."]
@@ -86,7 +96,7 @@
  :label "0.0001 -x- 0.1"
  :name "particle decay"
  :outputs [""]
- :parsed [:widget "-m9fggc" 0.8405358450753349 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "2hx0nc" 0.8405358450753349 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-596 -425]}
  "get61r64cidhdko" 
 {:inputs []
@@ -129,14 +139,14 @@
  :label "0.0001 -x- 0.5"
  :name "system decay"
  :outputs [""]
- :parsed [:widget "sxrie6" 0.6048215593610491 {:type :slider, :limits [[:float "0.0001"] [:float "0.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-lacfec" 0.6048215593610491 {:type :slider, :limits [[:float "0.0001"] [:float "0.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-730 -425]}
  "uyy9a999iuf6cgy" 
 {:inputs []
  :label "0.001 -x- 1.5"
  :name "ring decay"
  :outputs [""]
- :parsed [:widget "-zdn279" 0.7548215593610491 {:type :slider, :limits [[:float "0.001"] [:float "1.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :parsed [:widget "-w1q9ag" 0.7548215593610491 {:type :slider, :limits [[:float "0.001"] [:float "1.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
  :pos [-262 -425]}}
  :scale 1
  :scroll [0 0]}}

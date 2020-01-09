@@ -1,16 +1,19 @@
 {:draft-argument "nil"
- :identifier "Adafruit"
+ :identifier "adafruit"
  :identity "3mr0bh236lfghby"
  :patch
 {:cables
 {["0q1nmb7zdh3ldza" 0] [:fixed "kqmlgzumdbmcayh" 0]
  ["0q1nmb7zdh3ldza" 1] [:fixed "bhubun7hq75dpy" 0]
- ["bg4rz6u3s7ljswl" 0] [:fixed "tnw1lqaafhb0544" 0]
  ["bhubun7hq75dpy" 0] [:fixed "condfhugy1fa4yj" 0]
  ["bhubun7hq75dpy" 1] [:fixed "lz86qxa2d1u9n2f" 0]
  ["condfhugy1fa4yj" 0] [:fixed "b4d8mzgv32hzkx9" 0]
  ["condfhugy1fa4yj" 1] [:fixed "qx88qfucy78l713" 0]
- ["ga6hozmw4qmorqz" 0] [:fixed "bg4rz6u3s7ljswl" 0]
+ ["hpl3stcqm5f58r2" 0] [:fixed "tnw1lqaafhb0544" 0]
+ ["hpl3stcqm5f58r2" 1] [:fixed "tnw1lqaafhb0544" 1]
+ ["hpl3stcqm5f58r2" 2] [:fixed "tnw1lqaafhb0544" 2]
+ ["hpl3stcqm5f58r2" 3] [:fixed "xn946kvuu6n1qow" 0]
+ ["hpl3stcqm5f58r2" 4] [:fixed "xn946kvuu6n1qow" 1]
  ["kqmlgzumdbmcayh" 0] [:fixed "b4d8mzgv32hzkx9" 0]
  ["kqmlgzumdbmcayh" 1] [:fixed "hooqnmjrf9c6brl" 0]
  ["tnw1lqaafhb0544" 0] [:fixed "0q1nmb7zdh3ldza" 0]
@@ -18,15 +21,15 @@
  :nodes
 {"0q1nmb7zdh3ldza" 
 {:inputs ["sig" "cc" "cn"]
- :label "Control:Sample-and-Hold($sig $cc == $cn)"
+ :label "Control:Sample-and-Hold($sig $cc == $cn) / 60"
  :outputs [""]
- :parsed [:fn "Control:Sample-and-Hold" [:tuple [:free-var "sig"] [:infix [:free-var "cc"] "==" [:free-var "cn"]]]]
+ :parsed [:infix [:fn "Control:Sample-and-Hold" [:tuple [:free-var "sig"] [:infix [:free-var "cc"] "==" [:free-var "cn"]]]] "/" [:float "60"]]
  :pos [17 -337]}
  "8w6aldz5er5cbm4" 
 {:inputs []
- :label "[20i 21i 22i]"
+ :label "(20i 21i 22i)"
  :outputs [""]
- :parsed [:list [:int32 "20"] [:int32 "21"] [:int32 "22"]]
+ :parsed [:tuple [:int32 "20"] [:int32 "21"] [:int32 "22"]]
  :pos [-268 -72]}
  "b4d8mzgv32hzkx9" 
 {:inputs []
@@ -34,12 +37,6 @@
  :outputs [""]
  :parsed [:fn "IO:Source" [:tuple [:string "/midi"] [:int32 "0"] [:invariant "0"]]]
  :pos [-644 -310]}
- "bg4rz6u3s7ljswl" 
-{:inputs ["elements"]
- :label "Vector:Cons($elements)"
- :outputs [""]
- :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements"]]]
- :pos [355 -67]}
  "bhubun7hq75dpy" 
 {:inputs ["a" "b"]
  :label "And($a $b)"
@@ -52,18 +49,19 @@
  :outputs [""]
  :parsed [:fn "BitShiftRight" [:tuple [:free-var "a"] [:free-var "b"]]]
  :pos [-334 -385]}
- "ga6hozmw4qmorqz" 
-{:inputs ["a"]
- :label "/ 60"
- :outputs [""]
- :parsed [:infix [:free-var "a"] "/" [:float "60"]]
- :pos [449 -138]}
  "hooqnmjrf9c6brl" 
 {:inputs []
  :label "255i"
  :outputs [""]
  :parsed [:int32 "255"]
  :pos [-538 -152]}
+ "hpl3stcqm5f58r2" 
+{:inputs ["x" "y" "z" "rate" "curve"]
+ :label "Inertial-Accel($x $y $z $rate $curve)"
+ :outputs [""]
+ :parsed [:fn "Inertial-Accel" [:tuple [:free-var "x"] [:free-var "y"] [:free-var "z"] [:free-var "rate"] [:free-var "curve"]]]
+ :pos [513 -69]
+ :selected true}
  "kqmlgzumdbmcayh" 
 {:flip-y true
  :inputs ["a" "b"]
@@ -88,8 +86,14 @@
  :flip-y true
  :inputs ["func" "set1" "set..."]
  :label "Algorithm:Map($func $set...)"
- :outputs [""]
+ :outputs ["" "" ""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [250 -191]}}
+ :pos [250 -191]}
+ "xn946kvuu6n1qow" 
+{:inputs []
+ :label "(rate curve) = arg"
+ :outputs ["rate" "curve"]
+ :parsed "arg"
+ :pos [360 -304]}}
  :scale 0.8389211702838585
  :scroll [0 0]}}

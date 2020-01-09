@@ -1,0 +1,73 @@
+{:identity "xmidyir7kx7hdpr"
+ :patch
+{:cables
+{["9yisnb1mfgj56z5" 0] [:fixed "daqdpobzbk11hzm" 0]
+ ["daqdpobzbk11hzm" 0] [:fixed "6jg8mea5b6tux5l" 0]
+ ["daqdpobzbk11hzm" 1] [:fixed "i7g0asx2kx731r8" 0]
+ ["m0962g7de32lx79" 0] [:fixed "9yisnb1mfgj56z5" 0]
+ ["m0962g7de32lx79" 1] [:fixed "32n4mg6vla8axui" 0]
+ ["m0962g7de32lx79" 2] [:fixed "bvcdach7y6an5bq" 0]
+ ["m0962g7de32lx79" 3] [:fixed "50cqyq85ac9yb92" 0]
+ ["m0962g7de32lx79" 4] [:fixed "e35jrvdbu7sio1y" 0]
+ ["m0962g7de32lx79" 5] [:fixed "3wucj6m2gdd8sa2" 0]}
+ :nodes
+{"32n4mg6vla8axui" 
+{:inputs []
+ :label "4"
+ :outputs [""]
+ :parsed [:float "4"]
+ :pos [-405 -354]}
+ "3wucj6m2gdd8sa2" 
+{:inputs []
+ :label "0.35"
+ :outputs [""]
+ :parsed [:float "0.35"]
+ :pos [27 -367]}
+ "50cqyq85ac9yb92" 
+{:inputs []
+ :label "0.8"
+ :outputs [""]
+ :parsed [:float "0.8"]
+ :pos [-243 -470]}
+ "6jg8mea5b6tux5l" 
+{:inputs []
+ :label "1"
+ :outputs [""]
+ :parsed [:float "1"]
+ :pos [-905 -286]}
+ "9yisnb1mfgj56z5" 
+{:inputs ["acceleration"]
+ :label "mbiracas($acceleration)"
+ :outputs [""]
+ :parsed [:fn "mbiracas" [:tuple [:free-var "acceleration"]]]
+ :pos [-501 -243]}
+ "bvcdach7y6an5bq" 
+{:inputs []
+ :label "0.1"
+ :outputs [""]
+ :parsed [:float "0.1"]
+ :pos [-334 -414]}
+ "daqdpobzbk11hzm" 
+{:inputs ["rate" "curve"]
+ :label "adafruit($rate $curve)"
+ :outputs [""]
+ :parsed [:fn "adafruit" [:tuple [:free-var "rate"] [:free-var "curve"]]]
+ :pos [-718 -283]}
+ "e35jrvdbu7sio1y" 
+{:inputs []
+ :label "2800"
+ :outputs [""]
+ :parsed [:float "2800"]
+ :pos [-85 -429]}
+ "i7g0asx2kx731r8" 
+{:inputs []
+ :label "0.6"
+ :outputs [""]
+ :parsed [:float "0.6"]
+ :pos [-763 -390]}
+ "m0962g7de32lx79" 
+{:inputs ["sig" "rt60" "predelay" "damp" "tone" "mix"]
+ :label "FDN:Reverb($sig $rt60 $predelay $damp $tone $mix)"
+ :outputs [""]
+ :parsed [:fn "FDN:Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "predelay"] [:free-var "damp"] [:free-var "tone"] [:free-var "mix"]]]
+ :pos [-218 -174]}}}}
