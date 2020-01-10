@@ -24,7 +24,8 @@
  :label "o))"
  :outputs ["thru"]
  :parsed [:playback [:free-var "sig"]]
- :pos [352 19]}
+ :pos [352 19]
+ }
  "3wucj6m2gdd8sa2" 
 {:inputs []
  :label "0.35"
@@ -52,6 +53,13 @@
  :outputs [""]
  :parsed [:fn "mbiracas" [:tuple [:free-var "acceleration"]]]
  :pos [-107 -78]
+ }
+ "auhs2s3mrev8uea" 
+{:inputs []
+ :label "; MIDI only works on chrome :("
+ :outputs []
+ :parsed [:comment "MIDI only works on chrome :("]
+ :pos [-366 -44]
  }
  "bvcdach7y6an5bq" 
 {:inputs []
