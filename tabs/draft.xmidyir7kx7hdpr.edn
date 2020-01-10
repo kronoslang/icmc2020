@@ -1,7 +1,8 @@
 {:identity "xmidyir7kx7hdpr"
  :patch
 {:cables
-{["9yisnb1mfgj56z5" 0] [:fixed "daqdpobzbk11hzm" 0]
+{["3uq4dojj36j94v" 0] [:fixed "m0962g7de32lx79" 0]
+ ["9yisnb1mfgj56z5" 0] [:fixed "daqdpobzbk11hzm" 0]
  ["daqdpobzbk11hzm" 0] [:fixed "6jg8mea5b6tux5l" 0]
  ["daqdpobzbk11hzm" 1] [:fixed "i7g0asx2kx731r8" 0]
  ["m0962g7de32lx79" 0] [:fixed "9yisnb1mfgj56z5" 0]
@@ -16,58 +17,76 @@
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [-405 -354]}
+ :pos [-11 -189]
+ }
+ "3uq4dojj36j94v" 
+{:inputs ["sig"]
+ :label "o))"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [352 19]}
  "3wucj6m2gdd8sa2" 
 {:inputs []
  :label "0.35"
  :outputs [""]
  :parsed [:float "0.35"]
- :pos [27 -367]}
+ :pos [421 -202]
+ }
  "50cqyq85ac9yb92" 
 {:inputs []
  :label "0.8"
  :outputs [""]
  :parsed [:float "0.8"]
- :pos [-243 -470]}
+ :pos [151 -305]
+ }
  "6jg8mea5b6tux5l" 
 {:inputs []
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [-905 -286]}
+ :pos [-511 -121]
+ }
  "9yisnb1mfgj56z5" 
 {:inputs ["acceleration"]
  :label "mbiracas($acceleration)"
  :outputs [""]
  :parsed [:fn "mbiracas" [:tuple [:free-var "acceleration"]]]
- :pos [-501 -243]}
+ :pos [-107 -78]
+ }
  "bvcdach7y6an5bq" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [-334 -414]}
+ :pos [60 -249]
+ }
  "daqdpobzbk11hzm" 
 {:inputs ["rate" "curve"]
  :label "adafruit($rate $curve)"
  :outputs [""]
  :parsed [:fn "adafruit" [:tuple [:free-var "rate"] [:free-var "curve"]]]
- :pos [-718 -283]}
+ :pos [-324 -118]
+ }
  "e35jrvdbu7sio1y" 
 {:inputs []
  :label "2800"
  :outputs [""]
  :parsed [:float "2800"]
- :pos [-85 -429]}
+ :pos [309 -264]
+ }
  "i7g0asx2kx731r8" 
 {:inputs []
  :label "0.6"
  :outputs [""]
  :parsed [:float "0.6"]
- :pos [-763 -390]}
+ :pos [-369 -225]
+ }
  "m0962g7de32lx79" 
 {:inputs ["sig" "rt60" "predelay" "damp" "tone" "mix"]
  :label "FDN:Reverb($sig $rt60 $predelay $damp $tone $mix)"
  :outputs [""]
  :parsed [:fn "FDN:Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "predelay"] [:free-var "damp"] [:free-var "tone"] [:free-var "mix"]]]
- :pos [-218 -174]}}}}
+ :pos [176 -9]
+ }}
+ :scale 1
+ :scroll [0 0]}}

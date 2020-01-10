@@ -1,4 +1,17 @@
 {:draft-argument "1 4"
+ :export 
+{:arguments 
+{"rate" 
+{:default-value "2"
+ :max-value "20"
+ :min-value "0.1"
+ :signal-type "control"}
+ "sharpness" 
+{:default-value "2"
+ :max-value "20"
+ :min-value "1"
+ :signal-type "control"}}
+ :export-this-tab true}
  :identifier "Shaker:Stimulus"
  :identity "30ndbcghf0lq5q5"
  :patch
