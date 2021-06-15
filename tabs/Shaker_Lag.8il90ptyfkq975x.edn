@@ -21,59 +21,72 @@
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [-356 -278]}
+ :pos [-40 -149]
+ }
  "7dn2oqe1o76ibyj" 
 {:inputs ["b"]
  :label "1 -"
  :outputs [""]
  :parsed [:infix [:float "1"] "-" [:free-var "b"]]
- :pos [-68 -39]}
+ :pos [248 90]
+ }
  "90ae6dddm70b7r6" 
 {:inputs ["b"]
  :label "1 /"
  :outputs [""]
  :parsed [:infix [:float "1"] "/" [:free-var "b"]]
- :pos [-199 -142]}
+ :pos [117 -13]
+ }
  "hetsv0b4biun3pf" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [-290 -43]}
+ :pos [26 86]
+ }
  "lhbhe44qr1ca2l3" 
 {:inputs ["a" "b"]
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-168 -38]}
+ :pos [148 91]
+ }
  "m14prf5w93dh597" 
-{:inputs []
+{:color 0
+ :inputs []
  :label "(sig lag) = arg"
  :outputs ["sig" "lag"]
  :parsed "arg"
- :pos [-627 -56]}
+ :pos [-311 73]
+ :selected true}
  "sk7cmyyiv6l2zbv" 
 {:inputs ["a" "b"]
  :label "Max($a $b)"
  :outputs [""]
  :parsed [:fn "Max" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-292 -142]}
+ :pos [24 -13]
+ }
  "swf6q1qjwves2e8" 
 {:inputs ["sig" "cutoff"]
  :label "Filter:Tone($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Tone" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [6 80]}
+ :pos [322 209]
+ }
  "tzkqcxqbr4um0xx" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-369 -142]}
+ :pos [-53 -13]
+ }
  "w49x3s4jd838wcw" 
 {:inputs ["sig"]
  :label "Rate-of($sig)"
  :outputs [""]
  :parsed [:fn "Rate-of" [:tuple [:free-var "sig"]]]
- :pos [-492 -142]}}}}
+ :pos [-176 -13]
+ }}
+ :scale 1
+ :scroll [0 0]}}

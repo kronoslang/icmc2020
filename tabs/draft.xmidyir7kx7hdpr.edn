@@ -1,10 +1,15 @@
 {:identity "xmidyir7kx7hdpr"
  :patch
 {:cables
-{["3uq4dojj36j94v" 0] [:fixed "m0962g7de32lx79" 0]
- ["9yisnb1mfgj56z5" 0] [:fixed "daqdpobzbk11hzm" 0]
+{["84hvaddlapmwxko" 0] [:fixed "9uo9am0fldny4xj" 0]
+ ["9uo9am0fldny4xj" 0] [:fixed "m0962g7de32lx79" 0]
+ ["9yisnb1mfgj56z5" 0] [:fixed "dpugqbp0d6pl99f" 0]
  ["daqdpobzbk11hzm" 0] [:fixed "6jg8mea5b6tux5l" 0]
  ["daqdpobzbk11hzm" 1] [:fixed "i7g0asx2kx731r8" 0]
+ ["dpugqbp0d6pl99f" 0] [:fixed "e9o8i92rznb2kq" 0]
+ ["dpugqbp0d6pl99f" 1] [:fixed "l99f80hs28io2il" 0]
+ ["e9o8i92rznb2kq" 0] [:fixed "85g1ctevldnd8tp" 0]
+ ["l99f80hs28io2il" 0] [:fixed "e9o8i92rznb2kq" 0]
  ["m0962g7de32lx79" 0] [:fixed "9yisnb1mfgj56z5" 0]
  ["m0962g7de32lx79" 1] [:fixed "32n4mg6vla8axui" 0]
  ["m0962g7de32lx79" 2] [:fixed "bvcdach7y6an5bq" 0]
@@ -13,88 +18,153 @@
  ["m0962g7de32lx79" 5] [:fixed "3wucj6m2gdd8sa2" 0]}
  :nodes
 {"32n4mg6vla8axui" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [-11 -189]
- }
- "3uq4dojj36j94v" 
-{:inputs ["sig"]
- :label "o))"
- :outputs ["thru"]
- :parsed [:playback [:free-var "sig"]]
- :pos [352 19]
+ :pos [19 13]
  }
  "3wucj6m2gdd8sa2" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.35"
  :outputs [""]
  :parsed [:float "0.35"]
- :pos [421 -202]
+ :pos [19 -203]
  }
  "50cqyq85ac9yb92" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.8"
  :outputs [""]
  :parsed [:float "0.8"]
- :pos [151 -305]
+ :pos [19 -95]
  }
+ "5157fvs0xp778j7" 
+{:color 0
+ :inputs []
+ :label "; Fake Accelerometer"
+ :outputs []
+ :parsed [:comment "Fake Accelerometer"]
+ :pos [-466 -196]
+ :selected true}
  "6jg8mea5b6tux5l" 
 {:inputs []
  :label "1"
  :outputs [""]
  :parsed [:float "1"]
- :pos [-511 -121]
+ :pos [-502 530]
+ }
+ "84hvaddlapmwxko" 
+{:cable-midpoints 
+{}
+ :ephemeral-inputs #{"numbers"}
+ :inputs ["numbers" "numbers..."]
+ :label "Average($numbers...)"
+ :outputs [""]
+ :parsed [:fn "Average" [:tuple [:free-var "numbers"] [:free-var "numbers..."]]]
+ :pos [399 261]
+ }
+ "85g1ctevldnd8tp" 
+{:color 0
+ :inputs []
+ :label "0 ---o--- 1000"
+ :outputs [""]
+ :parsed [:widget "-i6x9rp" 0.5 {:type :slider, :limits [[:float "0"] [:float "1000"]], :render [:limits], :ast [[:limits 0] [:limits 1]], :size 7, :orientation :vertical, :curve :linear}]
+ :pos [-535 4]
+ :selected true}
+ "9uo9am0fldny4xj" 
+{:inputs ["v"]
+ :label "Vector:Explode($v)"
+ :outputs [""]
+ :parsed [:fn "Vector:Explode" [:tuple [:free-var "v"]]]
+ :pos [378 190]
  }
  "9yisnb1mfgj56z5" 
 {:inputs ["acceleration"]
  :label "mbiracas($acceleration)"
+ :name "Instrument Model"
  :outputs [""]
  :parsed [:fn "mbiracas" [:tuple [:free-var "acceleration"]]]
- :pos [-107 -78]
+ :pos [-87 75]
+ }
+ "a5xh9lw44g2ka8r" 
+{:color 3
+ :inputs []
+ :label "; Reverb params"
+ :outputs []
+ :parsed [:comment "Reverb params"]
+ :pos [192 -98]
  }
  "auhs2s3mrev8uea" 
 {:inputs []
  :label "; MIDI only works on chrome :("
  :outputs []
  :parsed [:comment "MIDI only works on chrome :("]
- :pos [-366 -44]
+ :pos [-357 607]
  }
  "bvcdach7y6an5bq" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [60 -249]
+ :pos [19 -41]
  }
  "daqdpobzbk11hzm" 
 {:inputs ["rate" "curve"]
  :label "adafruit($rate $curve)"
  :outputs [""]
  :parsed [:fn "adafruit" [:tuple [:free-var "rate"] [:free-var "curve"]]]
- :pos [-324 -118]
+ :pos [-315 533]
  }
+ "dpugqbp0d6pl99f" 
+{:color 0
+ :inputs ["a" "b" "more..."]
+ :label "-"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-268 -66]
+ :selected true}
  "e35jrvdbu7sio1y" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "2800"
  :outputs [""]
  :parsed [:float "2800"]
- :pos [309 -264]
+ :pos [19 -149]
  }
+ "e9o8i92rznb2kq" 
+{:color 0
+ :inputs ["sig"]
+ :label "Control:Smooth-Audio($sig 50)"
+ :outputs [""]
+ :parsed [:fn "Control:Smooth-Audio" [:tuple [:free-var "sig"] [:float "50"]]]
+ :pos [-488 -105]
+ :selected true}
  "i7g0asx2kx731r8" 
 {:inputs []
  :label "0.6"
  :outputs [""]
  :parsed [:float "0.6"]
- :pos [-369 -225]
+ :pos [-360 426]
  }
+ "l99f80hs28io2il" 
+{:color 0
+ :inputs ["sig~"]
+ :label "z-1($sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
+ :pos [-293 -151]
+ :selected true}
  "m0962g7de32lx79" 
 {:inputs ["sig" "rt60" "predelay" "damp" "tone" "mix"]
  :label "FDN:Reverb($sig $rt60 $predelay $damp $tone $mix)"
+ :name "Reverberation"
  :outputs [""]
  :parsed [:fn "FDN:Reverb" [:tuple [:free-var "sig"] [:free-var "rt60"] [:free-var "predelay"] [:free-var "damp"] [:free-var "tone"] [:free-var "mix"]]]
- :pos [176 -9]
+ :pos [196 144]
  }}
  :scale 1
  :scroll [0 0]}}

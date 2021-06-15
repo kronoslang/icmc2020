@@ -26,32 +26,37 @@
  :label "Polymorphic($forms...)"
  :outputs [""]
  :parsed [:fn "Polymorphic" [:tuple [:free-var "forms1"] [:free-var "forms2"] [:free-var "forms..."]]]
- :pos [401 141]}
+ :pos [460 189]
+ }
  "5plkcv29vwefrlb" 
 {:inputs ["vector"]
  :label "Vector:Split($vector)"
  :outputs ["" ""]
  :parsed [:fn "Vector:Split" [:tuple [:free-var "vector"]]]
- :pos [-126 -319]}
+ :pos [-67 -271]
+ }
  "8d3d6gvcaf9fh3" 
 {:inputs []
  :label "; # Butterfly Matrix #\n\n\nThis circuit recursively constructs\na matrix multiply operation that makes use\nof the symmetry in a Hadamaard matrix.\n\n\nEach row and column vector has a different combination\nof in-phase and anti-phase components.\n\n\nThe function is polymorphic: the `Vector!` rule constraints\nthe patch downstream to the case when the function argument\nis a vector. This path recurs, splitting up the vector,\nfinally finding the terminating case where the argument is a single scalar.\n\n\nIn that case, the `Vector!` is rejected, and a fallback\nform is used. In this case, the fallback is simply\nthe identity function.\n\n\nThe green `Polymorphic` node collates the alternative paths\nthis circuit can take depending on the aforementioned type rules."
  :outputs []
  :parsed [:comment "# Butterfly Matrix #\n\n\nThis circuit recursively constructs\na matrix multiply operation that makes use\nof the symmetry in a Hadamaard matrix.\n\n\nEach row and column vector has a different combination\nof in-phase and anti-phase components.\n\n\nThe function is polymorphic: the `Vector!` rule constraints\nthe patch downstream to the case when the function argument\nis a vector. This path recurs, splitting up the vector,\nfinally finding the terminating case where the argument is a single scalar.\n\n\nIn that case, the `Vector!` is rejected, and a fallback\nform is used. In this case, the fallback is simply\nthe identity function.\n\n\nThe green `Polymorphic` node collates the alternative paths\nthis circuit can take depending on the aforementioned type rules."]
- :pos [-20 -150]}
+ :pos [0 -131]
+ }
  "cildyx45rf7w0ef" 
 {:inputs ["vec"]
  :label "Butterfly($vec)"
  :outputs [""]
  :parsed [:fn "FDN:Butterfly" [:tuple [:free-var "vec"]]]
- :pos [56 -257]}
+ :pos [115 -209]
+ }
  "fr96ob0y61m1o9j" 
 {:color 3
  :inputs []
  :label "vec = arg"
  :outputs ["vec"]
  :parsed "arg"
- :pos [-432 -275]}
+ :pos [-373 -227]
+ }
  "jtl3kclekjqgiuk" 
 {:cable-midpoints 
 {}
@@ -59,19 +64,22 @@
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [218 -223]}
+ :pos [277 -175]
+ }
  "kejl8eeo4ot41v6" 
 {:inputs ["a" "b"]
  :label "Vector:Concat($a $b)"
  :outputs [""]
  :parsed [:fn "Vector:Concat" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [368 -133]}
+ :pos [427 -85]
+ }
  "ksjisxtlq7d5af3" 
 {:inputs ["vec"]
  :label "Butterfly($vec)"
  :outputs [""]
  :parsed [:fn "FDN:Butterfly" [:tuple [:free-var "vec"]]]
- :pos [64 -351]}
+ :pos [123 -303]
+ :selected true}
  "p2mb3rl0ylahe5j" 
 {:cable-midpoints 
 {}
@@ -80,7 +88,8 @@
  :label "Constraints:Vector!($v)"
  :outputs [""]
  :parsed [:fn "Constraints:Vector!" [:tuple [:free-var "v"]]]
- :pos [-277 -307]}
+ :pos [-218 -259]
+ }
  "z1nddd8mh3mo769" 
 {:cable-midpoints 
 {}
@@ -89,6 +98,7 @@
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [258 -353]}}
- :scale 1
+ :pos [317 -305]
+ }}
+ :scale 0.6612949819199149
  :scroll [0 0]}}

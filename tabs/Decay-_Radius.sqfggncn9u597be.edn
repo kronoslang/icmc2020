@@ -14,35 +14,44 @@
  :label "1 /"
  :outputs [""]
  :parsed [:infix [:float "1"] "/" [:free-var "b"]]
- :pos [-189 -127]}
+ :pos [202 10]
+ }
  "8am2te881gokvg" 
 {:inputs ["a" "b"]
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-109 -52]}
+ :pos [282 85]
+ }
  "kny61116qjl88hx" 
 {:inputs []
  :label "Gen:Rate()"
  :outputs [""]
  :parsed [:fn "Gen:Rate" [:tuple]]
- :pos [-542 -223]}
+ :pos [-151 -86]
+ }
  "l2k1lvknrldb3wy" 
 {:inputs []
  :label "0.1"
  :outputs [""]
  :parsed [:float "0.1"]
- :pos [-281 -5]}
+ :pos [110 132]
+ }
  "v45ihpqhlj2yl22" 
-{:inputs []
+{:color 0
+ :inputs []
  :label "decay = arg"
  :outputs ["decay"]
  :parsed "arg"
- :pos [-647 -77]}
+ :pos [-256 60]
+ }
  "zd3199a9krmorkx" 
 {:flip-y true
  :inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-277 -129]}}}}
+ :pos [114 8]
+ }}
+ :scale 1
+ :scroll [0 0]}}

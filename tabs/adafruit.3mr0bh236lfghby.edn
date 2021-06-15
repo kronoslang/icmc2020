@@ -24,63 +24,72 @@
  :label "Control:Sample-and-Hold($sig $cc == $cn) / 60"
  :outputs [""]
  :parsed [:infix [:fn "Control:Sample-and-Hold" [:tuple [:free-var "sig"] [:infix [:free-var "cc"] "==" [:free-var "cn"]]]] "/" [:float "60"]]
- :pos [17 -337]}
+ :pos [104 -44]
+ }
  "8w6aldz5er5cbm4" 
 {:inputs []
  :label "(20i 21i 22i)"
  :outputs [""]
  :parsed [:tuple [:int32 "20"] [:int32 "21"] [:int32 "22"]]
- :pos [-268 -72]}
+ :pos [-181 221]
+ }
  "b4d8mzgv32hzkx9" 
 {:inputs []
  :label "IO:Source(\"/midi\" 0i #0)"
  :outputs [""]
  :parsed [:fn "IO:Source" [:tuple [:string "/midi"] [:int32 "0"] [:invariant "0"]]]
- :pos [-644 -310]}
+ :pos [-557 -17]
+ }
  "bhubun7hq75dpy" 
 {:inputs ["a" "b"]
  :label "And($a $b)"
  :outputs [""]
  :parsed [:fn "And" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-152 -436]}
+ :pos [-65 -143]
+ }
  "condfhugy1fa4yj" 
 {:inputs ["a" "b"]
  :label "BitShiftRight($a $b)"
  :outputs [""]
  :parsed [:fn "BitShiftRight" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-334 -385]}
+ :pos [-247 -92]
+ }
  "hooqnmjrf9c6brl" 
 {:inputs []
  :label "255i"
  :outputs [""]
  :parsed [:int32 "255"]
- :pos [-538 -152]}
+ :pos [-451 141]
+ }
  "hpl3stcqm5f58r2" 
 {:inputs ["x" "y" "z" "rate" "curve"]
  :label "Inertial-Accel($x $y $z $rate $curve)"
  :outputs [""]
  :parsed [:fn "Inertial-Accel" [:tuple [:free-var "x"] [:free-var "y"] [:free-var "z"] [:free-var "rate"] [:free-var "curve"]]]
- :pos [513 -69]
- :selected true}
+ :pos [600 224]
+ }
  "kqmlgzumdbmcayh" 
 {:flip-y true
  :inputs ["a" "b"]
  :label "And($a $b)"
  :outputs [""]
  :parsed [:fn "And" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [-343 -255]}
+ :pos [-256 38]
+ }
  "lz86qxa2d1u9n2f" 
 {:inputs []
  :label "255i"
  :outputs [""]
  :parsed [:int32 "255"]
- :pos [-309 -522]}
+ :pos [-222 -229]
+ }
  "qx88qfucy78l713" 
 {:inputs []
  :label "8i"
  :outputs [""]
  :parsed [:int32 "8"]
- :pos [-393 -457]}
+ :pos [-306 -164]
+ }
  "tnw1lqaafhb0544" 
 {:ephemeral-inputs #{"set1"}
  :flip-y true
@@ -88,12 +97,14 @@
  :label "Algorithm:Map($func $set...)"
  :outputs ["" "" ""]
  :parsed [:fn "Algorithm:Map" [:tuple [:free-var "func"] [:free-var "set1"] [:free-var "set..."]]]
- :pos [250 -191]}
+ :pos [337 102]
+ }
  "xn946kvuu6n1qow" 
 {:inputs []
  :label "(rate curve) = arg"
  :outputs ["rate" "curve"]
  :parsed "arg"
- :pos [360 -304]}}
+ :pos [447 -11]
+ }}
  :scale 0.8389211702838585
  :scroll [0 0]}}

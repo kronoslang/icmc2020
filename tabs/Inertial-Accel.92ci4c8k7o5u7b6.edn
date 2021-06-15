@@ -48,13 +48,15 @@
  :label "Math:Pow($a $b)"
  :outputs [""]
  :parsed [:fn "Math:Pow" [:tuple [:free-var "a"] [:free-var "b"]]]
- :pos [535 -69]}
+ :pos [535 97]
+ }
  "0bp6ipoji9q4cnz" 
 {:inputs ["sig"]
  :label "Control:Signal($sig)"
  :outputs [""]
  :parsed [:fn "Control:Signal" [:tuple [:free-var "sig"]]]
- :pos [-243 -228]}
+ :pos [-243 -62]
+ }
  "1joycsspmzfp3cy" 
 {:cable-midpoints 
 {1 [33 62]}
@@ -62,59 +64,72 @@
  :label "-"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
- :pos [-146 -94]}
+ :pos [-146 72]
+ }
  "4y66vl6878attd5" 
 {:inputs ["sig" "cutoff"]
  :label "Filter:Lpf6($sig $cutoff)"
  :outputs [""]
  :parsed [:fn "Filter:Lpf6" [:tuple [:free-var "sig"] [:free-var "cutoff"]]]
- :pos [-94 -228]}
+ :pos [-94 -62]
+ }
  "9l3fgd3cmpqndar" 
 {:inputs ["fn" "v"]
  :label "Vector:Horizontal($fn $v)"
  :outputs [""]
  :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
- :pos [-43 91]}
+ :pos [-43 257]
+ }
  "dtxzh4gfdhvgxut" 
-{:inputs []
+{:color 0
+ :inputs []
  :label "(x y z rate curve) = arg"
  :outputs ["x" "y" "z" "rate" "curve"]
  :parsed "arg"
- :pos [-481 -404]}
+ :pos [-481 -238]
+ :selected true}
  "ghcdfnd6rzgn528" 
 {:ephemeral-inputs #{"elements1" "elements2" "elements3"}
  :inputs ["elements1" "elements2" "elements3" "elements..."]
  :label "Vector:Cons($elements...)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:free-var "elements1"] [:free-var "elements2"] [:free-var "elements3"] [:free-var "elements..."]]]
- :pos [-364 -228]}
+ :pos [-364 -62]
+ }
  "juc0gv8ldtw3qeq" 
 {:inputs ["b"]
  :label "Max(0 $b)"
  :outputs [""]
  :parsed [:fn "Max" [:tuple [:float "0"] [:free-var "b"]]]
- :pos [394 -69]}
+ :pos [394 97]
+ }
  "mk5dna5y88gue7i" 
 {:inputs ["a"]
  :label "Math:Sqrt($a)"
  :outputs [""]
  :parsed [:fn "Math:Sqrt" [:tuple [:free-var "a"]]]
- :pos [111 -69]}
+ :pos [111 97]
+ }
  "oeb6oau0g2j42j7" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-98 -18]}
+ :pos [-98 148]
+ }
  "wt7n6xdk80raqe7" 
 {:inputs ["a"]
  :label "- 0.05"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "-" [:float "0.05"]]
- :pos [230 -69]}
+ :pos [230 97]
+ }
  "xwsb4hgcf210g5" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [-175 65]}}}}
+ :pos [-175 231]
+ }}
+ :scale 1
+ :scroll [0 0]}}

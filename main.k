@@ -3,7 +3,7 @@
 
 
 
-Package icmc2020 {
+Package Icmc2020 {
 
 Brief() { 
 ;; Example code
@@ -13,8 +13,12 @@ Brief() {
 
 tambourine(acceleration) {
 (nsbuzx1ycq9mctzy-0) = arg
+(n4pn2nihehb5h3tz-0) = nkoeeadb7mnxymgw-0
 (nkoeeadb7mnxymgw-0) = Sum(nro3mts6tg3a539k-0 )
 (nro3mts6tg3a539k-0) = Algorithm:Map(n0721jega3l7f2it-0 n1h26rt21h3bhwkc-0 )
+(n5oqxcguht69002d-0) = Control:Smooth-Audio(ng63k5i2fi8amz5c-0 50)
+(ng63k5i2fi8amz5c-0) = 0.3459250544508856
+(nxqeces37k2gtppo-0) = (n5oqxcguht69002d-0 - nc903qotrkgzv3wf-0)
 (n1h26rt21h3bhwkc-0) = [(2300 0.96 0.1) (5600 0.99 0.8) (8100 0.99 1.0)]
 (nvi9yyxax38ast8t-0) = 0.005
 (n0nncubcgya815m6-0) = 0
@@ -22,8 +26,9 @@ tambourine(acceleration) {
 (n0721jega3l7f2it-0) = (res r amp) => ( (Shaker:Resonator(no6b5rp27w5vt4ti-0 res r) * amp) ) 
 (no6b5rp27w5vt4ti-0) = Shaker:PHISEM(nsbuzx1ycq9mctzy-0 n3ou2n95y47uc5f6-0 noldoa9dp9dnp2c6-0 n5rw41gvoc3ou5j9-0 nvi9yyxax38ast8t-0 n0nncubcgya815m6-0)
 (n5rw41gvoc3ou5j9-0) = 0.3
+(nc903qotrkgzv3wf-0) = z-1(n5oqxcguht69002d-0)
 (n3ou2n95y47uc5f6-0) = #1
-nkoeeadb7mnxymgw-0
+n4pn2nihehb5h3tz-0
 }
 
 mbiracas(acceleration) {
@@ -31,21 +36,26 @@ mbiracas(acceleration) {
 (ns3xoy8dxlc8mayb-0) = (n1sytl1e7ygzwhin-0 / 4)
 (n320oyfvhxyze7u8-0) = Approx:Tanh(nmkc5ikq1o942o7l-0)
 (npcissz7zn8ib65i-0) = Decay->Radius(nuyy9a999iuf6cgy-0)
+(nbscuf29j0dpc83e-0) = n320oyfvhxyze7u8-0
 (nb2j872bwf5eg166-0) = 0.4691072736467634
 (nebezi85i7fstpmx-0) = (nb2j872bwf5eg166-0 * ns3xoy8dxlc8mayb-0)
 (n1sytl1e7ygzwhin-0) = Vector:Cons(8 5 6 7)
 (n39dcp5p6n3dn177-0) = Shaker:Resonator(nmn7bt65l3y7d4wf-0 nebezi85i7fstpmx-0 npcissz7zn8ib65i-0)
+(nahde682obvi458n-0) = 0.5
 (n2pcyiycoy6n97h0-0) = (a b) => ( (a + b) ) 
+(niuvn4o6vrilntg5-0) = z-1(nq0z2eqedfvy1wnr-0)
+(nq0z2eqedfvy1wnr-0) = Control:Smooth-Audio(nahde682obvi458n-0 50)
 (nerzkkwzpieen8yy-0) = 0.8405358450753349
 (nmkc5ikq1o942o7l-0) = Vector:Horizontal(n2pcyiycoy6n97h0-0 n39dcp5p6n3dn177-0)
 (nkqxrzrll5vvsi08-0) = arg
+(ndujp9a1npwro3la-0) = (nq0z2eqedfvy1wnr-0 - niuvn4o6vrilntg5-0)
 (nuyez010pue7l5r2-0) = 0.6048215593610491
 (n71x4yvdzbqgpyqh-0) = Vector:Indices(nget61r64cidhdko-0)
 (ncza5mpoqqmi5klh-0) = 0.16196441650390625
 (nget61r64cidhdko-0) = #4
 (nuyy9a999iuf6cgy-0) = 0.7548215593610491
 (nahkn6grj34yjkih-0) = 0.5
-n320oyfvhxyze7u8-0
+nbscuf29j0dpc83e-0
 }
 
 adafruit(rate curve) {
@@ -127,19 +137,24 @@ nksbc6z6h4zpu42b-0
 }
 
 FDN:Reverb(sig rt60 predelay damp tone mix) {
+(npie02sduhejcn2u-0) = FDN:Test-Signal()
 (n7lrakq6xwwplv7u-0) = FDN:Butterfly(nvwyo51vfhtec3u7-0)
+(ngwdi7hwl81ie9op-0) = 0.8
 (npn488smrmtnj2nm-0) = Math:Pow(n16bdifxjt1alv7w-0 nnt1f13bv82gl5x4-0)
 (nk4w9vi1iq5zh0p5-0) = (nbcbwjo9hceuad19-0 * n9nncusk1c8u4e4n-0)
 (nilmd4jtxy53859s-0) = Algorithm:Expand(nuzozw785sx6lobw-0 n872e35euq87re8g-0 nepx0bz2wzoe68kw-0)
 (n9nncusk1c8u4e4n-0) = Math:Sqrt(nnt1f13bv82gl5x4-0)
 (n3axy3etok4fls5s-0) = Math:Mix(nghs21lu2fkpkf72-5 nghs21lu2fkpkf72-0 nloc2v0p363kqxif-0)
+(nvl6iw83gi80rmux-0) = 0.5
 (nghs21lu2fkpkf72-0 nghs21lu2fkpkf72-1 nghs21lu2fkpkf72-2 nghs21lu2fkpkf72-3 nghs21lu2fkpkf72-4 nghs21lu2fkpkf72-5) = arg
 (nloc2v0p363kqxif-0) = Filter:Lpf6(ng5ie7h8trup8n6-0 nghs21lu2fkpkf72-4)
 (neerbpfw5uye683x-0) = Vector:Repeat(nuzozw785sx6lobw-0 n7e2r70x0eag5rdj-0)
 (ng5ie7h8trup8n6-0) = (n9nncusk1c8u4e4n-0 * n7lrakq6xwwplv7u-0)
+(nua73fbd1hy885wv-0) = 9000
 (n2l3f6yd6nd091lh-0) = (sig N) => ( FDN:Delay-Line(sig N nghs21lu2fkpkf72-1 nghs21lu2fkpkf72-3) ) 
 (nnt1f13bv82gl5x4-0) = (#1 / nuzozw785sx6lobw-0)
 (n872e35euq87re8g-0) = (b) => ( (npn488smrmtnj2nm-0 * b) ) 
+(n2vx82me3fca5itw-0) = 0.08
 (nuzozw785sx6lobw-0) = #8
 (n16bdifxjt1alv7w-0) = (n7lv9g825e8kvk7z-0 / nepx0bz2wzoe68kw-0)
 (n77du3c6at9d8577-0) = (neerbpfw5uye683x-0 + nk4w9vi1iq5zh0p5-0)
@@ -147,6 +162,7 @@ FDN:Reverb(sig rt60 predelay damp tone mix) {
 (nbcbwjo9hceuad19-0) = z-1(n7lrakq6xwwplv7u-0)
 (nvwyo51vfhtec3u7-0) = Vector:Zip-Op(n2l3f6yd6nd091lh-0 n77du3c6at9d8577-0 n4a0jbxdh8ts8ybp-0)
 (n7lv9g825e8kvk7z-0) = #456
+(n326bzichqevv2w0-0) = 4.5
 (n7e2r70x0eag5rdj-0) = Delay:Static-Delay(nghs21lu2fkpkf72-0 nghs21lu2fkpkf72-2 nnxvyqf1s2fq5a5m-0)
 (nm5s284xjm4yt1aa-0) = n3axy3etok4fls5s-0
 (nepx0bz2wzoe68kw-0) = #10987

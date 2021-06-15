@@ -64,52 +64,63 @@
  :name "system energy"
  :outputs [""]
  :parsed [:fn "Shaker:Lag" [:tuple [:free-var "sig"] [:free-var "lag"]]]
- :pos [-339 9]}
+ :pos [-147 68]
+ }
  "3s5by81lo9ddsi" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-144 -313]}
+ :pos [-78 -292]
+ }
  "5yi4xmbf4h8vmnx" 
-{:ephemeral-inputs #{"more1"}
+{:color 2
+ :ephemeral-inputs #{"more1"}
  :inputs ["a" "b" "more1" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more1"] [:free-var "more..."]]
- :pos [425 353]}
+ :pos [491 374]
+ }
  "79p4bf4v73egcjr" 
 {:inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-261 -105]}
+ :pos [-195 -84]
+ }
  "89282qlspuz1363" 
 {:inputs ["sig" "lag"]
  :label "Shaker:Lag($sig $lag)"
  :name "particle envelope"
  :outputs [""]
  :parsed [:fn "Shaker:Lag" [:tuple [:free-var "sig"] [:free-var "lag"]]]
- :pos [123 218]}
+ :pos [84 266]
+ }
  "8jfrjq7nosr46n7" 
-{:inputs ["seed"]
+{:color 2
+ :inputs ["seed"]
  :label "Gen:Noise($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Noise" [:tuple [:free-var "seed"]]]
- :pos [120 351]
- :selected true}
+ :pos [186 372]
+ }
  "93fgu2xzf6nopd2" 
 {:inputs ["seed"]
  :label "Gen:Drift($seed)"
  :outputs [""]
  :parsed [:fn "Gen:Drift" [:tuple [:free-var "seed"]]]
- :pos [-312 124]}
+ :pos [9 0]
+ }
  "a2q7n2k2r20bc07" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "* 400"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:float "400"]]
- :pos [56 -175]}
+ :pos [122 -154]
+ }
  "a8rqqwy0eha4a8a" 
 {:cable-midpoints 
 {}
@@ -118,7 +129,8 @@
  :label "&"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "&" [:free-var "b"] [:free-var "more..."]]
- :pos [111 32]}
+ :pos [162 65]
+ }
  "apwwlg8g66dd89" 
 {:cable-midpoints 
 {}
@@ -126,56 +138,93 @@
  :label "<"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "<" [:free-var "b"] [:free-var "more..."]]
- :pos [53 -20]}
+ :pos [119 0]
+ }
  "fc5ir545ebbct5y" 
-{:inputs []
+{:color 0
+ :inputs []
  :label "(sig seed rate sys-decay sound-decay smoothing) = arg"
  :outputs ["sig" "seed" "rate" "sys-decay" "sound-decay" "smoothing"]
  :parsed "arg"
- :pos [-664 -42]}
+ :pos [-426 64]
+ }
  "g8xruwc1nrmbwhi" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "4"
  :outputs [""]
  :parsed [:float "4"]
- :pos [-299 -313]}
+ :pos [-233 -292]
+ }
+ "kc6yeh2d34ohnvf" 
+{:inputs []
+ :label "; Triggers and Envelope"
+ :outputs []
+ :parsed [:comment "Triggers and Envelope"]
+ :pos [358 64]
+ }
  "kkw21omt743wxs" 
-{:inputs ["a"]
+{:color 3
+ :inputs ["a"]
  :label "Math:Log($a)"
  :outputs [""]
  :parsed [:fn "Math:Log" [:tuple [:free-var "a"]]]
- :pos [-141 -175]}
+ :pos [-75 -154]
+ }
  "l102dp7uuomqsfj" 
-{:inputs []
+{:color 2
+ :inputs []
  :label "0.499d"
  :outputs [""]
  :parsed [:double "0.499"]
- :pos [-119 353]
- :selected true}
+ :pos [-53 374]
+ }
+ "l562qyb5iqtzdjy" 
+{:color 3
+ :inputs []
+ :label "; Compute gain compensation"
+ :outputs []
+ :parsed [:comment "Compute gain compensation"]
+ :pos [174 -272]
+ }
+ "lc6hpvs0zjt80mf" 
+{:color 2
+ :inputs []
+ :label "; Audio Signal"
+ :outputs []
+ :parsed [:comment "Audio Signal"]
+ :pos [330 352]
+ }
  "lmqqkmsa8t9j0jj" 
 {:inputs []
  :label "Gen:Rate()"
  :outputs [""]
  :parsed [:fn "Gen:Rate" [:tuple]]
- :pos [-396 -131]}
+ :pos [-291 -137]
+ }
  "mc9b8kn75rf1ajv" 
-{:inputs ["a" "b" "more..."]
+{:color 3
+ :inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [-60 -175]}
+ :pos [6 -154]
+ }
  "ni6b2dq1e71c21g" 
 {:inputs ["sig" "lag"]
  :label "Shaker:Lag($sig $lag)"
  :outputs [""]
  :parsed [:fn "Shaker:Lag" [:tuple [:free-var "sig"] [:free-var "lag"]]]
- :pos [272 221]}
+ :pos [239 267]
+ }
  "p9umq7u51u45yzl" 
-{:inputs ["a" "b" "more..."]
+{:color 3
+ :inputs ["a" "b" "more..."]
  :label "/"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:free-var "b"] [:free-var "more..."]]
- :pos [159 -175]}
+ :pos [225 -154]
+ }
  "z0s6egw4t6qluz9" 
 {:cable-midpoints 
 {}
@@ -183,6 +232,7 @@
  :label "Max(#1 $b)"
  :outputs [""]
  :parsed [:fn "Max" [:tuple [:invariant "1"] [:free-var "b"]]]
- :pos [-376 -252]}}
- :scale 1
+ :pos [-310 -231]
+ }}
+ :scale 0.7495373667734408
  :scroll [0 0]}}

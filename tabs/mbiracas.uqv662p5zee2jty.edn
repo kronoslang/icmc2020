@@ -20,8 +20,13 @@
  ["39dcp5p6n3dn177" 1] [:fixed "ebezi85i7fstpmx" 0]
  ["39dcp5p6n3dn177" 2] [:fixed "pcissz7zn8ib65i" 0]
  ["71x4yvdzbqgpyqh" 0] [:fixed "get61r64cidhdko" 0]
+ ["bscuf29j0dpc83e" 0] [:fixed "320oyfvhxyze7u8" 0]
+ ["dujp9a1npwro3la" 0] [:fixed "q0z2eqedfvy1wnr" 0]
+ ["dujp9a1npwro3la" 1] [:fixed "iuvn4o6vrilntg5" 0]
  ["ebezi85i7fstpmx" 0] [:fixed "b2j872bwf5eg166" 0]
  ["ebezi85i7fstpmx" 1] [:fixed "s3xoy8dxlc8mayb" 0]
+ ["iuvn4o6vrilntg5" 0] [:fixed "q0z2eqedfvy1wnr" 0]
+ ["kqxrzrll5vvsi08" 0] [:fixed "dujp9a1npwro3la" 0]
  ["mkc5ikq1o942o7l" 0] [:fixed "2pcyiycoy6n97h0" 0]
  ["mkc5ikq1o942o7l" 1] [:fixed "39dcp5p6n3dn177" 0]
  ["mn7bt65l3y7d4wf" 0] [:fixed "kqxrzrll5vvsi08" 0]
@@ -31,6 +36,7 @@
  ["mn7bt65l3y7d4wf" 4] [:fixed "erzkkwzpieen8yy" 0]
  ["mn7bt65l3y7d4wf" 5] [:fixed "cza5mpoqqmi5klh" 0]
  ["pcissz7zn8ib65i" 0] [:fixed "uyy9a999iuf6cgy" 0]
+ ["q0z2eqedfvy1wnr" 0] [:fixed "ahde682obvi458n" 0]
  ["s3xoy8dxlc8mayb" 0] [:fixed "1sytl1e7ygzwhin" 0]}
  :nodes
 {"1sytl1e7ygzwhin" 
@@ -38,115 +44,196 @@
  :label "Vector:Cons(8 5 6 7)"
  :outputs [""]
  :parsed [:fn "Vector:Cons" [:tuple [:float "8"] [:float "5"] [:float "6"] [:float "7"]]]
- :pos [-603 -497]}
+ :pos [-505 -268]
+ }
  "2pcyiycoy6n97h0" 
 {:inputs ["a" "b" "more..."]
  :label "+"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "+" [:free-var "b"] [:free-var "more..."]]
- :pos [139 108]}
+ :pos [268 308]
+ }
  "320oyfvhxyze7u8" 
 {:inputs ["w"]
  :label "Approx:Tanh($w)"
  :outputs [""]
  :parsed [:fn "Approx:Tanh" [:tuple [:free-var "w"]]]
- :pos [539 35]
- :selected true}
+ :pos [537 307]
+ }
  "39dcp5p6n3dn177" 
 {:inputs ["sig" "res" "r"]
  :label "Shaker:Resonator($sig $res $r)"
  :outputs [""]
  :parsed [:fn "Shaker:Resonator" [:tuple [:free-var "sig"] [:free-var "res"] [:free-var "r"]]]
- :pos [239 -44]}
+ :pos [317 226]
+ }
  "71x4yvdzbqgpyqh" 
 {:inputs ["count"]
  :label "Vector:Indices($count)"
  :outputs [""]
  :parsed [:fn "Vector:Indices" [:tuple [:free-var "count"]]]
- :pos [-345 -107]}
+ :pos [-247 122]
+ }
+ "ahde682obvi458n" 
+{:color 0
+ :inputs []
+ :label "0 ---o--- 1000"
+ :outputs [""]
+ :parsed [:widget "-6v9v2t" 0.5 {:type :slider, :limits [[:float "0"] [:float "1000"]], :render [:limits], :ast [[:limits 0] [:limits 1]], :size 7, :orientation :vertical, :curve :linear}]
+ :pos [-709 54]
+ }
  "ahkn6grj34yjkih" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "2 -x- 250"
  :name "beans"
  :outputs [""]
- :parsed [:widget "-wdivp2" 0.5 {:type :slider, :limits [[:float "2"] [:float "250"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-168 -425]}
+ :parsed [:widget "-f289ow" 0.5 {:type :slider, :limits [[:float "2"] [:float "250"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-70 -196]
+ }
  "b2j872bwf5eg166" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "60 -x- 700"
  :name "tuning"
  :outputs [""]
- :parsed [:widget "fdxkai" 0.4691072736467634 {:type :slider, :limits [[:float "60"] [:float "700"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-364 -425]}
+ :parsed [:widget "-pyz55t" 0.4691072736467634 {:type :slider, :limits [[:float "60"] [:float "700"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-266 -196]
+ }
+ "bscuf29j0dpc83e" 
+{:inputs ["sig"]
+ :label "o))"
+ :outputs ["thru"]
+ :parsed [:playback [:free-var "sig"]]
+ :pos [505 190]
+ }
  "cza5mpoqqmi5klh" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.0001 -x- 0.1"
  :name "particle shape"
  :outputs [""]
- :parsed [:widget "mqn896" 0.16196441650390625 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-470 -425]}
+ :parsed [:widget "-9x8hvf" 0.16196441650390625 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-372 -196]
+ }
+ "dujp9a1npwro3la" 
+{:color 0
+ :inputs ["a" "b" "more..."]
+ :label "-"
+ :outputs [""]
+ :parsed [:infix [:free-var "a"] "-" [:free-var "b"] [:free-var "more..."]]
+ :pos [-260 351]
+ }
  "ebezi85i7fstpmx" 
 {:inputs ["a" "b" "more..."]
  :label "*"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "*" [:free-var "b"] [:free-var "more..."]]
- :pos [-78 -333]}
+ :pos [228 -97]
+ }
  "erzkkwzpieen8yy" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.0001 -x- 0.1"
  :name "particle decay"
  :outputs [""]
- :parsed [:widget "2hx0nc" 0.8405358450753349 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-596 -425]}
+ :parsed [:widget "441zms" 0.8405358450753349 {:type :slider, :limits [[:float "0.0001"] [:float "0.1"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-498 -196]
+ }
  "get61r64cidhdko" 
 {:inputs []
  :label "#4"
  :outputs [""]
  :parsed [:invariant "4"]
- :pos [-481 -107]}
+ :pos [-383 122]
+ }
+ "iuvn4o6vrilntg5" 
+{:color 0
+ :inputs ["sig~"]
+ :label "z-1($sig~)"
+ :outputs [""]
+ :parsed [:fn "z-1" [:tuple [:free-var "sig~"]]]
+ :pos [-297 300]
+ }
  "kqxrzrll5vvsi08" 
-{:inputs []
+{:color 0
+ :default-params 
+{"a" "nil"
+ "c" "nil"
+ "e" "nil"
+ "i" "nil"
+ "l" "nil"
+ "n" "nil"
+ "o" "nil"
+ "r" "nil"
+ "t" "nil"}
+ :inputs ["acceleration"]
  :label "acceleration = arg"
  :outputs ["acceleration"]
  :parsed "arg"
- :pos [-400 21]}
+ :pos [-133 232]
+ }
  "mkc5ikq1o942o7l" 
 {:inputs ["fn" "v"]
  :label "Vector:Horizontal($fn $v)"
  :outputs [""]
  :parsed [:fn "Vector:Horizontal" [:tuple [:free-var "fn"] [:free-var "v"]]]
- :pos [378 34]}
+ :pos [406 305]
+ }
  "mn7bt65l3y7d4wf" 
 {:inputs ["sig" "seed" "rate" "sys-decay" "sound-decay" "smoothing"]
  :label "Shaker:Synth($sig $seed $rate $sys-decay $sound-decay $smoothing)"
  :outputs [""]
  :parsed [:fn "Shaker:PHISEM" [:tuple [:free-var "sig"] [:free-var "seed"] [:free-var "rate"] [:free-var "sys-decay"] [:free-var "sound-decay"] [:free-var "smoothing"]]]
- :pos [10 -2]}
+ :pos [108 226]
+ }
  "pcissz7zn8ib65i" 
 {:inputs ["decay"]
  :label "Decay->Radius($decay)"
  :outputs [""]
  :parsed [:fn "Decay->Radius" [:tuple [:free-var "decay"]]]
- :pos [87 -266]}
+ :pos [229 67]
+ }
+ "q0z2eqedfvy1wnr" 
+{:color 0
+ :inputs ["sig"]
+ :label "Control:Smooth-Audio($sig 50)"
+ :outputs [""]
+ :parsed [:fn "Control:Smooth-Audio" [:tuple [:free-var "sig"] [:float "50"]]]
+ :pos [-482 356]
+ }
  "s3xoy8dxlc8mayb" 
 {:inputs ["a"]
  :label "/ 4"
  :outputs [""]
  :parsed [:infix [:free-var "a"] "/" [:float "4"]]
- :pos [-314 -520]}
+ :pos [-216 -291]
+ }
  "uyez010pue7l5r2" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.0001 -x- 0.5"
  :name "system decay"
  :outputs [""]
- :parsed [:widget "-lacfec" 0.6048215593610491 {:type :slider, :limits [[:float "0.0001"] [:float "0.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-730 -425]}
+ :parsed [:widget "p0mgq3" 0.6048215593610491 {:type :slider, :limits [[:float "0.0001"] [:float "0.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-632 -196]
+ }
  "uyy9a999iuf6cgy" 
-{:inputs []
+{:color 3
+ :inputs []
  :label "0.001 -x- 1.5"
  :name "ring decay"
  :outputs [""]
- :parsed [:widget "-w1q9ag" 0.7548215593610491 {:type :slider, :limits [[:float "0.001"] [:float "1.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
- :pos [-262 -425]}}
- :scale 1
+ :parsed [:widget "-sim9lm" 0.7548215593610491 {:type :slider, :limits [[:float "0.001"] [:float "1.5"]], :render [:limits], :size 3, :orientation :vertical, :curve :exponential}]
+ :pos [-164 -196]
+ }
+ "ye45gshtb4zvtl0" 
+{:color 0
+ :inputs []
+ :label "; Fake Accelerometer"
+ :outputs []
+ :parsed [:comment "Fake Accelerometer"]
+ :pos [-510 226]
+ }}
+ :scale 0.9092213586886565
  :scroll [0 0]}}
